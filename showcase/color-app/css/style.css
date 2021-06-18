@@ -1,0 +1,85 @@
+#color-article                  {margin: auto; height: 480px; width: 320px; text-align: center; border-radius: 0px; margin-top: 5%;}
+#color-menu                     {background-color: #000000; height: 450px; width: 300px; color: #FFFFFF; position: absolute; z-index: 1; border: 1px solid black; display: none;}
+#color-main                     {background-color: #DDDDDD; height: 450px; width: 300px; border: 1px solid black;}
+
+.color-head                     {text-align: center; padding: 3%; height: 30px; font-family: "Century Gothic"; color: #FFFFFF; font-weight: bold; font-size: 1.45em; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+#color-menu-head                {background-color: blue; border-bottom: 1px solid black;}
+#color-main-head                {background-color: orange; border-bottom: 1px solid black;}
+
+.color-main-icon                {display: block; width: 30px; height: 30px;  background-size: 30px 30px;}
+#color-main-icon-menu           {float: left;  cursor: pointer; background: url("../images/menu.png"); background-size: 33px 33px;}
+#color-main-icon-reload         {float: right; cursor: pointer; background: url("../images/reload.png"); background-size: 33px 33px;}	/* transition: all 0.5s ease-in-out; -webkit-animation: rotate_once 1s; -moz-animation: rotate_once 1s;}*/
+/*#color-main-icon-reload:hover {transform: rotate(180deg);}*/
+
+#color-menu li                  {list-style-type: none; display: block; font-size: 1.5em; font-family: "Segoe UI Light"; padding: 5%;}
+#color-menu li:hover            {background-color: #333333; cursor: pointer;}
+#color-menu li:active           {background-color: #DDDDDD; color: #000000;}
+#color-menu li.selected         {background-color: #DDDDDD; color: #000000;}
+
+#color-form     {margin-top: 7%;}
+.color-label    {display: inline-block; line-height: 150%; font-size: 2em; font-family: "Segoe UI Light"; width: 35%; position: relative; top: 5px; font-weight: normal;}
+.color-input    {width: 35%; text-align: center; font-family: "Consolas"; font-size: 1.3em; padding: 0.15em;}
+#color-red      {color: #FF0000;}
+#color-grn      {color: #177935;}
+#color-blu      {color: #273094;}
+.color-well     {border-radius: 18px; background-color: #000000; color: #FFFFFF; width: 50%; margin: auto; margin-top: 12%; padding: 2%; font-family: "Consolas";}
+.color-well     {text-align: center; font-size: 1.5em; margin-bottom: 12%;}
+
+#color-hexres           {border-radius: 10px; background: linear-gradient(to right bottom, #CB0ACD 25%, #1FB5ED); padding: 1.5em; color: white; font-family: "Magneto";}
+#color-hexres           {text-align: center; font-size: 1.5em; cursor: pointer; border: 1px solid #000000; text-shadow: 2px 2px 0px #000000; box-shadow: 2px 2px 5px #000000;}
+#color-hexres           {margin: 10%;}
+#color-hexres:active    {position: relative; top: 2px; left: 2px; box-shadow: 0px 0px 1px #000000;}
+#color-hexres:hover     {animation: spacing 1s infinite; -webkit-animation: spacing 1s infinite; -moz-animation: spacing 1s infinite;}
+input[type=number]      {-moz-appearance: textfield;}
+
+
+/*:not(.color-well, span, .color-hexres)
+{	'-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;'
+    unselectable='on'
+    onselectstart='return false;'
+    onmousedown='return false;
+}
+
+
+@keyframes rotate_once {
+    0% {transform: rotate(-359deg) scale(10); opacity: 0;}
+    100% {transform: rotate(0deg) scale(1); opacity: 1;}
+}
+
+@-webkit-keyframes rotate_once {
+    0% {transform: rotate(-359deg) scale(10); opacity: 0;}
+    100% {transform: rotate(0deg) scale(1); opacity: 1;}
+}
+*/
+
+#color-contain-ans, #color-hexres
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@keyframes spacing {
+    0% {letter-spacing: 4px;}
+    50% {letter-spacing: inherit;}
+    100% {letter-spacing: 4px;}
+}
+
+@-webkit-keyframes spacing {
+    0% {letter-spacing: 4px;}
+    50% {letter-spacing: inherit;}
+    100% {letter-spacing: 4px;}
+}
+
+@-moz-keyframes spacing {
+    0% {letter-spacing: 4px;}
+    50% {letter-spacing: inherit;}
+    100% {letter-spacing: 4px;}
+}

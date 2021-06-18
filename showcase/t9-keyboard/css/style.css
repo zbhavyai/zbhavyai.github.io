@@ -1,0 +1,75 @@
+#t9-article {
+    margin: auto;
+    height: 480px;
+    width: 320px;
+    text-align: center;
+    border-radius: 0px;
+    margin-top: 5%;
+}
+
+/* #t9-frame {
+    height: 480px;
+    width: 320px;
+    font-family: "Consolas";
+    min-width: 200px;
+} */
+
+#t9-input {
+    height: 100px;
+    text-align: center;
+}
+
+#t9-field {
+    height: 70px;
+    width: 98%;
+    font-size: 20px;
+    text-align: right;
+    border: 2px solid #000;
+}
+
+#t9-buttons {
+    height: 380px;
+    width: 100%;
+}
+
+.t9-button {
+    height: 25%;
+    width: 33.33%;
+    background-color: #333;
+    color: #FFF;
+    display: inline-block;
+    text-align: center;
+    margin: -2px -2px;
+}
+
+.t9-button {
+    cursor: pointer;
+    float: left;
+    border: 2px solid #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Consolas";
+}
+
+.t9-button:active {
+    background-color: #FFC90E;
+}
+
+.t9-button-text {
+    display: block;
+    font-size: 10px;
+    text-align: center;
+}
+
+#t9-input,
+#t9-field,
+#t9-button,
+.t9-button,
+.t9-button-text {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

@@ -1,0 +1,119 @@
+#calci-article {
+    margin: auto;
+    height: 480px;
+    width: 320px;
+    text-align: center;
+    border-radius: 0px;
+    margin-top: 5%;
+}
+
+#calci-main {
+    height: 480px;
+    width: 320px;
+    border-radius: 5px;
+    background-color: #222;
+    position: absolute;
+}
+
+#calci-screen {
+    height: 20%;
+    width: 85%;
+    border-radius: 20px;
+    background-color: #EEE;
+    position: relative;
+    margin: 13% auto 10% auto;
+    overflow: hidden;
+}
+
+#calci-numpad {
+    height: 52%;
+    width: 83%;
+    margin: auto;
+    text-align: center;
+}
+
+#calci-history {
+    display: block;
+    margin: auto;
+    text-align: right;
+    font-family: "Consolas";
+    height: 20px;
+    width: 77%;
+}
+
+#calci-history {
+    background-color: #EEE;
+    font-size: 1em;
+    position: relative;
+    top: 7px;
+    border: none;
+}
+
+#calci-field {
+    display: block;
+    text-align: right;
+    border: none;
+    background-color: #EEE;
+    padding: 2%;
+}
+
+#calci-field {
+    width: 80%;
+    font-family: "Consolas";
+    margin: auto;
+    margin-top: 5%;
+    font-size: 2em;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#calci-logo {
+    color: #FFF;
+    font-family: "Consolas";
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button {
+    height: 20%;
+    width: 25%;
+    border: 2px solid #222;
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 1em;
+    float: left;
+    outline: 0 !important;
+}
+
+button:active {
+    border-color: #FFF;
+    outline: 0 !important;
+}
+
+button:focus {
+    outline: 0 !important;
+}
+
+.calci-number {
+    background-color: #0279C0;
+}
+
+.calci-operator,
+.calci-del,
+.calci-plus {
+    background-color: #772087
+}
+
+.calci-equalto {
+    background-color: #F5BF12
+}
+
+.calci-clear {
+    background-color: #772087
+}
+
+.calci-root {
+    background-color: #772087
+}

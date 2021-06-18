@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <meta name="author" content="Bhavyai Gupta">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <article id="calci-article">
+        <div id="calci-main">
+            <p id="calci-logo">Casio<sup>&reg;</sup></p>
+
+            <div id="calci-screen">
+                <input id="calci-history" type="text" readonly>
+                <input id="calci-field" type="text" readonly>
+            </div>
+
+            <div id="calci-numpad">
+                <button class="calci-clear" data-value="clear" id="calci-clear">C</button>
+                <button class="calci-root" data-value="root" id="calci-root">&#8730;</button>
+                <button class="calci-plus" data-value="plus" id="calci-plusminus">&#8723;</button>
+                <button class="calci-del" data-value="del" id="calci-del">&larr;</button>
+                <br>
+                <button class="calci-number" data-value="7" id="calci-seven">7</button>
+                <button class="calci-number" data-value="8" id="calci-eight">8</button>
+                <button class="calci-number" data-value="9" id="calci-nine">9</button>
+                <button class="calci-operator" data-value=" / " id="calci-div">&divide;</button>
+                <br>
+                <button class="calci-number" data-value="4" id="calci-four">4</button>
+                <button class="calci-number" data-value="5" id="calci-five">5</button>
+                <button class="calci-number" data-value="6" id="calci-six">6</button>
+                <button class="calci-operator" data-value=" * " id="calci-mul">&times;</button>
+                <br>
+                <button class="calci-number" data-value="1" id="calci-one">1</button>
+                <button class="calci-number" data-value="2" id="calci-two">2</button>
+                <button class="calci-number" data-value="3" id="calci-three">3</button>
+                <button class="calci-operator" data-value=" - " id="calci-sub">-</button>
+                <br>
+                <button class="calci-number" data-value="." id="calci-dec">.</button>
+                <button class="calci-number" data-value="0" id="calci-zero">0</button>
+                <button class="calci-equalto" data-value="equal" id="calci-equal">=</button>
+                <button class="calci-operator" data-value=" + " id="calci-add">+</button>
+            </div>
+        </div>
+    </article>
+    <script type="text/javascript" rel="javascript" src="js/script.js"></script>
+</body>
+
+</html>

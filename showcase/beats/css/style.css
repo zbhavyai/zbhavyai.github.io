@@ -1,0 +1,43 @@
+#beats-article  {margin: auto; height: 480px; width: 320px; text-align: center; border-radius: 0px; margin-top: 5%;}
+#beats-main     {margin: 0; height: 100%; background: #000000; overflow: hidden;}
+#beats-heading  {color: #FF0000; text-align: center; margin-top: 5%; margin-bottom: 10%; font-size: 4em; font-family: "Bauhaus 93";}
+#beats-heading  {-webkit-animation: load_beats 0.4s ease-in; animation: load_beats 0.4s ease-in; letter-spacing: 5px}
+.beats-bar      {width: 4%; height: 500px; float: left; position: relative; border-radius: 10%;}
+
+@-webkit-keyframes bars_up_down
+{
+    0% {top: 0px;}
+    50% {top: 300px;}
+    100% {top: 0px;}
+}
+
+@keyframes bars_up_down
+{
+    0% {top: 0px;}
+    50% {top: 300px;}
+    100% {top: 0px;}
+}
+
+@-webkit-keyframes load_beats
+{
+    0% {transform: scale(50); opacity: 0;}
+    100% {transform: scale(1); opacity: 1;}
+}
+
+@keyframes load_beats
+{
+    0% {transform: scale(50); opacity: 0;}
+    100% {transform: scale(1); opacity: 1;}
+}
+
+@-webkit-keyframes spacing_toggle
+{
+    0% {letter-spacing: 5px;}
+    100% {letter-spacing: 15px;}
+}
+
+@keyframes spacing_toggle
+{
+    0% {letter-spacing: 5px;}
+    100% {letter-spacing: 15px;}
+}
