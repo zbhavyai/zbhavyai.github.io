@@ -7,15 +7,6 @@ const ProjectCard = ({ props }) => {
 
   return (
     <Card className='shadow rounded monoFont'>
-      <Card.Header className='text-end' style={{ fontSize: '0.85em' }}>
-        {props['tech_stack']?.map((language, index) => {
-          return (
-            <Badge key={index} pill className='bg-secondary ms-1'>
-              {language}
-            </Badge>
-          );
-        })}
-      </Card.Header>
       <Card.Img
         variant='top'
         src={props['card_image']}
@@ -27,13 +18,14 @@ const ProjectCard = ({ props }) => {
         className='p-5'
         style={{ objectFit: 'contain', borderRadius: '0em', backgroundColor: '#e8e9ea' }}
       />
-      <Card.Body>
-        <Card.Title>
-          <Link to={props['repository_link']} target='_blank' rel='noopener noreferrer'>
+      <Card.Body className='p-0'>
+        <Card.Title className='py-1 px-3 bg-secondary text-light'>
+          <Link to={props['repository_link']} target='_blank' rel='noopener noreferrer' className='text-light'>
             {props['name']}
           </Link>
         </Card.Title>
         <Card.Text
+          className='px-3 mb-2'
           style={{
             overflow: 'hidden',
             textOverflow: 'ellipsis',
@@ -47,6 +39,15 @@ const ProjectCard = ({ props }) => {
           {props['short_description']}
         </Card.Text>
       </Card.Body>
+      <Card.Footer className='text-end' style={{ fontSize: '0.85em' }}>
+        {props['tech_stack']?.map((language, index) => {
+          return (
+            <Badge key={index} pill className='bg-secondary ms-1'>
+              {language}
+            </Badge>
+          );
+        })}
+      </Card.Footer>
     </Card>
   );
 };
