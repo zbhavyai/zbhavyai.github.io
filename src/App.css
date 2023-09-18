@@ -1,4 +1,21 @@
+html,
+body {
+  background-color: #f9f9f9;
+}
+
 .monoFont {
   font-family: 'Fira Mono', 'Roboto Mono', 'Inter', sans-serif;
   font-size: 14px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.linkColor {
+  color: #005ef8;
 }
