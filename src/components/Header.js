@@ -11,14 +11,14 @@ const Header = ({ activeNav }) => {
 
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end'>
-          <Nav className='ml-auto' variant='pills' activeKey={activeNav}>
-            <Nav.Link eventKey='about' href='/about'>
+          <Nav className='ml-auto monoFont' variant='pills' activeKey={activeNav}>
+            <Nav.Link eventKey='about' href='/about' className='px-3'>
               About
             </Nav.Link>
-            <Nav.Link eventKey='projects' href='/projects'>
+            <Nav.Link eventKey='projects' href='/projects' className='px-3'>
               Projects
             </Nav.Link>
-            <Nav.Link eventKey='resume' href='/resume'>
+            <Nav.Link eventKey='resume' href='/resume' className='px-3'>
               Resume
             </Nav.Link>
           </Nav>
