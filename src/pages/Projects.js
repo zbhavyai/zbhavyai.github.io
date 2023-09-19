@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Header from '../components/Header';
 import ProjectCard from '../components/ProjectCard';
-import projectList from '../components/projects.json';
+import projectList from '../data/projects.json';
 
 const Projects = () => {
   return (

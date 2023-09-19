@@ -1,7 +1,7 @@
 [
   {
     "name": "PowerBI Embed",
-    "short_description": "Embedding Power BI reports using OAuth2 Implicit Grant (Hybrid) Flow",
+    "short_description": "Embedding Power BI reports using OAuth2 Implicit Grant Flow",
     "description": "",
     "repository_link": "https://github.com/zbhavyai/powerbi-embed",
     "deployment_link": "",
@@ -15,7 +15,7 @@
   },
   {
     "name": "Tableau Embed",
-    "short_description": "Embedding Tableau Visualizations using Tableau Connected Apps",
+    "short_description": "Embedding Tableau Visuals using Tableau Connected Apps",
     "description": "",
     "repository_link": "https://github.com/zbhavyai/powerbi-embed",
     "deployment_link": "",
