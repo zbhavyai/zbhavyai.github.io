@@ -1,3 +1,5 @@
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Badge, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -16,12 +18,13 @@ const ProjectCard = ({ props }) => {
         }}
         height={'200px'}
         className='p-5'
-        style={{ objectFit: 'contain', borderRadius: '0em', backgroundColor: '#e8e9ea' }}
+        style={{ objectFit: 'contain', backgroundColor: '#e8e9ea' }}
       />
       <Card.Body className='p-0'>
-        <Card.Title className='py-1 px-3 bg-secondary text-light'>
+        <Card.Title className='py-1 px-2 bg-secondary text-light d-flex justify-content-between'>
+          {props['name']}
           <Link to={props['repository_link']} target='_blank' rel='noopener noreferrer' className='text-light'>
-            {props['name']}
+            <FontAwesomeIcon icon={faGithub} />
           </Link>
         </Card.Title>
         <Card.Text
