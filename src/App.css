@@ -1,30 +1,37 @@
+/**
+ * update background color
+ */
 html,
 body {
   background-color: #f9f9f9;
 }
 
+/**
+ * mono font
+ */
 .monoFont {
   font-family: 'Fira Mono', 'Roboto Mono', 'Inter', sans-serif;
   font-size: 14px;
 }
 
-.active {
-  font-weight: bold;
-}
-
+/**
+  * make all items in navbar brighter
+  */
 .nav-link {
   color: #ffffff;
 }
 
-.linkColor {
-  color: #005ef8;
+/**
+  * make selected item in navbar bold
+  */
+.nav-link.active {
+  font-weight: bold;
 }
 
+/**
+ * Hover effect on all cards
+ */
 .card:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.55) !important;
   transition: 0.3s;
-}
-
-.card-title a {
-  text-decoration: none;
 }
