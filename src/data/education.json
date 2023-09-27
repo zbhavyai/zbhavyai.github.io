@@ -1,0 +1,19 @@
+[
+  {
+    "university": "University of Calgary",
+    "location": "Calgary, AB",
+    "degree": "Master of Engineering",
+    "area_of_study": "Electrical and Computer Engineering",
+    "specialization": "Software Engineering",
+    "start_date": "05/2021",
+    "end_date": "04/2022"
+  },
+  {
+    "university": "Delhi Technological University",
+    "location": "Delhi, IN",
+    "degree": "Bachelor of Technology",
+    "area_of_study": "Electronics and Communication Engineering",
+    "start_date": "08/2012",
+    "end_date": "08/2016"
+  }
+]
