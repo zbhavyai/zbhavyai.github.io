@@ -15,23 +15,23 @@ body {
 }
 
 /**
-  * make all items in navbar brighter
-  */
+ * make all items in navbar brighter
+ */
 .nav-link {
   color: #ffffff;
 }
 
 /**
-  * make selected item in navbar bold
-  */
+ * make selected item in navbar bold
+ */
 .nav-link.active {
   font-weight: bold;
 }
 
 /**
- * Hover effect on all cards
+ * Hover effect on project cards
  */
-.card:hover {
+.card-project:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.55) !important;
   transition: 0.3s;
 }
