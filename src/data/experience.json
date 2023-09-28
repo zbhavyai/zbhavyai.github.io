@@ -1,0 +1,45 @@
+[
+  {
+    "company": "Userful Corporation",
+    "designation": "Software Developer",
+    "location": "Calgary, AB",
+    "start_date": "04/2022",
+    "end_date": "present",
+    "tech_stack": ["Quarkus", "Java", "Python", "ReactJS", "Javascript", "Grafana", "Prometheus", "Vault KV2"],
+    "responsibities": [
+      "Orchestrated the integration of real-time metrics, extracted from DBus signals and methods, into our core product using Quarkus Micrometer, Prometheus, and Grafana",
+      "Tailored and whitelabelled Grafana v7.5.15 source code resulting in substantial cost savings of approximately $100,000, circumventing the need for costly OEM licensing",
+      "Pioneered the inclusion of Tableau and Power BI embedding functionality, bolstering our product's capacity to harness dynamic data visualization capabilities",
+      "Elevated security measures by integrating HashiCorp's Vault into our product's infrastructure, fortifying protection for media sources like RTSP Streams, Tableau Connected Apps, and VNC Passwords",
+      "Actively contributed to continuous improvement through the agile development process",
+      "Authored technical documents for new functionalities and APIs, fostering collaboration with stakeholders"
+    ]
+  },
+  {
+    "company": "Luxoft",
+    "designation": "Consultant",
+    "location": "Singapore",
+    "start_date": "10/2018",
+    "end_date": "12/2019",
+    "tech_stack": ["Bash", "XML", "SQL"],
+    "responsibities": ["Spearheaded the end-to-end technical development of the Market Risk module within the MX.3 framework utilizing ANT scripts and bash scripts"]
+  },
+  {
+    "company": "Capgemini",
+    "designation": "Associate Consultant",
+    "location": "Singapore",
+    "start_date": "08/2017",
+    "end_date": "08/2018",
+    "tech_stack": ["Bash", "XML", "SQL"],
+    "responsibities": ["Responsile for technical build of the Market Risk module within MX.3, catering to diverse client requirements and their international entities"]
+  },
+  {
+    "company": "Capgemini",
+    "designation": "Associate Consultant",
+    "location": "Gurugram, IN",
+    "start_date": "06/2016",
+    "end_date": "08/2017",
+    "tech_stack": ["Bash", "XML", "SQL"],
+    "responsibities": ["Responsible for market risk scenario generation, application, and computations like VaR, Stress Testing, and Back Testing"]
+  }
+]
