@@ -37,6 +37,37 @@ body {
 }
 
 /**
+ * Make card header and footer as part of body
+ */
+.card-experience .card-header,
+.card-experience .card-footer {
+  background-color: #ffffff;
+  border: 0;
+}
+.card-experience .triangle-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/**
+ * Customize badges
+ */
+.tech-badge {
+  background-color: #f1f1f1 !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px !important;
+  display: inline-block;
+  font-family: 'Inconsolata', monospace;
+  font-weight: lighter;
+  color: #111111;
+  font-size: 0.9em;
+  line-height: 1.6em;
+  margin: 5px;
+  padding: 0 5px;
+  letter-spacing: 0.05em;
+}
+
+/**
  * Triangle list style
  */
 ul.triangle-list {

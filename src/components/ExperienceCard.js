@@ -3,7 +3,7 @@ import { Badge, Card } from 'react-bootstrap';
 
 const ExperienceCard = ({ props }) => {
   return (
-    <Card as='article' className='shadow monoFont card-experience'>
+    <Card as='article' className='monoFont card-experience'>
       <Card.Header as='header' className='d-flex justify-content-between'>
         <div>
           <Card.Title className='mb-1'>{props['company']}</Card.Title>
@@ -16,7 +16,7 @@ const ExperienceCard = ({ props }) => {
           <Card.Text as='address'>{props['location']}</Card.Text>
         </div>
       </Card.Header>
-      <Card.Body as='section' className='py-1'>
+      <Card.Body as='section' className='py-0'>
         <Card.Text className='px-3'>
           <ul className='triangle-list'>
             {props['responsibities']?.map((item, index) => {
@@ -32,7 +32,7 @@ const ExperienceCard = ({ props }) => {
       <Card.Footer as='footer'>
         {props['tech_stack']?.map((language, index) => {
           return (
-            <Badge key={index} pill className='bg-secondary me-1'>
+            <Badge key={index} pill className='tech-badge me-1'>
               {language}
             </Badge>
           );

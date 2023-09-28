@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 
 const ExperienceCard = ({ props }) => {
   return (
-    <Card as='article' className='shadow monoFont card-education'>
+    <Card as='article' className='monoFont card-education'>
       <Card.Body as='section' className='d-flex justify-content-between'>
         <div>
           <Card.Title>
