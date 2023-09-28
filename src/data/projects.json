@@ -14,10 +14,24 @@
     "hasFrontend": true
   },
   {
+    "name": "EPIC API Scaper",
+    "short_description": "A scraper to quickly get the aggregated list of EPIC System's Open APIs",
+    "description": "",
+    "repository_link": "https://github.com/zbhavyai/epic-open-api-scaper",
+    "deployment_link": "",
+    "association": "Personal",
+    "last_updated": 2023,
+    "card_image": "https://open.epic.com/Content/Images/logo.png?version=R41429",
+    "language": ["Python"],
+    "tech_stack": ["BeautifulSoup4"],
+    "hasBackend": true,
+    "hasFrontend": false
+  },
+  {
     "name": "Tableau Embed",
     "short_description": "Embedding Tableau Visuals using Tableau Connected Apps",
     "description": "",
-    "repository_link": "https://github.com/zbhavyai/powerbi-embed",
+    "repository_link": "https://github.com/zbhavyai/tableau-embed",
     "deployment_link": "",
     "association": "Personal",
     "last_updated": 2023,
@@ -91,7 +105,7 @@
     "deployment_link": "",
     "association": "University of Calgary",
     "last_updated": 2022,
-    "card_image": "not found",
+    "card_image": "https://raw.githubusercontent.com/zbhavyai/veterinary-clinic/main/frontend/public/animals.png",
     "language": ["Java", "Javascript", "SQL"],
     "tech_stack": ["Spring Boot", "ReactJS", "MySQL"],
     "hasBackend": true,
@@ -110,5 +124,19 @@
     "tech_stack": ["XMLHttpRequest", "fetch"],
     "hasBackend": false,
     "hasFrontend": true
+  },
+  {
+    "name": "README Downloader",
+    "short_description": "Downloading README files from random GitHub repositories using GitHub REST API",
+    "description": "",
+    "repository_link": "https://github.com/zbhavyai/readme-downloader",
+    "deployment_link": "",
+    "association": "University of Calgary",
+    "last_updated": 2021,
+    "card_image": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+    "language": ["Python", "REST", "Databricks"],
+    "tech_stack": ["Pandas"],
+    "hasBackend": true,
+    "hasFrontend": false
   }
 ]
