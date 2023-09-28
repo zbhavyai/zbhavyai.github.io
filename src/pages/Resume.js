@@ -11,7 +11,7 @@ const Resume = () => {
     <React.Fragment>
       <Header activeNav='resume' />
       <Container>
-        <h3 className='mt-5 mx-4 mb-0'>Experience</h3>
+        <h3 className='mt-5 mx-4 mb-0'>Professional Experience</h3>
         <Row id='container-experience' xs={1} md={1} lg={1} xl={1} className='g-4 m-4 mt-0'>
           {ExperienceList?.map((project, index) => {
             return (
