@@ -11,7 +11,7 @@ const Header = ({ activeNav }) => {
 
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end'>
-          <Nav className='ml-auto monoFont' variant='pills' activeKey={activeNav}>
+          <Nav className='ml-auto monoFontFira' variant='pills' activeKey={activeNav}>
             <Nav.Item>
               <Nav.Link eventKey='about' href='/about' className='px-3'>
                 About

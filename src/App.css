@@ -7,11 +7,14 @@ body {
 }
 
 /**
- * mono font
+ * mono fonts
  */
-.monoFont {
+.monoFontFira {
   font-family: 'Fira Mono', 'Roboto Mono', 'Inter', sans-serif;
   font-size: 14px;
+}
+.monoFontInconsolata {
+  font-family: 'Inconsolata', monospace;
 }
 
 /**
@@ -57,7 +60,6 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px !important;
   display: inline-block;
-  font-family: 'Inconsolata', monospace;
   font-weight: lighter;
   color: #111111;
   font-size: 0.9em;

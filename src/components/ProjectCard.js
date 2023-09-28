@@ -8,7 +8,7 @@ const ProjectCard = ({ props }) => {
   let brokenCardImage = `${process.env.PUBLIC_URL + '/logo512.png'}`;
 
   return (
-    <Card className='shadow rounded monoFont card-project'>
+    <Card className='shadow rounded monoFontFira card-project'>
       <Card.Img
         variant='top'
         src={props['card_image']}
