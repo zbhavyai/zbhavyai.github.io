@@ -1,0 +1,8 @@
+{
+  "programming": ["Java", "Javascript", "Python"],
+  "backEndFrameworks": ["Quarkus", "Spring Boot", "JPA", "Flyway"],
+  "frontEndframeworks": ["ReactJS", "Bootstrap"],
+  "databases": ["PostgreSQL", "MySQL"],
+  "tools": ["Postman", "Grafana", "Prometheus", "Hashicorp Vault"],
+  "ops": ["Git", "Docker", "Linux"]
+}
