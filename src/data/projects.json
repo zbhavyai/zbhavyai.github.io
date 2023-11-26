@@ -133,7 +133,7 @@
     "deployment_link": "",
     "association": "Personal",
     "last_updated": 2023,
-    "card_image": "",
+    "card_image": "https://raw.githubusercontent.com/zbhavyai/revered-banshee/main/src/main/assets/banshee.png",
     "language": ["Java", "REST"],
     "tech_stack": ["Quarkus"],
     "hasBackend": true,
