@@ -1,5 +1,19 @@
 [
   {
+    "name": "Portfolio Website",
+    "short_description": "Portfolio website showcasing projects and resume",
+    "description": "",
+    "repository_link": "https://github.com/zbhavyai/zbhavyai.github.io",
+    "deployment_link": "https://zbhavyai.github.io",
+    "association": "Personal",
+    "last_updated": 2023,
+    "card_image": "https://raw.githubusercontent.com/zbhavyai/zbhavyai.github.io/main/public/logo512.png",
+    "language": ["Javascript"],
+    "tech_stack": ["ReactJS"],
+    "hasBackend": false,
+    "hasFrontend": true
+  },
+  {
     "name": "PowerBI Embed",
     "short_description": "Embedding Power BI reports using OAuth2 Implicit Grant Flow",
     "description": "",
@@ -84,7 +98,7 @@
     "hasFrontend": true
   },
   {
-    "name": "IntelliNurse",
+    "name": "Intelli Nurse",
     "short_description": "Web portal for Registered Nurses to create surveys and educational articles",
     "description": "",
     "repository_link": "https://github.com/meng-ucalgary/intelli-nurse",
@@ -136,6 +150,20 @@
     "card_image": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
     "language": ["Python", "REST", "Databricks"],
     "tech_stack": ["Pandas"],
+    "hasBackend": true,
+    "hasFrontend": false
+  },
+  {
+    "name": "Revered Banshee",
+    "short_description": "Utility wrapper project to generate RSA keys and X509 certs using Bouncy Castle",
+    "description": "",
+    "repository_link": "https://github.com/zbhavyai/revered-banshee",
+    "deployment_link": "",
+    "association": "Personal",
+    "last_updated": 2023,
+    "card_image": "",
+    "language": ["Java", "REST"],
+    "tech_stack": ["Quarkus"],
     "hasBackend": true,
     "hasFrontend": false
   }
