@@ -14,20 +14,6 @@
     "hasFrontend": true
   },
   {
-    "name": "PowerBI Embed",
-    "short_description": "Embedding Power BI reports using OAuth2 Implicit Grant Flow",
-    "description": "",
-    "repository_link": "https://github.com/zbhavyai/powerbi-embed",
-    "deployment_link": "",
-    "association": "Personal",
-    "last_updated": 2023,
-    "card_image": "https://raw.githubusercontent.com/zbhavyai/powerbi-embed/main/public/logo512.png",
-    "language": ["Javascript"],
-    "tech_stack": ["ReactJS", "OAuth2"],
-    "hasBackend": false,
-    "hasFrontend": true
-  },
-  {
     "name": "EPIC API Scaper",
     "short_description": "A scraper to quickly get the aggregated list of EPIC System's Open APIs",
     "description": "",
@@ -40,20 +26,6 @@
     "tech_stack": ["BeautifulSoup4"],
     "hasBackend": true,
     "hasFrontend": false
-  },
-  {
-    "name": "Tableau Embed",
-    "short_description": "Embedding Tableau Visuals using Tableau Connected Apps",
-    "description": "",
-    "repository_link": "https://github.com/zbhavyai/tableau-embed",
-    "deployment_link": "",
-    "association": "Personal",
-    "last_updated": 2023,
-    "card_image": "https://raw.githubusercontent.com/zbhavyai/tableau-embed/main/public/logo512.png",
-    "language": ["Python", "Javascript"],
-    "tech_stack": ["Flask", "ReactJS"],
-    "hasBackend": true,
-    "hasFrontend": true
   },
   {
     "name": "OMDb Search",
