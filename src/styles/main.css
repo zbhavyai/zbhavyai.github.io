@@ -7,41 +7,41 @@ body {
 }
 
 /**
- * mono fonts
- */
+  * mono fonts
+  */
 .monoFontFira {
-  font-family: 'Fira Mono', 'Roboto Mono', 'Inter', sans-serif;
+  font-family: "Fira Mono", "Roboto Mono", "Inter", sans-serif;
   font-size: 14px;
 }
 .monoFontInconsolata {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 /**
- * make all items in navbar brighter
- */
+  * make all items in navbar brighter
+  */
 .nav-link {
   color: #ffffff;
 }
 
 /**
- * make selected item in navbar bold
- */
+  * make selected item in navbar bold
+  */
 .nav-link.active {
   font-weight: bold;
 }
 
 /**
- * Hover effect on project cards
- */
+  * Hover effect on project cards
+  */
 .card-project:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.55) !important;
   transition: 0.3s;
 }
 
 /**
- * Make card header and footer as part of body
- */
+  * Make card header and footer as part of body
+  */
 .card-experience .card-header,
 .card-experience .card-footer {
   background-color: #ffffff;
@@ -53,8 +53,8 @@ body {
 }
 
 /**
- * Customize badges
- */
+  * Customize badges
+  */
 .tech-badge {
   background-color: #f1f1f1 !important;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -70,15 +70,15 @@ body {
 }
 
 /**
- * Triangle list style
- */
+  * Triangle list style
+  */
 ul.triangle-list {
   list-style-type: none;
   margin: 0.75em 0;
   padding: 0 1em;
 }
 li.triangle-list:before {
-  content: '';
+  content: "";
   border-color: transparent #111;
   border-style: solid;
   border-width: 0.35em 0 0.35em 0.5em;
