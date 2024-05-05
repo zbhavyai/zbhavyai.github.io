@@ -1,0 +1,18 @@
+{
+  "editor.codeActionsOnSave": { "source.organizeImports": "always", "source.addMissingImports": "always" },
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "[html][css][scss][javascript][typescript][typescriptreact][json][jsonc][markdown][yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[xml]": { "editor.defaultFormatter": "redhat.vscode-xml" },
+  "[markdown]": { "editor.tabSize": 3 },
+  "prettier.jsxSingleQuote": false,
+  "prettier.singleQuote": false,
+  "prettier.printWidth": 200,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "all",
+  "prettier.useTabs": false
+}
