@@ -14,6 +14,7 @@
 html,
 body {
   background-color: var(--theme-dark-1);
+  color: var(--theme-text);
   margin: 0;
   font-family: "Inter", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -60,6 +61,26 @@ body {
   font-family: "Fira Mono", monospace;
   font-weight: 700;
   font-style: normal;
+}
+
+/* ABOUT *********************************************************************/
+.zbhavyai-container-about {
+  min-height: 80vh !important;
+  text-align: left;
+}
+
+.zbhavyai-h1-about {
+  font-size: 3em;
+}
+
+.zbhavyai-container-social {
+  text-align: left;
+}
+
+.zbhavyai-container-social .social {
+  padding-left: 0px;
+  padding-right: 20px;
+  color: var(--theme-text);
 }
 
 /* PROJECT CARDS *************************************************************/
