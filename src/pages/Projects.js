@@ -8,11 +8,11 @@ const Projects = () => {
   return (
     <React.Fragment>
       <Header activeNav="projects" />
-      <Container className="pt-4">
+      <Container className="my-5">
         <Row xs={1} sm={2} md={3} lg={3} className="g-4 m-4">
           {projectList?.map((project, index) => {
             return (
-              <Col className="p-2" key={index}>
+              <Col className="p-lg-2 p-0" key={index}>
                 <ProjectCard key={project["name"]} props={project} />
               </Col>
             );

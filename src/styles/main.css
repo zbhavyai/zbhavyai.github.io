@@ -113,6 +113,13 @@ body {
 .zbhavyai-project-card-title {
   font-weight: bold;
   font-size: 1.2em;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
 }
 
 .zbhavyai-project-card-text {
