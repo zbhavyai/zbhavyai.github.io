@@ -88,15 +88,44 @@ body {
 }
 
 /* PROJECT CARDS *************************************************************/
-.card-project {
-  background-color: var(--theme-dark-1);
+.zbhavyai-project-link {
+  text-decoration: none;
+  color: var(--theme-text);
+  display: block;
 }
 
-.card-project:hover {
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.55) !important;
-  transition: 0.3s;
+.zbhavyai-project-card {
+  background-color: var(--theme-dark-2);
+  display: block;
+  border-radius: 10px;
+  color: var(--theme-text);
+  block-size: 130px;
+  font-size: 0.9em;
 }
 
+.zbhavyai-project-card-image {
+  display: inline-block;
+  object-fit: contain !important;
+  width: 130px;
+  height: 130px;
+}
+
+.zbhavyai-project-card-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.zbhavyai-project-card-text {
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+/* EXPERIENCE CARDS **********************************************************/
 .card-experience .card-header,
 .card-experience .card-footer {
   background-color: #ffffff;

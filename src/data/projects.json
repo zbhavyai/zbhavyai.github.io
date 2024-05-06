@@ -1,12 +1,12 @@
 [
   {
     "name": "Portfolio Website",
-    "short_description": "Portfolio website showcasing projects and resume",
+    "summary": "Portfolio website showcasing projects and resume.",
     "description": "",
     "repository_link": "https://github.com/zbhavyai/zbhavyai.github.io",
     "deployment_link": "https://zbhavyai.github.io",
     "association": "Personal",
-    "last_updated": 2023,
+    "last_updated": 2024,
     "card_image": "https://raw.githubusercontent.com/zbhavyai/zbhavyai.github.io/main/public/logo512.png",
     "language": ["Javascript"],
     "tech_stack": ["ReactJS"],
@@ -15,7 +15,7 @@
   },
   {
     "name": "EPIC API Scaper",
-    "short_description": "A scraper to quickly get the aggregated list of EPIC System's Open APIs",
+    "summary": "A scraper to quickly get the aggregated list of EPIC System's Open APIs.",
     "description": "",
     "repository_link": "https://github.com/zbhavyai/epic-open-api-scaper",
     "deployment_link": "",
@@ -29,7 +29,7 @@
   },
   {
     "name": "OMDb Search",
-    "short_description": "A frontend for searching for movies or web series using the OMDb API",
+    "summary": "A frontend for searching for movies or web series using the OMDb API.",
     "description": "",
     "repository_link": "https://github.com/zbhavyai/movie-search-omdb",
     "deployment_link": "",
@@ -43,7 +43,7 @@
   },
   {
     "name": "BudLib",
-    "short_description": "A library management system",
+    "summary": "A library management system written for Calgary Waldorf School.",
     "description": "",
     "repository_link": "https://github.com/budlib/",
     "deployment_link": "",
@@ -57,7 +57,7 @@
   },
   {
     "name": "EyeSea Analytics",
-    "short_description": "A new hypothetical venture that provides social media reputation management service",
+    "summary": "A new hypothetical venture that provides social media reputation management service.",
     "description": "",
     "repository_link": "https://github.com/meng-ucalgary/engg-683-project",
     "deployment_link": "",
@@ -71,7 +71,7 @@
   },
   {
     "name": "Intelli Nurse",
-    "short_description": "Web portal for Registered Nurses to create surveys and educational articles",
+    "summary": "Web portal for Registered Nurses to create surveys and educational articles.",
     "description": "",
     "repository_link": "https://github.com/meng-ucalgary/intelli-nurse",
     "deployment_link": "",
@@ -85,7 +85,7 @@
   },
   {
     "name": "Vet Application",
-    "short_description": "A web application for managing Veterinary Clinic",
+    "summary": "A web application for managing a Veterinary Clinic.",
     "description": "",
     "repository_link": "https://github.com/zbhavyai/veterinary-clinic",
     "deployment_link": "",
@@ -99,7 +99,7 @@
   },
   {
     "name": "Currency Converter",
-    "short_description": "A simple currency exchange rate app using the ExchangeRate-API",
+    "summary": "A simple currency exchange rate app using the ExchangeRate-API.",
     "description": "",
     "repository_link": "https://github.com/zbhavyai/currency-converter",
     "deployment_link": "https://zbhavyai.github.io/currency-converter",
@@ -113,7 +113,7 @@
   },
   {
     "name": "README Downloader",
-    "short_description": "Downloading README files from random GitHub repositories using GitHub REST API",
+    "summary": "Downloading README files from random GitHub repositories using GitHub REST API.",
     "description": "",
     "repository_link": "https://github.com/zbhavyai/readme-downloader",
     "deployment_link": "",
@@ -127,7 +127,7 @@
   },
   {
     "name": "Revered Banshee",
-    "short_description": "Utility wrapper project to generate RSA keys and X509 certs using Bouncy Castle",
+    "summary": "Utility wrapper project to generate RSA keys and X509 certs using Bouncy Castle.",
     "description": "",
     "repository_link": "https://github.com/zbhavyai/revered-banshee",
     "deployment_link": "",
