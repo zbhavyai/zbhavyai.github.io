@@ -21,7 +21,7 @@
     "location": "Singapore",
     "start_date": "Oct 2018",
     "end_date": "Dec 2019",
-    "tech_stack": ["Bash", "XML", "SQL"],
+    "tech_stack": ["Bash", "Ant scripts", "Oracle SQL"],
     "responsibities": ["Responsible for end-to-end technical development of the Market Risk module within the MX.3 framework utilizing ANT scripts and bash scripts"]
   },
   {
@@ -30,7 +30,7 @@
     "location": "Singapore",
     "start_date": "Aug 2017",
     "end_date": "Aug 2018",
-    "tech_stack": ["Bash", "XML", "SQL"],
+    "tech_stack": ["Bash", "Ant scripts", "Oracle SQL"],
     "responsibities": ["Responsile for technical build of the Market Risk module within MX.3, catering to diverse client requirements and their international entities"]
   },
   {
@@ -39,7 +39,7 @@
     "location": "Gurugram, IN",
     "start_date": "Jun 2016",
     "end_date": "Aug 2017",
-    "tech_stack": ["Bash", "XML", "SQL"],
+    "tech_stack": ["Bash", "Ant scripts", "Oracle SQL"],
     "responsibities": ["Responsible for market risk scenario generation, application, and computations like VaR, Stress Testing, and Back Testing"]
   }
 ]
