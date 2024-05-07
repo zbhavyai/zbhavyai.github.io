@@ -1,4 +1,4 @@
-import { faDiscord, faFacebook, faGithub, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -11,17 +11,20 @@ const SocialStrip = () => {
       <Link to="https://www.github.com/zbhavyai" target="_blank" rel="noopener noreferrer" className="github social">
         <FontAwesomeIcon icon={faGithub} size="2x" />
       </Link>
-      <Link to="https://www.youtube.com/@zbhavyai" target="_blank" rel="noopener noreferrer" className="youtube social">
+      {/* <Link to="https://www.youtube.com/@zbhavyai" target="_blank" rel="noopener noreferrer" className="youtube social">
         <FontAwesomeIcon icon={faYoutube} size="2x" />
-      </Link>
-      <Link to="https://www.facebook.com/zbhavyai" target="_blank" rel="noopener noreferrer" className="facebook social">
+      </Link> */}
+      {/* <Link to="https://www.facebook.com/zbhavyai" target="_blank" rel="noopener noreferrer" className="facebook social">
         <FontAwesomeIcon icon={faFacebook} size="2x" />
-      </Link>
-      <Link to="https://www.twitter.com/zbhavyai" target="_blank" rel="noopener noreferrer" className="twitter social">
+      </Link> */}
+      {/* <Link to="https://www.twitter.com/zbhavyai" target="_blank" rel="noopener noreferrer" className="twitter social">
         <FontAwesomeIcon icon={faXTwitter} size="2x" />
-      </Link>
-      <Link to="https://discord.com/users/zbhavyai" target="_blank" rel="noopener noreferrer" className="twitter social">
+      </Link> */}
+      {/* <Link to="https://discord.com/users/zbhavyai" target="_blank" rel="noopener noreferrer" className="twitter social">
         <FontAwesomeIcon icon={faDiscord} size="2x" />
+      </Link> */}
+      <Link to="https://www.linkedin.com/in/zbhavyai" target="_blank" rel="noopener noreferrer" className="linkedin social">
+        <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
       </Link>
       <Link to="mailto:zbhavyai@gmail.com" target="_blank" rel="noopener noreferrer" className="email social">
         <FontAwesomeIcon icon={faEnvelope} size="2x" />
