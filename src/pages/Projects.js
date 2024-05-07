@@ -12,7 +12,7 @@ const Projects = () => {
         <Row xs={1} sm={1} md={2} lg={3} className="g-4 m-4">
           {projectList?.map((project, index) => {
             return (
-              <Col className="p-lg-2 p-0" key={index}>
+              <Col className="p-0 p-md-2 p-lg-2" key={index}>
                 <ProjectCard key={project["name"]} props={project} />
               </Col>
             );
