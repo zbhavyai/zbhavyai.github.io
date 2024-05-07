@@ -1,14 +1,9 @@
 /* BASE **********************************************************************/
 :root {
-  /* current */
   --theme-dark-1: #0e0f0f;
   --theme-dark-2: #303436;
   --theme-text: #deddda;
   --theme-text-bright: #ffffff;
-
-  /* flathub */
-  /* --theme-dark-1: #241f31; */
-  /* --theme-dark-2: #3d3846; */
 }
 
 html,
