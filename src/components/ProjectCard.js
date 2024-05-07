@@ -9,8 +9,8 @@ const ProjectCard = ({ props }) => {
 
   return (
     <Link className="zbhavyai-project-link" to={props["repository_link"]} target="_blank" rel="noopener noreferrer">
-      <Card className="zbhavyai-project-card shadow" height={"100px"}>
-        <Card.Body className="p-0 d-flex flex-row">
+      <Card as="article" className="zbhavyai-project-card shadow" height={"100px"}>
+        <Card.Body as="section" className="p-0 d-flex flex-row">
           <Image
             className="zbhavyai-project-card-image p-3"
             src={props["card_image"]}
@@ -38,12 +38,5 @@ ProjectCard.propTypes = {
     card_image: PropTypes.string.isRequired,
   }).isRequired,
 };
-
-// ProjectCard.propTypes = {
-//   name: PropTypes.string.isRequired,
-//   summary: PropTypes.string.isRequired,
-//   card_image: PropTypes.string.isRequired,
-//   repository_link: PropTypes.string.isRequired,
-// };
 
 export default ProjectCard;
