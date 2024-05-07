@@ -1,8 +1,22 @@
-{
-  "programming": ["Java", "Javascript", "Python"],
-  "backEndFrameworks": ["Quarkus", "Spring Boot", "JPA", "Flyway"],
-  "frontEndframeworks": ["ReactJS", "Bootstrap"],
-  "databases": ["PostgreSQL", "MySQL"],
-  "tools": ["Postman", "Grafana", "Prometheus", "Hashicorp Vault"],
-  "ops": ["Git", "Docker", "Linux"]
-}
+[
+  {
+    "type": "backend",
+    "list": ["Java", "Quarkus", "Reactive Programming", "Spring Boot", "JPA", "Flyway", "JUnit", "Python"]
+  },
+  {
+    "type": "frontend",
+    "list": ["Javascript", "ReactJS", "Bootstrap"]
+  },
+  {
+    "type": "databases",
+    "list": ["PostgreSQL", "MySQL"]
+  },
+  {
+    "type": "tools",
+    "list": ["Postman", "Grafana", "Prometheus", "Nginx", "Hashicorp Vault", "Jira"]
+  },
+  {
+    "type": "ops",
+    "list": ["Git", "Docker", "Linux", "Maven"]
+  }
+]
