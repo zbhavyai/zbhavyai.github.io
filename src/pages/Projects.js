@@ -9,7 +9,7 @@ const Projects = () => {
     <React.Fragment>
       <Header activeNav="projects" />
       <Container className="my-5">
-        <Row xs={1} sm={2} md={3} lg={3} className="g-4 m-4">
+        <Row xs={1} sm={1} md={2} lg={3} className="g-4 m-4">
           {projectList?.map((project, index) => {
             return (
               <Col className="p-lg-2 p-0" key={index}>

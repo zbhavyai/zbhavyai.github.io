@@ -1,27 +1,28 @@
-import React from 'react';
-import { Badge, Card } from 'react-bootstrap';
+import PropTypes from "prop-types";
+import React from "react";
+import { Badge, Card } from "react-bootstrap";
 
 const ExperienceCard = ({ props }) => {
   return (
-    <Card as='article' className='monoFontFira card-experience'>
-      <Card.Header as='header' className='d-flex justify-content-between'>
+    <Card as="article" className="zbhavyai-experience-card">
+      <Card.Header as="header" className="d-flex justify-content-between pt-3">
         <div>
-          <Card.Title className='mb-1'>{props['company']}</Card.Title>
-          <Card.Subtitle>{props['designation']}</Card.Subtitle>
+          <Card.Title>{props["company"]}</Card.Title>
+          <Card.Text>{props["designation"]}</Card.Text>
         </div>
         <div>
-          <Card.Text as='time'>
-            {props['start_date']} - {props['end_date']}
+          <Card.Text as="time">
+            {props["start_date"]} - {props["end_date"]}
           </Card.Text>
-          <Card.Text as='address'>{props['location']}</Card.Text>
+          <Card.Text as="address">{props["location"]}</Card.Text>
         </div>
       </Card.Header>
-      <Card.Body as='section' className='py-0'>
-        <Card.Text className='px-3'>
-          <ul className='triangle-list'>
-            {props['responsibities']?.map((item, index) => {
+      <Card.Body as="section" className="py-0">
+        <Card.Text className="px-3">
+          <ul className="zbhavyai-list-triangle">
+            {props["responsibities"]?.map((item, index) => {
               return (
-                <li key={index} className='triangle-list'>
+                <li key={index} className="zbhavyai-list-triangle">
                   {item}
                 </li>
               );
@@ -29,10 +30,10 @@ const ExperienceCard = ({ props }) => {
           </ul>
         </Card.Text>
       </Card.Body>
-      <Card.Footer as='footer'>
-        {props['tech_stack']?.map((language, index) => {
+      <Card.Footer as="footer">
+        {props["tech_stack"]?.map((language, index) => {
           return (
-            <Badge key={index} pill className='tech-badge monoFontInconsolata me-1'>
+            <Badge key={index} pill className="zbhavyai-tech-badge fira-mono-regular me-1">
               {language}
             </Badge>
           );
@@ -40,6 +41,18 @@ const ExperienceCard = ({ props }) => {
       </Card.Footer>
     </Card>
   );
+};
+
+ExperienceCard.propTypes = {
+  props: PropTypes.shape({
+    company: PropTypes.string.isRequired,
+    designation: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    start_date: PropTypes.string.isRequired,
+    end_date: PropTypes.string.isRequired,
+    tech_stack: PropTypes.arrayOf(PropTypes.string).isRequired,
+    responsibities: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
 };
 
 export default ExperienceCard;

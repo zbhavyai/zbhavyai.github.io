@@ -132,47 +132,67 @@ body {
   line-clamp: 3;
 }
 
-/* EXPERIENCE CARDS **********************************************************/
-.card-experience .card-header,
-.card-experience .card-footer {
-  background-color: #ffffff;
+/* RESUME CARDS **************************************************************/
+.zbhavyai-container-experience,
+.zbhavyai-container-education {
+  max-width: 1000px;
+  text-align: left;
+  border: 0;
+  font-size: 0.9em;
+}
+
+.zbhavyai-education-card,
+.zbhavyai-experience-card {
+  background-color: var(--theme-dark-2);
+  color: var(--theme-text);
+}
+
+.zbhavyai-education-card .card-title,
+.zbhavyai-experience-card .card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.zbhavyai-experience-card,
+.card-header,
+.card-footer {
   border: 0;
 }
-.card-experience .triangle-list {
+
+.zbhavyai-experience-card .zbhavyai-list-triangle {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* Customize badges */
-.tech-badge {
-  background-color: #f1f1f1 !important;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px !important;
-  display: inline-block;
-  font-weight: lighter;
-  color: #111111;
-  font-size: 0.9em;
-  line-height: 1.6em;
-  margin: 5px;
-  padding: 0 5px;
-  letter-spacing: 0.05em;
-}
-
-/* Triangle list style */
-ul.triangle-list {
+ul.zbhavyai-list-triangle {
   list-style-type: none;
   margin: 0.75em 0;
   padding: 0 1em;
 }
-li.triangle-list:before {
+
+li.zbhavyai-list-triangle:before {
   content: "";
-  border-color: transparent #111;
+  border-color: transparent var(--theme-text);
   border-style: solid;
   border-width: 0.35em 0 0.35em 0.5em;
   display: block;
   height: 0;
   width: 0;
   left: -1em;
-  top: 1em;
+  top: 1.1em;
   position: relative;
+}
+
+.zbhavyai-tech-badge {
+  background-color: var(--theme-dark-1) !important;
+  border: 2px solid var(--theme-dark-1);
+  border-radius: 5px !important;
+  display: inline-block;
+  font-weight: lighter;
+  color: var(--theme-text);
+  font-size: 0.9em;
+  line-height: 1.6em;
+  margin: 5px;
+  padding: 0 5px;
+  letter-spacing: 0.05em;
 }
