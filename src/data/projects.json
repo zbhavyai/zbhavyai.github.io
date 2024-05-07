@@ -14,6 +14,20 @@
     "hasFrontend": true
   },
   {
+    "name": "OMDb Search",
+    "summary": "A frontend for searching for movies or web series using the OMDb API.",
+    "description": "",
+    "repository_link": "https://github.com/zbhavyai/movie-search-omdb",
+    "deployment_link": "",
+    "association": "Personal",
+    "last_updated": 2022,
+    "card_image": "https://raw.githubusercontent.com/zbhavyai/movie-search-omdb/main/public/logo512.png",
+    "language": ["Javascript"],
+    "tech_stack": ["ReactJS"],
+    "hasBackend": false,
+    "hasFrontend": true
+  },
+  {
     "name": "EPIC API Scaper",
     "summary": "A scraper to quickly get the aggregated list of EPIC System's Open APIs.",
     "description": "",
@@ -27,19 +41,34 @@
     "hasBackend": true,
     "hasFrontend": false
   },
+
   {
-    "name": "OMDb Search",
-    "summary": "A frontend for searching for movies or web series using the OMDb API.",
+    "name": "Currency Converter",
+    "summary": "A simple currency exchange rate app using the ExchangeRate-API.",
     "description": "",
-    "repository_link": "https://github.com/zbhavyai/movie-search-omdb",
-    "deployment_link": "",
+    "repository_link": "https://github.com/zbhavyai/currency-converter",
+    "deployment_link": "https://zbhavyai.github.io/currency-converter",
     "association": "Personal",
     "last_updated": 2022,
-    "card_image": "https://raw.githubusercontent.com/zbhavyai/movie-search-omdb/main/public/logo512.png",
+    "card_image": "https://images.crunchbase.com/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/v1475234221/pndhdj5pwbfjomuzhc1o.png",
     "language": ["Javascript"],
-    "tech_stack": ["ReactJS"],
+    "tech_stack": ["XMLHttpRequest", "fetch"],
     "hasBackend": false,
     "hasFrontend": true
+  },
+  {
+    "name": "Revered Banshee",
+    "summary": "Utility wrapper project to generate RSA keys and X509 certs using Bouncy Castle.",
+    "description": "",
+    "repository_link": "https://github.com/zbhavyai/revered-banshee",
+    "deployment_link": "",
+    "association": "Personal",
+    "last_updated": 2023,
+    "card_image": "https://raw.githubusercontent.com/zbhavyai/revered-banshee/main/src/main/assets/banshee.png",
+    "language": ["Java", "REST"],
+    "tech_stack": ["Quarkus"],
+    "hasBackend": true,
+    "hasFrontend": false
   },
   {
     "name": "BudLib",
@@ -98,20 +127,6 @@
     "hasFrontend": true
   },
   {
-    "name": "Currency Converter",
-    "summary": "A simple currency exchange rate app using the ExchangeRate-API.",
-    "description": "",
-    "repository_link": "https://github.com/zbhavyai/currency-converter",
-    "deployment_link": "https://zbhavyai.github.io/currency-converter",
-    "association": "Personal",
-    "last_updated": 2022,
-    "card_image": "https://images.crunchbase.com/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/v1475234221/pndhdj5pwbfjomuzhc1o.png",
-    "language": ["Javascript"],
-    "tech_stack": ["XMLHttpRequest", "fetch"],
-    "hasBackend": false,
-    "hasFrontend": true
-  },
-  {
     "name": "README Downloader",
     "summary": "Downloading README files from random GitHub repositories using GitHub REST API.",
     "description": "",
@@ -119,23 +134,9 @@
     "deployment_link": "",
     "association": "University of Calgary",
     "last_updated": 2021,
-    "card_image": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+    "card_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzUECg_ITr7YkE2pYiVdHqTxlg3wLwXKXIQrcxEBKd7Q&s",
     "language": ["Python", "REST", "Databricks"],
     "tech_stack": ["Pandas"],
-    "hasBackend": true,
-    "hasFrontend": false
-  },
-  {
-    "name": "Revered Banshee",
-    "summary": "Utility wrapper project to generate RSA keys and X509 certs using Bouncy Castle.",
-    "description": "",
-    "repository_link": "https://github.com/zbhavyai/revered-banshee",
-    "deployment_link": "",
-    "association": "Personal",
-    "last_updated": 2023,
-    "card_image": "https://raw.githubusercontent.com/zbhavyai/revered-banshee/main/src/main/assets/banshee.png",
-    "language": ["Java", "REST"],
-    "tech_stack": ["Quarkus"],
     "hasBackend": true,
     "hasFrontend": false
   }
