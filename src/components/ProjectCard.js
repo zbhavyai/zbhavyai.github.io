@@ -3,10 +3,9 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
+import brokenCardImage from "../images/no-image.jpg";
 
 const ProjectCard = ({ props }) => {
-  let brokenCardImage = `${process.env.PUBLIC_URL + "/logo512.png"}`;
-
   return (
     <Link className="zbhavyai-project-link" to={props["repository_link"]} target="_blank" rel="noopener noreferrer">
       <Card as="article" className="zbhavyai-project-card shadow" height={"100px"}>
