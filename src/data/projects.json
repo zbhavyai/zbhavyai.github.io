@@ -14,6 +14,20 @@
     "hasFrontend": true
   },
   {
+    "name": "Fedora Workstation Setup",
+    "summary": "Automated setup of Fedora Workstation with GNOME DE.",
+    "description": "",
+    "repository_link": "https://github.com/zbhavyai/fedora-setup",
+    "deployment_link": "",
+    "association": "Personal",
+    "last_updated": 2024,
+    "card_image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Fedora_logo.svg",
+    "language": ["Bash"],
+    "tech_stack": [""],
+    "hasBackend": true,
+    "hasFrontend": false
+  },
+  {
     "name": "OMDb Search",
     "summary": "A frontend for searching for movies or web series using the OMDb API.",
     "description": "",
@@ -41,7 +55,6 @@
     "hasBackend": true,
     "hasFrontend": false
   },
-
   {
     "name": "Currency Converter",
     "summary": "A simple currency exchange rate app using the ExchangeRate-API.",
