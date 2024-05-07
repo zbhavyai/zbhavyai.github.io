@@ -5,14 +5,51 @@
     "location": "Calgary, AB",
     "start_date": "Apr 2022",
     "end_date": "present",
-    "tech_stack": ["Quarkus", "Java", "Python", "ReactJS", "Javascript", "Grafana", "Prometheus", "Vault KV2"],
+    "tech_stack": [
+      "Quarkus",
+      "Java",
+      "Python",
+      "ReactJS",
+      "Javascript",
+      "Grafana",
+      "Prometheus",
+      "Power BI Embedded",
+      "Tableau Embedded",
+      "Epic System Web Services",
+      "PostgreSQL",
+      "Vault KV2",
+      "OAuth2",
+      "JWT"
+    ],
     "responsibities": [
-      "Orchestrated the integration of real-time metrics, extracted from DBus signals and methods, into our core product using Quarkus Micrometer, Prometheus, and Grafana",
-      "Tailored and whitelabelled Grafana v7.5.15 source code resulting in substantial cost savings of approximately $100,000, circumventing the need for costly OEM licensing",
-      "Pioneered the inclusion of Tableau and Power BI embedding functionality, bolstering our product's capacity to harness dynamic data visualization capabilities",
-      "Elevated security measures by integrating HashiCorp's Vault into our product's infrastructure, fortifying protection for media sources like RTSP Streams, Tableau Connected Apps, and VNC Passwords",
-      "Actively contributed to continuous improvement through the agile development process",
-      "Authored technical documents for new functionalities and APIs, fostering collaboration with stakeholders"
+      {
+        "keyword": "Monitoring and Notifications",
+        "description": "Orchestrated the seamless integration of real-time metrics, extracted from DBus signals and methods, into our core product using Quarkus Micrometer, Prometheus, and Grafana v7.5.15. Implemented notifications to alert users when system usage exceeded critical thresholds of 60% and 85%, optimizing resource management and user experience."
+      },
+      {
+        "keyword": "Whitelabelling Grafana",
+        "description": "Tailored and whitelabelled Grafana v7.5.15 source code resulting in substantial cost savings of approximately $100,000, circumventing the need for costly OEM licensing."
+      },
+      {
+        "keyword": "LED Media Commander",
+        "description": "Leveraged Nvidia SLI Mosaic technology, configuring xorg.conf to use multiple GPUs to utilize seat0 as a rendering endpoint for stunning 4K output. Successfully integrated Megapixel products, Helios and Omnis, enhancing our platform's capabilities to route 8K content to LED panels and enabling centralized control."
+      },
+      {
+        "keyword": "Integrations",
+        "description": "Pioneered the integration of Power BI (using OAuth2 Code Flow), Tableau (using Connected Apps), and Epic System Patient Wait Time embedding functionalities, elevating our product's data visualization capabilities. Empowered users with dynamic insights, fostering a richer understanding of their data and enhancing decision-making processes."
+      },
+      {
+        "keyword": "Security",
+        "description": "Elevated security measures by seamlessly integrating HashiCorp's Vault into our product's infrastructure. Fortified protection for critical media sources such as RTSP Streams, VNC Passwords, RDP Connections, Tableau, and Power BI, ensuring a resilient and secure environment."
+      },
+      {
+        "keyword": "Backup & Restore",
+        "description": "Designed and implemented a backup and restore system encompassing PostgreSQL databases, Vault secrets, and Media files. Engineered a streamlined process for creating, archiving, downloading, uploading, and restoring backups."
+      },
+      {
+        "keyword": "Agile",
+        "description": "Actively contributed to continuous improvement through the agile development process. Authored technical documents for new functionalities and APIs, fostering collaboration with stakeholders"
+      }
     ]
   },
   {
@@ -22,7 +59,12 @@
     "start_date": "Oct 2018",
     "end_date": "Dec 2019",
     "tech_stack": ["Bash", "Ant scripts", "Oracle SQL"],
-    "responsibities": ["Responsible for end-to-end technical development of the Market Risk module within the MX.3 framework utilizing ANT scripts and bash scripts"]
+    "responsibities": [
+      {
+        "keyword": "Market Risk",
+        "description": "Responsible for end-to-end technical development of the Market Risk module within the MX.3 framework utilizing ANT scripts and bash scripts."
+      }
+    ]
   },
   {
     "company": "Capgemini",
@@ -31,7 +73,12 @@
     "start_date": "Aug 2017",
     "end_date": "Aug 2018",
     "tech_stack": ["Bash", "Ant scripts", "Oracle SQL"],
-    "responsibities": ["Responsile for technical build of the Market Risk module within MX.3, catering to diverse client requirements and their international entities"]
+    "responsibities": [
+      {
+        "keyword": "Market Risk",
+        "description": "Responsile for technical build of the Market Risk module within MX.3, catering to diverse client requirements and their international entities."
+      }
+    ]
   },
   {
     "company": "Capgemini",
@@ -40,6 +87,11 @@
     "start_date": "Jun 2016",
     "end_date": "Aug 2017",
     "tech_stack": ["Bash", "Ant scripts", "Oracle SQL"],
-    "responsibities": ["Responsible for market risk scenario generation, application, and computations like VaR, Stress Testing, and Back Testing"]
+    "responsibities": [
+      {
+        "keyword": "Market Risk",
+        "description": "Responsible for market risk scenario generation, application, and computations like VaR, Stress Testing, and Back Testing."
+      }
+    ]
   }
 ]
