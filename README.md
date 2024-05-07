@@ -1,17 +1,5 @@
 # Portfolio Website
 
-[zbhavyai.github.io](zbhavyai.github.io)
+My personal website / portfolio.
 
-## Build locally
-
-1. Install the dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Build the project
-
-   ```bash
-   npm run build
-   ```
+Visit at [zbhavyai.github.io](https://zbhavyai.github.io)
