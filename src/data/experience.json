@@ -36,7 +36,7 @@
       },
       {
         "keyword": "Integrations",
-        "description": "Pioneered the integration of Power BI (auth using OAuth2 code grant), Tableau (auth using Connected Apps), and Epic System Patient Wait Time (auth using OAuth2 client credentials grant) embedding functionalities, elevating our product's data visualization capabilities. Empowered users with dynamic insights, fostering a richer understanding of their data and enhancing decision-making processes."
+        "description": "Pioneered the integration of Power BI (auth using OAuth2 code grant), Tableau (auth using Connected Apps), and Epic System Patient Wait Time (auth using OAuth2 client credentials grant) embedding functionalities, elevating our product's data visualization capabilities. All the integrations were designed to use a 'Passport System', managing their credentials centrally and providing persistent logins, facilitating user experience. Empowered users with dynamic insights, fostering a richer understanding of their data and enhancing decision-making processes."
       },
       {
         "keyword": "Security",

@@ -51,7 +51,7 @@ ExperienceCard.propTypes = {
     start_date: PropTypes.string.isRequired,
     end_date: PropTypes.string.isRequired,
     tech_stack: PropTypes.arrayOf(PropTypes.string).isRequired,
-    responsibities: PropTypes.arrayOf(PropTypes.string).isRequired,
+    responsibities: PropTypes.arrayOf(PropTypes.object).isRequired,
   }).isRequired,
 };
 
