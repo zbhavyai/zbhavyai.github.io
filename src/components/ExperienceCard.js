@@ -23,7 +23,7 @@ const ExperienceCard = ({ props }) => {
             {props["responsibities"]?.map((item, index) => {
               return (
                 <li key={index} className="zbhavyai-list-triangle zbhavyai-text-heavy">
-                  <span className="fw-bold">{item["keyword"]}</span>: {item["description"]}
+                  <span className="fw-bold">{item["keyword"]}</span>: <span dangerouslySetInnerHTML={{ __html: item["description"] }} />
                 </li>
               );
             })}
