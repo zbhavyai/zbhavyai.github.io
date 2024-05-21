@@ -130,6 +130,7 @@ body {
 /* RESUME CARDS **************************************************************/
 .zbhavyai-container-skills,
 .zbhavyai-container-experience,
+.zbhavyai-container-downloader,
 .zbhavyai-container-education {
   max-width: 1000px;
   text-align: left;

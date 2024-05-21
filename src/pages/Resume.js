@@ -1,5 +1,8 @@
+import { faCircleArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
 import EducationCard from "../components/EducationCard";
 import ExperienceCard from "../components/ExperienceCard";
 import Header from "../components/Header";
@@ -9,6 +12,13 @@ import ExperienceList from "../data/experience.json";
 import SkillsList from "../data/skills.json";
 
 const Resume = () => {
+  const handleDownload = () => {
+    let resumeLink = "https://drive.google.com/uc?export=download&id=1IU5ziNTngCEuMQL7PWmJTQhpEmcER_ua";
+
+    // window.open(resumeLink);
+    window.location.assign(resumeLink);
+  };
+
   return (
     <React.Fragment>
       <Header activeNav="resume" />
@@ -43,6 +53,14 @@ const Resume = () => {
             );
           })}
         </Row>
+      </Container>
+      <Container className="zbhavyai-container-downloader d-flex flex-row my-5">
+        <ButtonGroup>
+          <Button variant="outline-light" className="px-2" onClick={handleDownload}>
+            Get resume's pdf
+            <FontAwesomeIcon icon={faCircleArrowDown} size="1x" className="ps-2" />
+          </Button>
+        </ButtonGroup>
       </Container>
     </React.Fragment>
   );
