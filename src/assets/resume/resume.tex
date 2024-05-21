@@ -1,0 +1,149 @@
+%--------------------------------------------------------------------------------
+% Author : Bhavyai Gupta
+% Website: https://github.com/zbhavyai/zbhavyai.github.io
+%--------------------------------------------------------------------------------
+
+\documentclass[a4paper]{article}
+
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\textheight=10in
+\pagestyle{empty}
+\raggedright
+\usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+\input{glyphtounicode}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% Generate pdf is ATS parsable
+\pdfgentounicode=1
+
+
+%--------------------------------CUSTOM COMMANDS---------------------------------
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\resumeItemExperience}[2]{
+  \item{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemProject}[1]{
+  \item{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+%----------------------------------RESUME START----------------------------------
+\begin{document}
+\vspace*{-40pt}
+
+
+%------------------------------------HEADING-------------------------------------
+\vspace*{-10pt}
+\begin{center}
+    \textbf{\Huge \scshape {Bhavyai Gupta}}\\
+    \href{https://zbhavyai.github.io}{zbhavyai.github.io} $\cdot$ \href{tel:+15875756982}{+1-587-575-6982} $\cdot$ \href{mailto:zbhavyai@gmail.com}{zbhavyai@gmail.com} \\
+\end{center}
+
+
+%-----------------------------------EXPERIENCE-----------------------------------
+\header{Experience}
+\vspace{1mm}
+
+\textbf{Userful Corporation} \hfill Calgary, Canada\\
+\textit{Software Developer} \hfill Apr 2022 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \resumeItemExperience {Monitoring and Notifications}{Orchestrated the seamless integration of real-time metrics, extracted from DBus signals and methods, into our core product using Quarkus Micrometer, Prometheus, and a white labelled Grafana v7.5.15. Implemented notifications to alert users when system usage exceeded critical thresholds of 60\% and 85\%, optimizing resource management and user experience.}
+
+    \resumeItemExperience {LED Media Commander} {Leveraged Nvidia SLI Mosaic technology, configuring \texttt{xorg.conf} to use multiple GPUs to utilize \texttt{seat0} as a rendering endpoint for stunning 4K output. Successfully integrated Megapixel products, Helios and Omnis, enhancing our platform\textquotesingle{}s capabilities to route 8K content to LED panels and enabling centralized control.}
+
+    \resumeItemExperience{Integrations} {Pioneered the integration of Power BI (auth using OAuth2 code grant), Tableau (auth using Connected Apps), and Epic System Patient Wait Time (auth using OAuth2 client credentials grant) embedding functionalities, elevating our product\textquotesingle{}s data visualization capabilities. All the integrations were designed to use a 'Passport System', managing their credentials centrally and providing persistent logins, facilitating user experience. Empowered users with dynamic insights, fostering a richer understanding of their data and enhancing decision-making processes.}
+
+    \resumeItemExperience{Security} {Elevated security measures by seamlessly integrating HashiCorp\textquotesingle{}s Vault into our product\textquotesingle{}s infrastructure. Fortified protection for critical media sources such as RTSP Streams, VNC and RDP Connections, Tableau, and Power BI, ensuring a resilient and secure environment.}
+
+    \resumeItemExperience{Backup \& Restore} {Designed and implemented a backup and restore system encompassing PostgreSQL databases, Vault secrets, and Media files. Engineered a streamlined process for creating, archiving, downloading, uploading, and restoring backups.}
+\end{itemize}
+
+\textbf{Luxoft} \hfill Singapore\\
+\textit{Consultant} \hfill Oct 2018 - Dec 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \resumeItemExperience{Market Risk} {Played a key role in the technical build of Market Risk for the migration project from Murex version 2.36 to 3.41. Utilized ANT scripts and bash scripts to support the seamless transition, demonstrating proficiency in configuration management and version migration.}
+\end{itemize}
+
+\textbf{Capgemini} \hfill Singapore\\
+\textit{Associate Consultant} \hfill Aug 2017 - Aug 2018\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \resumeItemExperience{Market Risk} {Responsile for technical build of the Market Risk module within MX.3, catering to diverse client requirements and their international entities.}
+\end{itemize}
+
+
+%------------------------------------PROJECTS------------------------------------
+\header{Projects}
+\vspace{1mm}
+{\textbf{BudLib}} $|$ \emph{Spring Boot, ReactJS, MySQL} \hfill {Jan 2022 - Apr 2022}
+\begin{itemize}
+    \resumeItemProject {A full stack web application made for Calgary Waldorf School to manage their library.}
+
+    % \resumeItemProject {Developed the complete REST API and major parts of the React build, including CRUD of books, loaner, and transactions.}
+
+    % \resumeItemProject {Designed UML diagrams for API, ER model for database, and wireframes of the web interface.}
+\end{itemize}
+\vspace*{1mm}
+{\textbf{IntelliNurse}} $|$ \emph{Spring Boot, ReactJS, MySQL} \hfill {Feb 2022 - Mar 2022}
+\begin{itemize}
+    \resumeItemProject {A full stack web application made for Registered Nurses to help them post articles and surveys to help the general public. Received 2nd prize out of 11 participant teams in the competition.}
+
+    % \resumeItemProject {Developed the complete REST API using Spring Boot and MySQL, and created base used by all React components.}
+\end{itemize}
+\vspace*{1mm}
+{\textbf{OMDb Search}} $|$ \emph{ReactJS} \hfill {Jun 2022 - Jun 2022}
+\begin{itemize}
+    \resumeItemProject {A frontend for searching for movies or web series using the OMDb API}
+\vspace*{1mm}
+\end{itemize}
+
+
+%--------------------------------TECHNICAL SKILLS--------------------------------
+\header{Technical Skills}
+\vspace{1mm}
+\begin{tabular}{ l l }
+    \textbf{Backend}:   & Java, Quarkus, Reactive Programming, Spring Boot, JPA, Flyway, JUnit, Python  \\
+    \textbf{Frontend}:  & Javascript, ReactJS, Bootstrap                                                \\
+    \textbf{Databases}: & PostgreSQL, MySQL                                                             \\
+    \textbf{Tools}:     & Postman, Grafana, Prometheus, Nginx, Hashicorp Vault, Jira                    \\
+    \textbf{Ops}:       & Git, Docker, Linux, Maven                                                     \\
+\end{tabular}
+\vspace{2mm}
+
+
+%-----------------------------------EDUCATION------------------------------------
+\header{Education}
+\vspace{1mm}
+\textbf{University of Calgary}\hfill Calgary, Canada\\
+MEng Software Engineering \hfill May 2021 - Apr 2022\\
+\vspace{2mm}
+\textbf{Delhi Technological University}\hfill Delhi, India\\
+BTech Electronics and Communication \hfill Aug 2012 - Aug 2016\\
+\vspace{2mm}
+
+
+%-----------------------------------RESUME END-----------------------------------
+\
+\end{document}
