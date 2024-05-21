@@ -40,7 +40,7 @@
       },
       {
         "keyword": "Security",
-        "description": "Elevated security measures by seamlessly integrating HashiCorp's Vault into our product's infrastructure. Fortified protection for critical media sources such as RTSP Streams, VNC Passwords, RDP Connections, Tableau, and Power BI, ensuring a resilient and secure environment."
+        "description": "Elevated security measures by seamlessly integrating HashiCorp's Vault into our product's infrastructure. Fortified protection for critical media sources such as RTSP Streams, VNC and RDP Connections, Tableau, and Power BI, ensuring a resilient and secure environment."
       },
       {
         "keyword": "Backup & Restore",
@@ -48,7 +48,7 @@
       },
       {
         "keyword": "Agile",
-        "description": "Actively contributed to continuous improvement through the agile development process. Authored technical documents for new functionalities and APIs, fostering collaboration with stakeholders"
+        "description": "Actively contributed to continuous improvement through the agile development process. Authored technical documents for new functionalities and APIs, fostering collaboration with stakeholders."
       }
     ]
   },
@@ -62,7 +62,7 @@
     "responsibities": [
       {
         "keyword": "Market Risk",
-        "description": "Responsible for end-to-end technical development of the Market Risk module within the MX.3 framework utilizing ANT scripts and bash scripts."
+        "description": "Played a key role in the technical build of Market Risk for the migration project from Murex version 2.36 to 3.41. Utilized ANT scripts and bash scripts to support the seamless transition, demonstrating proficiency in configuration management and version migration."
       }
     ]
   },
@@ -90,7 +90,7 @@
     "responsibities": [
       {
         "keyword": "Market Risk",
-        "description": "Responsible for market risk scenario generation, application, and computations like VaR, Stress Testing, and Back Testing."
+        "description": "Responsible for green field implementation of market risk scenario generation, application, and computations like VaR, Stress Testing, and Back Testing."
       }
     ]
   }
