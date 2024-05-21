@@ -13,7 +13,7 @@ import SkillsList from "../data/skills.json";
 
 const Resume = () => {
   const handleDownload = () => {
-    let resumeLink = "https://drive.google.com/uc?export=download&id=1IU5ziNTngCEuMQL7PWmJTQhpEmcER_ua";
+    let resumeLink = "https://drive.google.com/uc?export=download&id=10WE6XlZXNCFWb5d9cwgmPr7qyMQWUAzk";
 
     // window.open(resumeLink);
     window.location.assign(resumeLink);

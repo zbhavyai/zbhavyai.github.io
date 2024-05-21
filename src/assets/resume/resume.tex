@@ -17,6 +17,9 @@
 \raggedright
 \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
 \input{glyphtounicode}
+\usepackage{ragged2e}   % For text alignment
+\usepackage{microtype}  % Slightly tweak font spacing to prevent hyphenation
+\microtypesetup{protrusion=true,expansion=true}
 
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 
@@ -37,13 +40,17 @@
 
 \newcommand{\resumeItemExperience}[2]{
   \item{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \begin{justify}
+    \setlength{\rightskip}{0.15in} \textbf{#1}{: #2 \vspace{-2pt}}
+    \end{justify}
   }
 }
 
 \newcommand{\resumeItemProject}[1]{
   \item{
-    {#1 \vspace{-4pt}}
+    \begin{justify}
+    \setlength{\rightskip}{0.15in} {#1 \vspace{-4pt}}
+    \end{justify}
   }
 }
 
