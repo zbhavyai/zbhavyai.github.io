@@ -1,6 +1,7 @@
 %--------------------------------------------------------------------------------
-% Author : Bhavyai Gupta
-% Website: https://github.com/zbhavyai/zbhavyai.github.io
+% Author :      Bhavyai Gupta
+% Repository:   https://github.com/zbhavyai/zbhavyai.github.io.git
+% Website:      https://zbhavyai.github.io
 %--------------------------------------------------------------------------------
 
 \documentclass[a4paper]{article}
@@ -16,14 +17,19 @@
 \pagestyle{empty}
 \raggedright
 \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
-\input{glyphtounicode}
-\usepackage{ragged2e}   % For text alignment
-\usepackage{microtype}  % Slightly tweak font spacing to prevent hyphenation
+
+% Support text justify
+\usepackage{ragged2e}
+
+% Slightly tweak font spacing to prevent hyphenation after text justify
+\usepackage{microtype}
+
 \microtypesetup{protrusion=true,expansion=true}
 
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 
 % Generate pdf is ATS parsable
+\input{glyphtounicode}
 \pdfgentounicode=1
 
 
