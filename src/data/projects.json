@@ -28,6 +28,20 @@
     "hasFrontend": false
   },
   {
+    "name": "Inspirational Morning",
+    "summary": "Periodically send a good morning message to your Google Chat with an inspirational quote.",
+    "description": "",
+    "repository_link": "https://github.com/zbhavyai/inspirational-morning",
+    "deployment_link": "",
+    "association": "Personal",
+    "last_updated": 2024,
+    "card_image": "https://t3.ftcdn.net/jpg/00/99/43/24/360_F_99432452_rqzeyOumTPfYCVzaLcZU7EaLlJbM519m.jpg",
+    "language": ["Java"],
+    "tech_stack": ["Quarkus", "Google Cloud Functions"],
+    "hasBackend": true,
+    "hasFrontend": false
+  },
+  {
     "name": "OMDb Search",
     "summary": "A frontend for searching for movies or web series using the OMDb API.",
     "description": "",
