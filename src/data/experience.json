@@ -24,7 +24,7 @@
     "responsibities": [
       {
         "keyword": "Monitoring and Notifications",
-        "description": "Orchestrated the seamless integration of real-time metrics, extracted from DBus signals and methods, into our core product using Quarkus Micrometer, Prometheus, and Grafana v7.5.15. Implemented notifications to alert users when system usage exceeded critical thresholds of 60% and 85%, optimizing resource management and user experience."
+        "description": "Orchestrated the seamless integration of real-time metrics, extracted from DBus signals and methods, into our core product using Quarkus Micrometer, Prometheus, and Grafana v7.5.15. Implemented notifications to alert users when system usage exceeded critical thresholds of 60% and 85%, optimizing resource management and user experience. Configured Prometheus to send metrics from on-prem to AWS Managed Prometheus on demand using <kbd>remote write<kbd>."
       },
       {
         "keyword": "Whitelabelling Grafana",
