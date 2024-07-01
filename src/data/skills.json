@@ -1,7 +1,7 @@
 [
   {
     "type": "backend",
-    "list": ["Java", "Quarkus", "Reactive Programming", "Spring Boot", "JPA", "Flyway", "JUnit", "Python"]
+    "list": ["Java", "Quarkus", "Spring Boot", "JPA", "Flyway", "JUnit", "Python"]
   },
   {
     "type": "frontend",
