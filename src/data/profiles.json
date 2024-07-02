@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Email",
+    "link": "mailto:zbhavyai@gmail.com",
+    "type": "social",
+    "faIcon": "faEnvelope",
+    "show": true
+  },
+  {
+    "name": "Github",
+    "link": "https://www.github.com/zbhavyai",
+    "type": "tech",
+    "faIcon": "faGithub",
+    "show": true
+  },
+  {
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/zbhavyai",
+    "type": "tech",
+    "faIcon": "faLinkedinIn",
+    "show": true
+  },
+  {
+    "name": "Google Developers",
+    "link": "https://developers.google.com/profile/u/zbhavyai",
+    "type": "tech",
+    "faIcon": "faGoogle",
+    "show": false
+  },
+  {
+    "name": "HackerRank",
+    "link": "https://www.hackerrank.com/profile/zbhavyai",
+    "type": "tech",
+    "faIcon": "faHackerrank",
+    "show": false
+  },
+  {
+    "name": "YouTube",
+    "link": "https://www.youtube.com/@zbhavyai",
+    "type": "social",
+    "faIcon": "faYoutube",
+    "show": false
+  },
+  {
+    "name": "Facebook",
+    "link": "https://www.facebook.com/zbhavyai",
+    "type": "social",
+    "faIcon": "faFacebook",
+    "show": false
+  },
+  {
+    "name": "Twitter",
+    "link": "https://www.twitter.com/zbhavyai",
+    "type": "social",
+    "faIcon": "faXTwitter",
+    "show": false
+  },
+  {
+    "name": "Discord",
+    "link": "https://discord.com/users/zbhavyai",
+    "type": "social",
+    "faIcon": "faDiscord",
+    "show": false
+  }
+]
