@@ -1,4 +1,4 @@
-import { faDiscord, faFacebook, faGithub, faGoogle, faHackerrank, faLinkedinIn, faWhatsapp, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faFacebook, faGithub, faGoogle, faHackerrank, faLinkedinIn, faTelegram, faWhatsapp, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -14,6 +14,8 @@ const iconMap = {
   faGoogle,
   faHackerrank,
   faLinkedinIn,
+  faTelegram,
+  faWhatsapp,
   faXTwitter,
   faYoutube,
 };

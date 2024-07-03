@@ -61,5 +61,19 @@
     "type": "social",
     "faIcon": "faDiscord",
     "show": false
+  },
+  {
+    "name": "WhatsApp",
+    "link": "https://wa.me/15875756982?text=Hi%2C%0A%0AI%20am%20reaching%20you%20out%20for%20",
+    "type": "social",
+    "faIcon": "faWhatsapp",
+    "show": false
+  },
+  {
+    "name": "Telegram",
+    "link": "https://t.me/zbhavyai",
+    "type": "social",
+    "faIcon": "faTelegram",
+    "show": false
   }
 ]
