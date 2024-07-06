@@ -33,10 +33,10 @@ const Resume = () => {
       <Container className="zbhavyai-container-experience my-5">
         <h4 className="mb-0 fw-bold">Professional Experience</h4>
         <Row id="zbhavyai-row-experience" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
-          {ExperienceList?.map((project, index) => {
+          {ExperienceList?.map((exp, index) => {
             return (
               <Col key={index}>
-                <ExperienceCard key={project["name"]} props={project} />
+                <ExperienceCard key={exp["start_date"]} props={exp} />
               </Col>
             );
           })}
@@ -45,10 +45,10 @@ const Resume = () => {
       <Container className="zbhavyai-container-education my-5">
         <h4 className="mb-0 fw-bold">Education</h4>
         <Row id="zbhavyai-row-education" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
-          {EducationList?.map((project, index) => {
+          {EducationList?.map((edu, index) => {
             return (
               <Col key={index}>
-                <EducationCard key={project["name"]} props={project} />
+                <EducationCard key={edu["university"]} props={edu} />
               </Col>
             );
           })}
