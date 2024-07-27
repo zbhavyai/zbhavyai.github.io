@@ -42,6 +42,20 @@
     "hasFrontend": false
   },
   {
+    "name": "Containers",
+    "summary": "Curated list of usage of various tools and services using containers.",
+    "description": "",
+    "repository_link": "https://github.com/zbhavyai/containers",
+    "deployment_link": "",
+    "association": "Personal",
+    "last_updated": 2024,
+    "card_image": "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png",
+    "language": ["YAML"],
+    "tech_stack": ["Docker"],
+    "hasBackend": false,
+    "hasFrontend": false
+  },
+  {
     "name": "OMDb Search",
     "summary": "A frontend for searching for movies or web series using the OMDb API.",
     "description": "",
