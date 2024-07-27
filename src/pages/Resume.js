@@ -22,38 +22,52 @@ const Resume = () => {
   return (
     <React.Fragment>
       <Header activeNav="resume" />
-      <Container className="zbhavyai-container-skills my-5">
-        <h4 className="mb-0 fw-bold">Technical Skills</h4>
-        <Row id="zbhavyai-row-skills" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
-          <Col md="12">
-            <SkillsCard props={SkillsList} />
-          </Col>
-        </Row>
-      </Container>
-      <Container className="zbhavyai-container-experience my-5">
-        <h4 className="mb-0 fw-bold">Professional Experience</h4>
-        <Row id="zbhavyai-row-experience" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
-          {ExperienceList?.map((exp, index) => {
-            return (
-              <Col key={index}>
-                <ExperienceCard key={exp["start_date"]} props={exp} />
-              </Col>
-            );
-          })}
-        </Row>
-      </Container>
-      <Container className="zbhavyai-container-education my-5">
-        <h4 className="mb-0 fw-bold">Education</h4>
-        <Row id="zbhavyai-row-education" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
-          {EducationList?.map((edu, index) => {
-            return (
-              <Col key={index}>
-                <EducationCard key={edu["university"]} props={edu} />
-              </Col>
-            );
-          })}
-        </Row>
-      </Container>
+
+      {/* Technical Skills */}
+      {SkillsList?.length > 0 && (
+        <Container className="zbhavyai-container-skills my-5">
+          <h4 className="mb-0 fw-bold">Technical Skills</h4>
+          <Row id="zbhavyai-row-skills" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
+            <Col md="12">
+              <SkillsCard props={SkillsList} />
+            </Col>
+          </Row>
+        </Container>
+      )}
+
+      {/* Professional Experience */}
+      {ExperienceList?.length > 0 && (
+        <Container className="zbhavyai-container-experience my-5">
+          <h4 className="mb-0 fw-bold">Professional Experience</h4>
+          <Row id="zbhavyai-row-experience" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
+            {ExperienceList?.map((exp, index) => {
+              return (
+                <Col key={index}>
+                  <ExperienceCard key={exp["start_date"]} props={exp} />
+                </Col>
+              );
+            })}
+          </Row>
+        </Container>
+      )}
+
+      {/* Education */}
+      {EducationList?.length > 0 && (
+        <Container className="zbhavyai-container-education my-5">
+          <h4 className="mb-0 fw-bold">Education</h4>
+          <Row id="zbhavyai-row-education" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
+            {EducationList?.map((edu, index) => {
+              return (
+                <Col key={index}>
+                  <EducationCard key={edu["university"]} props={edu} />
+                </Col>
+              );
+            })}
+          </Row>
+        </Container>
+      )}
+
+      {/* Download Resume */}
       <Container className="zbhavyai-container-downloader d-flex flex-row my-5">
         <ButtonGroup>
           <Button variant="outline-light" className="px-2" onClick={handleDownload}>
