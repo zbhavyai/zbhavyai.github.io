@@ -130,6 +130,7 @@ body {
 /* RESUME CARDS **************************************************************/
 .zbhavyai-container-skills,
 .zbhavyai-container-experience,
+.zbhavyai-container-certifications,
 .zbhavyai-container-downloader,
 .zbhavyai-container-education {
   max-width: 1000px;
@@ -139,8 +140,9 @@ body {
 }
 
 .zbhavyai-skills-card,
-.zbhavyai-education-card,
-.zbhavyai-experience-card {
+.zbhavyai-experience-card,
+.zbhavyai-certification-card,
+.zbhavyai-education-card {
   background-color: var(--theme-dark-2);
   color: var(--theme-text);
 }
@@ -153,8 +155,9 @@ body {
   margin-bottom: 0;
 }
 
-.zbhavyai-education-card .card-title,
-.zbhavyai-experience-card .card-title {
+.zbhavyai-experience-card .card-title,
+.zbhavyai-certification-card .card-title,
+.zbhavyai-education-card .card-title {
   font-size: 1.2em;
   font-weight: bold;
 }

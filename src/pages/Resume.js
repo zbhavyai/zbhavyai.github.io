@@ -3,10 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
+import CertificationCard from "../components/CertificationCard";
 import EducationCard from "../components/EducationCard";
 import ExperienceCard from "../components/ExperienceCard";
 import Header from "../components/Header";
 import SkillsCard from "../components/SkillsCard";
+import CertificationList from "../data/certification.json";
 import EducationList from "../data/education.json";
 import ExperienceList from "../data/experience.json";
 import SkillsList from "../data/skills.json";
@@ -44,6 +46,22 @@ const Resume = () => {
               return (
                 <Col key={index}>
                   <ExperienceCard key={exp["start_date"]} props={exp} />
+                </Col>
+              );
+            })}
+          </Row>
+        </Container>
+      )}
+
+      {/* Certifications */}
+      {CertificationList?.length > 0 && (
+        <Container className="zbhavyai-container-certifications my-5">
+          <h4 className="mb-0 fw-bold">Certifications</h4>
+          <Row id="zbhavyai-row-certification" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
+            {CertificationList?.map((cert, index) => {
+              return (
+                <Col key={index}>
+                  <CertificationCard key={cert["certification"]} props={cert} />
                 </Col>
               );
             })}
