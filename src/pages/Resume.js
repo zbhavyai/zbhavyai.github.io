@@ -13,7 +13,7 @@ import EducationList from "../data/education.json";
 import ExperienceList from "../data/experience.json";
 import SkillsList from "../data/skills.json";
 
-const Resume = () => {
+export default function Resume() {
   const handleDownload = () => {
     let resumeLink = "https://drive.google.com/uc?export=download&id=10WE6XlZXNCFWb5d9cwgmPr7qyMQWUAzk";
 
@@ -96,6 +96,4 @@ const Resume = () => {
       </Container>
     </React.Fragment>
   );
-};
-
-export default Resume;
+}

@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import ProjectCard from "../components/ProjectCard";
 import projectList from "../data/projects.json";
 
-const Projects = () => {
+export default function Projects() {
   return (
     <React.Fragment>
       <Header activeNav="projects" />
@@ -21,6 +21,4 @@ const Projects = () => {
       </Container>
     </React.Fragment>
   );
-};
-
-export default Projects;
+}

@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Header from "../components/Header";
 import SocialStrip from "../components/SocialStrip";
 
-const Home = () => {
+export default function Home() {
   return (
     <React.Fragment>
       <Header activeNav="about" />
@@ -18,6 +18,4 @@ const Home = () => {
       </Container>
     </React.Fragment>
   );
-};
-
-export default Home;
+}
