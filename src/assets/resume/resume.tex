@@ -44,6 +44,12 @@
     \vspace*{-6pt} \lineunder
 }
 
+\newcommand{\resumeHeadingExperience}[4]{
+    \textbf{#1} \hfill {#2}\\
+    \textit{#3} \hfill {#4}\\
+    \vspace{-3mm}
+}
+
 \newcommand{\resumeItemExperience}[2]{
   \item{
     \begin{justify}
@@ -83,38 +89,26 @@
 \header{Experience}
 \vspace{1mm}
 
-\textbf{Userful Corporation} \hfill Calgary, Canada\\
-\textit{Software Developer} \hfill Apr 2022 - Present\\
-\vspace{-1mm}
+\resumeHeadingExperience {Userful Corporation} {Calgary, Canada} {Software Developer} {Apr 2022 - Present}
 \begin{itemize} \itemsep 1pt
     \resumeItemExperience {Monitoring and Notifications}{Orchestrated the seamless integration of real-time metrics, extracted from DBus signals and methods, into our core product using Quarkus Micrometer, Prometheus, and a white labelled Grafana v7.5.15. Implemented notifications to alert users when system usage exceeded critical thresholds of 60\% and 85\%, optimizing resource management and user experience. Configured Prometheus to send metrics from on-prem to AWS Managed Prometheus on demand using \texttt{remote write}.}
-
     \resumeItemExperience {LED Media Commander} {Leveraged Nvidia SLI Mosaic technology, configuring \texttt{xorg.conf} to use multiple GPUs to utilize \texttt{seat0} as a rendering endpoint for stunning 4K output. Successfully integrated Megapixel products, Helios and Omnis, enhancing our platform\textquotesingle{}s capabilities to route 8K content to LED panels and enabling centralized control.}
-
     \resumeItemExperience{Integrations} {Pioneered the integration of Power BI (auth using OAuth2 code grant), Tableau (auth using Connected Apps), and Epic System Patient Wait Time (auth using OAuth2 client credentials grant) embedding functionalities, elevating our product\textquotesingle{}s data visualization capabilities. All the integrations were designed to use a \textquotesingle{}Passport System\textquotesingle{}, managing their credentials centrally and providing persistent logins, facilitating user experience. Empowered users with dynamic insights, fostering a richer understanding of their data and enhancing decision-making processes.}
-
     \resumeItemExperience{Security} {Elevated security measures by seamlessly integrating HashiCorp\textquotesingle{}s Vault into our product\textquotesingle{}s infrastructure. Fortified protection for critical media sources such as RTSP Streams, VNC and RDP Connections, Tableau, and Power BI, ensuring a resilient and secure environment.}
-
     \resumeItemExperience{Backup \& Restore} {Designed and implemented a backup and restore system encompassing PostgreSQL databases, Vault secrets, and Media files. Engineered a streamlined process for creating, archiving, downloading, uploading, and restoring backups.}
 \end{itemize}
 
-\textbf{Luxoft} \hfill Singapore\\
-\textit{Consultant} \hfill Oct 2018 - Dec 2019\\
-\vspace{-1mm}
+\resumeHeadingExperience {Luxoft} {Singapore} {Consultant} {Oct 2018 - Dec 2019}
 \begin{itemize} \itemsep 1pt
     \resumeItemExperience{Market Risk} {Played a key role in the technical build of Market Risk for the migration project from Murex version 2.36 to 3.41. Utilized ANT scripts and bash scripts to support the seamless transition, demonstrating proficiency in configuration management and version migration.}
 \end{itemize}
 
-% \textbf{Capgemini} \hfill Singapore\\
-% \textit{Associate Consultant} \hfill Aug 2017 - Aug 2018\\
-% \vspace{-1mm}
+% \resumeHeadingExperience {Capgemini} {Singapore} {Associate Consultant} {Aug 2017 - Aug 2018}
 % \begin{itemize} \itemsep 1pt
 %     \resumeItemExperience{Market Risk} {Responsible for technical build of the Market Risk module within MX.3, catering to diverse client requirements and their international entities.}
 % \end{itemize}
 
-% \textbf{Capgemini} \hfill Gurugram\\
-% \textit{Associate Consultant} \hfill Jun 2018 - Aug 2017\\
-% \vspace{-1mm}
+% \resumeHeadingExperience {Capgemini} {Gurugram} {Associate Consultant} {Jun 2018 - Aug 2017}
 % \begin{itemize} \itemsep 1pt
 %     \resumeItemExperience{Market Risk} {Responsible for green field implementation of market risk scenario generation, application, and computations like VaR, Stress Testing, and Back Testing.}
 % \end{itemize}
