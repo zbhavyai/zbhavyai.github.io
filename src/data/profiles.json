@@ -42,6 +42,13 @@
     "show": false
   },
   {
+    "name": "Instagram",
+    "link": "https://www.instagram.com/gbhavyai",
+    "type": "social",
+    "faIcon": "faInstagram",
+    "show": true
+  },
+  {
     "name": "Facebook",
     "link": "https://www.facebook.com/zbhavyai",
     "type": "social",
