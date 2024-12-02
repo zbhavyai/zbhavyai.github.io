@@ -212,3 +212,15 @@ li.zbhavyai-list-triangle:before {
   letter-spacing: 0.03em;
   text-align: justify;
 }
+
+.zbhavyai-certificate-link {
+  text-decoration: none;
+  color: var(--theme-text);
+}
+
+.zbhavyai-external-link-icon {
+  font-size: 0.8rem;
+  padding-left: 5px;
+  position: relative;
+  top: -4px;
+}
