@@ -16,7 +16,7 @@
 \textheight=10in
 \pagestyle{empty}
 \raggedright
-\usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+\usepackage[left=0.8in,right=0.8in,bottom=0.3in,top=0.8in]{geometry}
 
 % Support text justify
 \usepackage{ragged2e}
@@ -110,54 +110,51 @@
 
 \resumeHeadingExperience {Userful Corporation} {Calgary, Canada} {Software Developer} {Apr 2022 - Present}
 \begin{itemize} \itemsep 1pt
-    \resumeItemExperience {Monitoring and Notifications}{Orchestrated the seamless integration of real-time metrics, extracted from DBus signals and methods, into our core product using Quarkus Micrometer, Prometheus, and a white labelled Grafana v7.5.15. Implemented notifications to alert users when system usage exceeded critical thresholds of 60\% and 85\%, optimizing resource management and user experience. Configured Prometheus to send metrics from on-prem to AWS Managed Prometheus on demand using \texttt{remote write}.}
-    \resumeItemExperience {LED Media Commander} {Leveraged Nvidia SLI Mosaic technology, configuring \texttt{xorg.conf} to use multiple GPUs to utilize \texttt{seat0} as a rendering endpoint for stunning 4K output. Successfully integrated Megapixel products, Helios and Omnis, enhancing our platform\textquotesingle{}s capabilities to route 8K content to LED panels and enabling centralized control.}
-    \resumeItemExperience{Integrations} {Pioneered the integration of Power BI (auth using OAuth2 code grant), Tableau (auth using Connected Apps), and Epic System Patient Wait Time (auth using OAuth2 client credentials grant) embedding functionalities, elevating our product\textquotesingle{}s data visualization capabilities. All the integrations were designed to use a \textquotesingle{}Passport System\textquotesingle{}, managing their credentials centrally and providing persistent logins, facilitating user experience. Empowered users with dynamic insights, fostering a richer understanding of their data and enhancing decision-making processes.}
-    \resumeItemExperience{Security} {Elevated security measures by seamlessly integrating HashiCorp\textquotesingle{}s Vault into our product\textquotesingle{}s infrastructure. Fortified protection for critical media sources such as RTSP Streams, VNC and RDP Connections, Tableau, and Power BI, ensuring a resilient and secure environment.}
-    \resumeItemExperience{Backup \& Restore} {Designed and implemented a backup and restore system encompassing PostgreSQL databases, Vault secrets, and Media files. Engineered a streamlined process for creating, archiving, downloading, uploading, and restoring backups.}
+    \resumeItemExperience {Data integration and visualization} {Led the integration of various BI and data visualization tools, including Power BI, Tableau, Epic Systems, ServiceNow, Grafana, PowerPoint, and Domo, utilizing a centralized credential management for secure and seamless user access.}
+    \resumeItemExperience {Robust data management} {Designed and implemented a comprehensive backup and restore system for PostgreSQL databases, Vault secrets, and media files.}
+    \resumeItemExperience {Monitoring \& alerting} {Integrated real-time metrics from DBus into our core product using Micrometer, Prometheus, and Grafana, implementing notifications to alert users of critical system usage.}
+    \resumeItemExperience {Grafana whitelabeling} {Whitelabeled Grafana v7.5.15 source code, resulting in cost savings of approximately \$100,000 by avoiding OEM licensing.}
+    \resumeItemExperience {High-performance rendering} {Leveraged Nvidia SLI Mosaic technology to enable 4K output and integrated Megapixel products for 8K content routing on LED panels with centralized control.}
+    \resumeItemExperience {Enhanced security} {Integrated HashiCorp's Vault to secure critical media sources, including RTSP streams, VNC/RDP connections, and BI platforms.}
 \end{itemize}
 
 \resumeHeadingExperience {Luxoft} {Singapore} {Consultant} {Oct 2018 - Dec 2019}
 \begin{itemize} \itemsep 1pt
-    \resumeItemExperience{Market Risk} {Played a key role in the technical build of Market Risk for the migration project from Murex version 2.36 to 3.41. Utilized ANT scripts and bash scripts to support the seamless transition, demonstrating proficiency in configuration management and version migration.}
+    \resumeItemExperience{Market Risk} {Played a key role in the technical build for Murex Market Risk migration from version 2.36 to 3.41, utilizing ANT scripts, bash scripts, and configuration management for seamless transition.}
 \end{itemize}
 
 \resumeHeadingExperience {Capgemini} {Singapore} {Associate Consultant} {Aug 2017 - Aug 2018}
 \begin{itemize} \itemsep 1pt
-    \resumeItemExperience{Market Risk} {Responsible for technical build of the Market Risk module within MX.3, catering to diverse client requirements and their international entities.}
+    \resumeItemExperience{Market Risk} {Built the Market Risk module within MX.3, adapting to diverse client and international entity requirements.}
 \end{itemize}
 
 \resumeHeadingExperience {Capgemini} {Gurugram} {Associate Consultant} {Jun 2016 - Aug 2017}
 \begin{itemize} \itemsep 1pt
-    \resumeItemExperience{Market Risk} {Responsible for green field implementation of market risk scenario generation, application, and computations like VaR, Stress Testing, and Back Testing.}
+    \resumeItemExperience{Market Risk} {Implemented a greenfield market risk framework, encompassing scenario generation, application, and computations like VaR, Stress Testing, and Back Testing.}
 \end{itemize}
 
 
 %------------------------------------PROJECTS------------------------------------
 \header{Projects}
 
-\resumeHeadingProject {Inspirational Morning} {Quarkus, Google Cloud functions, Google Chat webhook} {Jun 2024 - Jun 2024}
-\begin{itemize}
-    \resumeItemProject {A serverless function to send a good morning greeting along with an inspirational quote to a Google Chat webhook, every weekday.}
-\end{itemize}
-
-\resumeHeadingProject {OMDb Search} {ReactJS} {Jun 2022 - Jun 2022}
-\begin{itemize}
-    \resumeItemProject {A frontend for searching for movies or web series using the OMDb API.}
-\end{itemize}
-
 \resumeHeadingProject {BudLib} {Spring Boot, ReactJS, MySQL} {Jan 2022 - Apr 2022}
 \begin{itemize}
-    \resumeItemProject {A full stack web application made for Calgary Waldorf School to manage their library.}
-    \resumeItemProject {Developed the complete REST API and major parts of the React build, including CRUD of books, loaner, and transactions.}
-    \resumeItemProject {Designed UML diagrams for API, ER model for database, and wireframes of the web interface.}
+    \resumeItemProject {Full-stack web application developed and used by Calgary Waldorf School for library management.}
 \end{itemize}
 
 \resumeHeadingProject {IntelliNurse} {Spring Boot, ReactJS, MySQL} {Feb 2022 - Mar 2022}
 \begin{itemize}
-    \resumeItemProject {A full stack web application made for Registered Nurses to help them post articles and surveys to help the general public.}
-    \resumeItemProject {Received 2nd prize out of 11 participant teams in the competition.}
-    \resumeItemProject {Developed the complete REST API using Spring Boot and MySQL, and created base used by all React components.}
+    \resumeItemProject {Full-stack web application for Registered Nurses to post articles and surveys, achieving 2nd place in a hackathon.}
+\end{itemize}
+
+\resumeHeadingProject {Inspirational Morning} {Quarkus, Google Cloud functions, Google Chat webhook} {Jun 2024 - Jun 2024}
+\begin{itemize}
+    \resumeItemProject {Serverless function using Quarkus and Google Cloud to send daily inspirational quotes to Google Chat.}
+\end{itemize}
+
+\resumeHeadingProject {OMDb Search} {ReactJS} {Jun 2022 - Jun 2022}
+\begin{itemize}
+    \resumeItemProject {ReactJS frontend for searching movies and web series using the OMDb API.}
 \end{itemize}
 
 
