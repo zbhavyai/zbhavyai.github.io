@@ -11,15 +11,18 @@
       "Python",
       "ReactJS",
       "Javascript",
+      "PostgreSQL",
+      "Linux",
+      "Bash",
+      "Vault KV2",
+      "OAuth2",
+      "JWT",
       "Grafana",
       "Prometheus",
       "Power BI Embedded",
       "Tableau Embedded",
-      "Epic System Web Services",
-      "PostgreSQL",
-      "Vault KV2",
-      "OAuth2",
-      "JWT"
+      "Domo Embedded",
+      "Epic System Web Services"
     ],
     "responsibities": [
       {
@@ -58,7 +61,7 @@
     "location": "Singapore",
     "start_date": "Oct 2018",
     "end_date": "Dec 2019",
-    "tech_stack": ["Bash", "Ant scripts", "Oracle SQL"],
+    "tech_stack": ["Linux", "Bash", "Ant scripts", "Oracle SQL"],
     "responsibities": [
       {
         "keyword": "Market Risk",
@@ -72,7 +75,7 @@
     "location": "Singapore",
     "start_date": "Aug 2017",
     "end_date": "Aug 2018",
-    "tech_stack": ["Bash", "Ant scripts", "Oracle SQL"],
+    "tech_stack": ["Linux", "Bash", "Ant scripts", "Oracle SQL"],
     "responsibities": [
       {
         "keyword": "Market Risk",
@@ -86,7 +89,7 @@
     "location": "Gurugram, IN",
     "start_date": "Jun 2016",
     "end_date": "Aug 2017",
-    "tech_stack": ["Bash", "Ant scripts", "Oracle SQL"],
+    "tech_stack": ["Linux", "Bash", "Ant scripts", "Oracle SQL"],
     "responsibities": [
       {
         "keyword": "Market Risk",
