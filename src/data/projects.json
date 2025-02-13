@@ -84,6 +84,20 @@
     "hasFrontend": false
   },
   {
+    "name": "YouTube Audio Downloader",
+    "summary": "Downloads given YouTube links as mp3 using yt-dlp with post-processing and setting up of metadata.",
+    "description": "",
+    "repository_link": "https://github.com/zbhavyai/youtube-audio-downloader",
+    "deployment_link": "",
+    "association": "Personal",
+    "last_updated": 2025,
+    "card_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdEjIsQcn8NwYWhwISL74xXLGtRHeW1Mn67g&s",
+    "language": ["Bash"],
+    "tech_stack": [""],
+    "hasBackend": true,
+    "hasFrontend": false
+  },
+  {
     "name": "Currency Converter",
     "summary": "A simple currency exchange rate app using the ExchangeRate-API.",
     "description": "",
