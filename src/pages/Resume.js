@@ -37,10 +37,10 @@ export default function Resume() {
         </Container>
       )}
 
-      {/* Professional Experience */}
+      {/* Work Experience */}
       {ExperienceList?.length > 0 && (
         <Container className="zbhavyai-container-experience my-5">
-          <h4 className="mb-0 fw-bold">Professional Experience</h4>
+          <h4 className="mb-0 fw-bold">Work Experience</h4>
           <Row id="zbhavyai-row-experience" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
             {ExperienceList?.map((exp, index) => {
               return (
