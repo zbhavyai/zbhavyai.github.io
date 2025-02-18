@@ -18,7 +18,7 @@ const ExperienceCard = ({ props }) => {
         </div>
       </Card.Header>
       <Card.Body as="section" className="py-0">
-        <Card.Text className="px-3">
+        <Card.Text as="div" className="px-3">
           <ul className="zbhavyai-list-triangle">
             {props["responsibities"]?.map((item, index) => {
               return (

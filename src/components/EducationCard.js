@@ -24,7 +24,6 @@ ExperienceCard.propTypes = {
   props: PropTypes.shape({
     university: PropTypes.string.isRequired,
     degree_short: PropTypes.string.isRequired,
-    specialization: PropTypes.string.isRequired,
     area_of_study: PropTypes.string.isRequired,
     start_date: PropTypes.string.isRequired,
     end_date: PropTypes.string.isRequired,
