@@ -1,11 +1,14 @@
 import { faClipboard } from "@fortawesome/free-regular-svg-icons";
+import { faClipboardCheck } from "@fortawesome/free-solid-svg-icons/faClipboardCheck";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 import { Card } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
 import { copyToClipboard, getSkills } from "../utils/clipboard";
 
 const SkillsCard = ({ props }) => {
+  const [copied, setCopied] = useState(false);
+
   return (
     <Card as="article" className="zbhavyai-skills-card">
       <Card.Body as="section" className="d-flex justify-content-between">
@@ -24,11 +27,13 @@ const SkillsCard = ({ props }) => {
       </Card.Body>
 
       <FontAwesomeIcon
-        icon={faClipboard}
+        icon={copied ? faClipboardCheck : faClipboard}
         className="zbhavyai-clipboard-icon"
         onClick={(e) => {
           e.stopPropagation();
           copyToClipboard(props, getSkills);
+          setCopied(true);
+          setTimeout(() => setCopied(false), 1000);
         }}
       />
     </Card>

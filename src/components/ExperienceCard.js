@@ -1,11 +1,14 @@
 import { faClipboard } from "@fortawesome/free-regular-svg-icons";
+import { faClipboardCheck } from "@fortawesome/free-solid-svg-icons/faClipboardCheck";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
-import React from "react";
+import React, { useState } from "react";
 import { Badge, Card } from "react-bootstrap";
 import { copyToClipboard, getExperienceResponsibilities } from "../utils/clipboard";
 
 const ExperienceCard = ({ props }) => {
+  const [copied, setCopied] = useState(false);
+
   return (
     <Card as="article" className="zbhavyai-experience-card">
       <Card.Header as="header" className="d-flex justify-content-between pt-3">
@@ -44,11 +47,13 @@ const ExperienceCard = ({ props }) => {
       </Card.Footer>
 
       <FontAwesomeIcon
-        icon={faClipboard}
+        icon={copied ? faClipboardCheck : faClipboard}
         className="zbhavyai-clipboard-icon"
         onClick={(e) => {
           e.stopPropagation();
           copyToClipboard(props, getExperienceResponsibilities);
+          setCopied(true);
+          setTimeout(() => setCopied(false), 1000);
         }}
       />
     </Card>
