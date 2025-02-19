@@ -1,6 +1,9 @@
+import { faClipboard } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Card } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
+import { copyToClipboard, getSkills } from "../utils/clipboard";
 
 const SkillsCard = ({ props }) => {
   return (
@@ -19,6 +22,15 @@ const SkillsCard = ({ props }) => {
           </tbody>
         </Table>
       </Card.Body>
+
+      <FontAwesomeIcon
+        icon={faClipboard}
+        className="zbhavyai-clipboard-icon"
+        onClick={(e) => {
+          e.stopPropagation();
+          copyToClipboard(props, getSkills);
+        }}
+      />
     </Card>
   );
 };

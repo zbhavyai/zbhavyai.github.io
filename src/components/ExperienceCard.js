@@ -1,6 +1,9 @@
+import { faClipboard } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
 import React from "react";
 import { Badge, Card } from "react-bootstrap";
+import { copyToClipboard, getExperienceResponsibilities } from "../utils/clipboard";
 
 const ExperienceCard = ({ props }) => {
   return (
@@ -39,6 +42,15 @@ const ExperienceCard = ({ props }) => {
           );
         })}
       </Card.Footer>
+
+      <FontAwesomeIcon
+        icon={faClipboard}
+        className="zbhavyai-clipboard-icon"
+        onClick={(e) => {
+          e.stopPropagation();
+          copyToClipboard(props, getExperienceResponsibilities);
+        }}
+      />
     </Card>
   );
 };
