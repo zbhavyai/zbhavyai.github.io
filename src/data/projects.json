@@ -92,7 +92,7 @@
     "association": "Personal",
     "last_updated": 2025,
     "card_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdEjIsQcn8NwYWhwISL74xXLGtRHeW1Mn67g&s",
-    "language": ["Bash"],
+    "language": ["Python"],
     "tech_stack": [""],
     "hasBackend": true,
     "hasFrontend": false
