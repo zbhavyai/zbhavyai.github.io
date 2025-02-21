@@ -9,7 +9,7 @@
     "last_updated": 2024,
     "card_image": "https://raw.githubusercontent.com/zbhavyai/zbhavyai.github.io/main/public/logo512.png",
     "language": ["Javascript"],
-    "tech_stack": ["ReactJS"],
+    "tech_stack": ["React.js"],
     "hasBackend": false,
     "hasFrontend": true
   },
@@ -65,7 +65,7 @@
     "last_updated": 2022,
     "card_image": "https://raw.githubusercontent.com/zbhavyai/movie-search-omdb/main/public/logo512.png",
     "language": ["Javascript"],
-    "tech_stack": ["ReactJS"],
+    "tech_stack": ["React.js"],
     "hasBackend": false,
     "hasFrontend": true
   },
@@ -135,7 +135,7 @@
     "last_updated": 2022,
     "card_image": "https://avatars.githubusercontent.com/u/96268227",
     "language": ["Java", "Javascript", "SQL"],
-    "tech_stack": ["Spring Boot", "ReactJS", "MySQL"],
+    "tech_stack": ["Spring Boot", "React.js", "MySQL"],
     "hasBackend": true,
     "hasFrontend": true
   },
@@ -149,7 +149,7 @@
     "last_updated": 2022,
     "card_image": "https://raw.githubusercontent.com/meng-ucalgary/engg-683-project/main/Minimum_Viable_Product/public/images/logo512.png",
     "language": ["Javascript"],
-    "tech_stack": ["ReactJS"],
+    "tech_stack": ["React.js"],
     "hasBackend": false,
     "hasFrontend": true
   },
@@ -163,7 +163,7 @@
     "last_updated": 2022,
     "card_image": "https://raw.githubusercontent.com/meng-ucalgary/intelli-nurse/main/frontend/public/logo512.png",
     "language": ["Java", "Javascript", "SQL"],
-    "tech_stack": ["Spring Boot", "ReactJS", "MySQL"],
+    "tech_stack": ["Spring Boot", "React.js", "MySQL"],
     "hasBackend": true,
     "hasFrontend": true
   },
@@ -177,7 +177,7 @@
     "last_updated": 2022,
     "card_image": "https://raw.githubusercontent.com/zbhavyai/veterinary-clinic/main/frontend/public/animals.png",
     "language": ["Java", "Javascript", "SQL"],
-    "tech_stack": ["Spring Boot", "ReactJS", "MySQL"],
+    "tech_stack": ["Spring Boot", "React.js", "MySQL"],
     "hasBackend": true,
     "hasFrontend": true
   },
@@ -197,7 +197,7 @@
   },
   {
     "name": "Counter App",
-    "summary": "A simple counter using ReactJS.",
+    "summary": "A simple counter using React.js.",
     "description": "",
     "repository_link": "https://github.com/zbhavyai/react-counter-app",
     "deployment_link": "",
@@ -205,7 +205,7 @@
     "last_updated": 2022,
     "card_image": "https://play-lh.googleusercontent.com/-Is09LBqm9eaDGb1wduB0sw4hMBzqwc6IiAzLy7kcGCgatq8PXjb1LE5tS7rYD5sB38",
     "language": ["Javascript"],
-    "tech_stack": ["ReactJS"],
+    "tech_stack": ["React.js"],
     "hasBackend": false,
     "hasFrontend": true
   },
