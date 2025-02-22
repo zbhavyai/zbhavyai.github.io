@@ -17,7 +17,9 @@ const SkillsCard = ({ props }) => {
             {props?.map((skillgroup, index) => {
               return (
                 <tr key={skillgroup["type"]}>
-                  <td className="fw-bold text-capitalize">{skillgroup["type"]}</td>
+                  <td className="fw-bold text-capitalize" width={"15%"}>
+                    {skillgroup["type"]}
+                  </td>
                   <td>{skillgroup["list"] && <span>{skillgroup["list"].join(", ")}</span>}</td>
                 </tr>
               );

@@ -1,22 +1,26 @@
 [
   {
     "type": "backend",
-    "list": ["Java", "Quarkus", "Spring Boot", "JPA", "Flyway", "JUnit", "Python"]
+    "list": ["Java", "Quarkus", "Spring Boot", "JPA", "Hiberate", "JUnit", "Python", "Flask"]
   },
   {
     "type": "frontend",
-    "list": ["Javascript", "React.js", "Bootstrap"]
+    "list": ["JavaScript", "React.js", "Bootstrap", "HTML", "CSS"]
   },
   {
     "type": "databases",
-    "list": ["PostgreSQL", "MySQL"]
+    "list": ["SQL", "PostgreSQL", "MySQL", "Flyway"]
   },
   {
     "type": "tools",
-    "list": ["Postman", "Grafana", "Prometheus", "Nginx", "Hashicorp Vault", "Jira"]
+    "list": ["Docker", "Git", "Linux", "Bash", "Maven", "Postman", "Grafana", "Prometheus", "Nginx", "Keycloak", "HashiCorp Vault", "CI/CD"]
   },
   {
-    "type": "ops",
-    "list": ["Google Cloud", "Git", "Docker", "Linux", "Maven"]
+    "type": "cloud",
+    "list": ["Google Cloud", "CLI", "Compute Engine", "Cloud Run", "Cloud Functions", "Pub/Sub", "Artifact Registry", "Cloud Storage", "IAM"]
+  },
+  {
+    "type": "Other",
+    "list": ["REST API", "Event-Driven Architecture", "SSO", "OAuth2", "JWT", "Unit Testing", "Agile", "Scrum", "Kanban", "Jira", "LaTeX"]
   }
 ]
