@@ -3,7 +3,7 @@ import { faClipboardCheck } from "@fortawesome/free-solid-svg-icons/faClipboardC
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
-import { Badge, Card } from "react-bootstrap";
+import { Badge, Card, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { copyToClipboard, getExperienceResponsibilities } from "../utils/clipboard";
 
 const ExperienceCard = ({ props }) => {
@@ -46,16 +46,18 @@ const ExperienceCard = ({ props }) => {
         })}
       </Card.Footer>
 
-      <FontAwesomeIcon
-        icon={copied ? faClipboardCheck : faClipboard}
-        className="zbhavyai-clipboard-icon"
-        onClick={(e) => {
-          e.stopPropagation();
-          copyToClipboard(props, getExperienceResponsibilities);
-          setCopied(true);
-          setTimeout(() => setCopied(false), 1000);
-        }}
-      />
+      <OverlayTrigger placement="left" overlay={<Tooltip>{copied ? "Copied!" : "Copy to clipboard"}</Tooltip>}>
+        <FontAwesomeIcon
+          icon={copied ? faClipboardCheck : faClipboard}
+          className="zbhavyai-clipboard-icon"
+          onClick={(e) => {
+            e.stopPropagation();
+            copyToClipboard(props, getExperienceResponsibilities);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 1000);
+          }}
+        />
+      </OverlayTrigger>
     </Card>
   );
 };

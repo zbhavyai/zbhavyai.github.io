@@ -2,7 +2,7 @@ import { faClipboard } from "@fortawesome/free-regular-svg-icons";
 import { faClipboardCheck } from "@fortawesome/free-solid-svg-icons/faClipboardCheck";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
-import { Card } from "react-bootstrap";
+import { Card, OverlayTrigger, Tooltip } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
 import { copyToClipboard, getSkills } from "../utils/clipboard";
 
@@ -28,16 +28,18 @@ const SkillsCard = ({ props }) => {
         </Table>
       </Card.Body>
 
-      <FontAwesomeIcon
-        icon={copied ? faClipboardCheck : faClipboard}
-        className="zbhavyai-clipboard-icon"
-        onClick={(e) => {
-          e.stopPropagation();
-          copyToClipboard(props, getSkills);
-          setCopied(true);
-          setTimeout(() => setCopied(false), 1000);
-        }}
-      />
+      <OverlayTrigger placement="left" overlay={<Tooltip>{copied ? "Copied!" : "Copy to clipboard"}</Tooltip>}>
+        <FontAwesomeIcon
+          icon={copied ? faClipboardCheck : faClipboard}
+          className="zbhavyai-clipboard-icon"
+          onClick={(e) => {
+            e.stopPropagation();
+            copyToClipboard(props, getSkills);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 1000);
+          }}
+        />
+      </OverlayTrigger>
     </Card>
   );
 };
