@@ -19,7 +19,7 @@ const ProjectCard = (props) => {
               e.target.src = brokenCardImage;
             }}
           />
-          <Card.Text className="py-3">
+          <Card.Text as="section" className="py-3">
             <h6 className="zbhavyai-project-card-title px-3">{props["name"]}</h6>
             <div className="zbhavyai-project-card-text px-3">{props["summary"]}</div>
           </Card.Text>
