@@ -28,7 +28,7 @@ const ExperienceCard = (props) => {
           <ul className="zbhavyai-list-triangle">
             {props["responsibities"]?.map((item, index) => {
               return (
-                <li key={index} className="zbhavyai-list-triangle zbhavyai-text-heavy">
+                <li key={item["keyword"]} className="zbhavyai-list-triangle zbhavyai-text-heavy">
                   <span className="fw-bold">{item["keyword"]}</span>: <span dangerouslySetInnerHTML={{ __html: item["description"] }} />
                 </li>
               );
@@ -39,7 +39,7 @@ const ExperienceCard = (props) => {
       <Card.Footer as="footer">
         {props["tech_stack"]?.map((language, index) => {
           return (
-            <Badge key={index} pill className="zbhavyai-tech-badge fira-mono-regular me-1">
+            <Badge key={language} pill className="zbhavyai-tech-badge fira-mono-regular me-1">
               {language}
             </Badge>
           );

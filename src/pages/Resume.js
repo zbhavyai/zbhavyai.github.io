@@ -44,8 +44,8 @@ export default function Resume() {
           <Row id="zbhavyai-row-experience" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
             {ExperienceList?.map((exp, index) => {
               return (
-                <Col key={index}>
-                  <ExperienceCard key={exp["start_date"]} {...exp} />
+                <Col key={exp["start_date"]}>
+                  <ExperienceCard {...exp} />
                 </Col>
               );
             })}
@@ -60,8 +60,8 @@ export default function Resume() {
           <Row id="zbhavyai-row-certification" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
             {CertificationList?.map((cert, index) => {
               return (
-                <Col key={index}>
-                  <CertificationCard key={cert["certification"]} {...cert} />
+                <Col key={cert["certification"]}>
+                  <CertificationCard {...cert} />
                 </Col>
               );
             })}
@@ -76,8 +76,8 @@ export default function Resume() {
           <Row id="zbhavyai-row-education" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
             {EducationList?.map((edu, index) => {
               return (
-                <Col key={index}>
-                  <EducationCard key={edu["university"]} {...edu} />
+                <Col key={edu["university"]}>
+                  <EducationCard {...edu} />
                 </Col>
               );
             })}

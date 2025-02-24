@@ -12,8 +12,8 @@ export default function Projects() {
         <Row xs={1} sm={1} md={2} lg={3} className="g-4 m-md-4 m-lg-4 m-1">
           {projectList?.map((project, index) => {
             return (
-              <Col className="p-0 px-md-3 px-lg-3" key={index}>
-                <ProjectCard key={project["name"]} {...project} />
+              <Col className="p-0 px-md-3 px-lg-3" key={project["name"]}>
+                <ProjectCard {...project} />
               </Col>
             );
           })}
