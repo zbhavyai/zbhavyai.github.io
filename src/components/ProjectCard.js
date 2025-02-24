@@ -5,7 +5,7 @@ import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
 import brokenCardImage from "../images/no-image.jpg";
 
-const ProjectCard = ({ props }) => {
+const ProjectCard = (props) => {
   return (
     <Link className="zbhavyai-project-link" to={props["repository_link"]} target="_blank" rel="noopener noreferrer">
       <Card as="article" className="zbhavyai-project-card shadow" height={"100px"}>
@@ -30,12 +30,10 @@ const ProjectCard = ({ props }) => {
 };
 
 ProjectCard.propTypes = {
-  props: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    repository_link: PropTypes.string.isRequired,
-    summary: PropTypes.string.isRequired,
-    card_image: PropTypes.string.isRequired,
-  }).isRequired,
+  name: PropTypes.string.isRequired,
+  repository_link: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired,
+  card_image: PropTypes.string.isRequired,
 };
 
 export default ProjectCard;

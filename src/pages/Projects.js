@@ -13,7 +13,7 @@ export default function Projects() {
           {projectList?.map((project, index) => {
             return (
               <Col className="p-0 px-md-3 px-lg-3" key={index}>
-                <ProjectCard key={project["name"]} props={project} />
+                <ProjectCard key={project["name"]} {...project} />
               </Col>
             );
           })}

@@ -31,7 +31,7 @@ export default function Resume() {
           <h4 className="mb-0 fw-bold">Technical Skills</h4>
           <Row id="zbhavyai-row-skills" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
             <Col md="12">
-              <SkillsCard props={SkillsList} />
+              <SkillsCard skills={SkillsList} />
             </Col>
           </Row>
         </Container>
@@ -45,7 +45,7 @@ export default function Resume() {
             {ExperienceList?.map((exp, index) => {
               return (
                 <Col key={index}>
-                  <ExperienceCard key={exp["start_date"]} props={exp} />
+                  <ExperienceCard key={exp["start_date"]} {...exp} />
                 </Col>
               );
             })}
@@ -61,7 +61,7 @@ export default function Resume() {
             {CertificationList?.map((cert, index) => {
               return (
                 <Col key={index}>
-                  <CertificationCard key={cert["certification"]} props={cert} />
+                  <CertificationCard key={cert["certification"]} {...cert} />
                 </Col>
               );
             })}
@@ -77,7 +77,7 @@ export default function Resume() {
             {EducationList?.map((edu, index) => {
               return (
                 <Col key={index}>
-                  <EducationCard key={edu["university"]} props={edu} />
+                  <EducationCard key={edu["university"]} {...edu} />
                 </Col>
               );
             })}

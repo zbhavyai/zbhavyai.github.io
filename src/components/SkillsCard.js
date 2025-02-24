@@ -1,12 +1,13 @@
 import { faClipboard } from "@fortawesome/free-regular-svg-icons";
 import { faClipboardCheck } from "@fortawesome/free-solid-svg-icons/faClipboardCheck";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PropTypes from "prop-types";
 import React, { useState } from "react";
 import { Card, OverlayTrigger, Tooltip } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
 import { copyToClipboard, getSkills } from "../utils/clipboard";
 
-const SkillsCard = ({ props }) => {
+const SkillsCard = ({ skills }) => {
   const [copied, setCopied] = useState(false);
 
   return (
@@ -14,7 +15,7 @@ const SkillsCard = ({ props }) => {
       <Card.Body as="section" className="d-flex justify-content-between">
         <Table variant="dark" className="zbhavyai-skills-table">
           <tbody>
-            {props?.map((skillgroup, index) => {
+            {skills?.map((skillgroup, index) => {
               return (
                 <tr key={skillgroup["type"]}>
                   <td className="fw-bold text-capitalize" width={"15%"}>
@@ -34,7 +35,7 @@ const SkillsCard = ({ props }) => {
           className="zbhavyai-clipboard-icon"
           onClick={(e) => {
             e.stopPropagation();
-            copyToClipboard(props, getSkills);
+            copyToClipboard(skills, getSkills);
             setCopied(true);
             setTimeout(() => setCopied(false), 1000);
           }}
@@ -42,6 +43,15 @@ const SkillsCard = ({ props }) => {
       </OverlayTrigger>
     </Card>
   );
+};
+
+SkillsCard.propTypes = {
+  skills: PropTypes.arrayOf(
+    PropTypes.shape({
+      type: PropTypes.string.isRequired,
+      list: PropTypes.arrayOf(PropTypes.string).isRequired,
+    }),
+  ).isRequired,
 };
 
 export default SkillsCard;

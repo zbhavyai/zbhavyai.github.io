@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { Badge, Card, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { copyToClipboard, getExperienceResponsibilities } from "../utils/clipboard";
 
-const ExperienceCard = ({ props }) => {
+const ExperienceCard = (props) => {
   const [copied, setCopied] = useState(false);
 
   return (
@@ -63,15 +63,13 @@ const ExperienceCard = ({ props }) => {
 };
 
 ExperienceCard.propTypes = {
-  props: PropTypes.shape({
-    company: PropTypes.string.isRequired,
-    designation: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    start_date: PropTypes.string.isRequired,
-    end_date: PropTypes.string.isRequired,
-    tech_stack: PropTypes.arrayOf(PropTypes.string).isRequired,
-    responsibities: PropTypes.arrayOf(PropTypes.object).isRequired,
-  }).isRequired,
+  company: PropTypes.string.isRequired,
+  designation: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  start_date: PropTypes.string.isRequired,
+  end_date: PropTypes.string.isRequired,
+  tech_stack: PropTypes.arrayOf(PropTypes.string).isRequired,
+  responsibities: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default ExperienceCard;

@@ -5,7 +5,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const CertificationCard = ({ props }) => {
+const CertificationCard = (props) => {
   return (
     <Card as="article" className="zbhavyai-certification-card">
       <Card.Body as="section" className="d-flex justify-content-between">
@@ -27,12 +27,11 @@ const CertificationCard = ({ props }) => {
 };
 
 CertificationCard.propTypes = {
-  props: PropTypes.shape({
-    certification: PropTypes.string.isRequired,
-    organization: PropTypes.string.isRequired,
-    issue_date: PropTypes.string.isRequired,
-    expiry_date: PropTypes.string.isRequired,
-  }).isRequired,
+  certification: PropTypes.string.isRequired,
+  organization: PropTypes.string.isRequired,
+  issue_date: PropTypes.string.isRequired,
+  expiry_date: PropTypes.string.isRequired,
+  credential_url: PropTypes.string.isRequired,
 };
 
 export default CertificationCard;
