@@ -9,10 +9,6 @@
   },
   "[xml]": { "editor.defaultFormatter": "redhat.vscode-xml" },
   "[markdown]": { "editor.tabSize": 3 },
-  "prettier.jsxSingleQuote": false,
-  "prettier.singleQuote": false,
-  "prettier.printWidth": 200,
-  "prettier.tabWidth": 2,
-  "prettier.trailingComma": "all",
-  "prettier.useTabs": false
+  "prettier.useEditorConfig": true,
+  "prettier.requireConfig": true
 }
