@@ -13,7 +13,7 @@
   },
   {
     "type": "tools",
-    "list": ["Docker", "Git", "Linux", "Bash", "Maven", "Postman", "Grafana", "Prometheus", "Nginx", "Keycloak", "HashiCorp Vault", "CI/CD"]
+    "list": ["Docker", "Git", "Linux", "Ansible", "Bash", "Maven", "Postman", "Grafana", "Prometheus", "Nginx", "Keycloak", "HashiCorp Vault", "CI/CD"]
   },
   {
     "type": "cloud",

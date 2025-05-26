@@ -15,7 +15,7 @@
   },
   {
     "name": "Fedora Workstation Setup",
-    "summary": "Automated setup of Fedora Workstation with GNOME DE.",
+    "summary": "Automated set up of Fedora Workstation using Ansible",
     "description": "",
     "repository_link": "https://github.com/zbhavyai/fedora-setup",
     "deployment_link": "",
@@ -23,7 +23,7 @@
     "last_updated": 2024,
     "card_image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Fedora_logo.svg",
     "language": ["Bash"],
-    "tech_stack": [""],
+    "tech_stack": ["Ansible"],
     "hasBackend": true,
     "hasFrontend": false
   },
