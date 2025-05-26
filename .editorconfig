@@ -7,4 +7,12 @@ indent_size = 2
 indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
+
+[*java]
+max_line_length = 80
+
+[*.{js,jsx,ts,tsx,json,jsonc}]
 max_line_length = 200
+
+[Makefile]
+indent_style = tab
