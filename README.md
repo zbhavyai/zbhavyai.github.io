@@ -4,17 +4,11 @@ Visit my portfolio at [zbhavyai.github.io](https://zbhavyai.github.io).
 
 ## Get web app running
 
-and seeing it on [localhost:3010](http://localhost:3010/).
+and seeing it on [127.0.0.1:8080](http://127.0.0.1:8080/).
 
 ```shell
-npm install
-npm start
-```
-
-## Build and run the web app
-
-```shell
-make container
+make container-build
+make container-run
 ```
 
 ## Get resume's pdf
