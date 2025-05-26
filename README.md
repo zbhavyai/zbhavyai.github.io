@@ -16,6 +16,9 @@ npm start
 but first refer to [my texlive guide](https://github.com/zbhavyai/containers/tree/main/texlive) for setup details.
 
 ```shell
-cd ./src/assets/resume
-latex resume.tex
+make resume
+
+# or
+
+cd ./src/assets/resume && latex resume.tex && cd -
 ```
