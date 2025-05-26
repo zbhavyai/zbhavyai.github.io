@@ -1,24 +1,35 @@
-IMAGE_NAME := localhost/latex
+IMAGE_APP := localhost/zbhavyai
+IMAGE_LATEX := localhost/latex
 RESUME_DIR := ./src/assets/resume
 RESUME_TEX := resume.tex
 RESUME_PDF := resume.pdf
 
-.PHONY: check-image resume help
+.PHONY: check-latex resume container-build container-run help
 
-check-image:
-	@if ! podman image exists $(IMAGE_NAME); then \
-		echo "'$(IMAGE_NAME)' is not present in podman."; \
+check-latex:
+	@if ! podman image exists $(IMAGE_LATEX); then \
+		echo "'$(IMAGE_LATEX)' is not present in podman."; \
 		echo "Refer to https://github.com/zbhavyai/containers/tree/main/texlive for setup."; \
 		exit 1; \
 	fi
 
-resume: check-image
+resume: check-latex
 	@echo "Building resume PDF."
-	@podman container run --privileged --rm --volume "$(shell pwd):/data" -w /data/$(RESUME_DIR) --name latex $(IMAGE_NAME) latex $(RESUME_TEX) 1>/dev/null
+	@podman container run --privileged --rm --volume "$(shell pwd):/data" -w /data/$(RESUME_DIR) --name latex $(IMAGE_LATEX) latex $(RESUME_TEX) 1>/dev/null
 	@echo "Resume generated at '$(RESUME_DIR)/$(RESUME_PDF)'."
+
+container-build:
+	@echo "Building the project in container."
+	@podman build --tag $(IMAGE_APP):1.0.0 .
+
+container-run:
+	@echo "Running the project container."
+	@podman container run --rm --name zbhavyai --detach --publish 8080:80 $(IMAGE_APP):1.0.0
 
 help:
 	@echo "Available targets:"
-	@echo "  check-image    - Check if the podman image '$(IMAGE_NAME)' exists"
-	@echo "  resume         - Build the resume PDF using latex (requires podman image)"
-	@echo "  help           - Show this help message"
+	@echo "  check-latex     - Check if the podman image '$(IMAGE_LATEX)' exists"
+	@echo "  resume          - Build the resume PDF using latex (requires podman image)"
+	@echo "  container-build - Build the container"
+	@echo "  container-run   - Run the container"
+	@echo "  help            - Show this help message"

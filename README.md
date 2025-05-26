@@ -11,6 +11,12 @@ npm install
 npm start
 ```
 
+## Build and run the web app
+
+```shell
+make container
+```
+
 ## Get resume's pdf
 
 but first refer to [my texlive guide](https://github.com/zbhavyai/containers/tree/main/texlive) for setup details.
