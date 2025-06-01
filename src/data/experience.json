@@ -24,7 +24,7 @@
       "Domo Embedded",
       "Epic System Web Services"
     ],
-    "responsibities": [
+    "responsibilities": [
       {
         "keyword": "Data integration and visualization",
         "description": "Led the integration of various BI and data visualization tools, including Power BI, Tableau, Epic Systems, ServiceNow, Grafana, PowerPoint, and Domo, utilizing a centralized credential management for secure and seamless user access."
@@ -62,7 +62,7 @@
     "start_date": "Oct 2018",
     "end_date": "Dec 2019",
     "tech_stack": ["Linux", "Bash", "Ant scripts", "Oracle SQL"],
-    "responsibities": [
+    "responsibilities": [
       {
         "keyword": "Market Risk",
         "description": "Led the technical build for Murex Market Risk migration from version 2.36 to 3.41, utilizing ANT scripts, bash scripts, and configuration management for seamless transition."
@@ -76,7 +76,7 @@
     "start_date": "Aug 2017",
     "end_date": "Aug 2018",
     "tech_stack": ["Linux", "Bash", "Ant scripts", "Oracle SQL"],
-    "responsibities": [
+    "responsibilities": [
       {
         "keyword": "Market Risk",
         "description": "Built the Market Risk module within MX.3, adapting to diverse client and international entity requirements."
@@ -90,7 +90,7 @@
     "start_date": "Jun 2016",
     "end_date": "Aug 2017",
     "tech_stack": ["Linux", "Bash", "Ant scripts", "Oracle SQL"],
-    "responsibities": [
+    "responsibilities": [
       {
         "keyword": "Market Risk",
         "description": "Implemented a greenfield market risk framework, encompassing scenario generation, application, and computations like VaR, Stress Testing, and Back Testing."

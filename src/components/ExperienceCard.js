@@ -2,7 +2,7 @@ import { faClipboard } from "@fortawesome/free-regular-svg-icons";
 import { faClipboardCheck } from "@fortawesome/free-solid-svg-icons/faClipboardCheck";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Badge, Card, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { copyToClipboard, getExperienceResponsibilities } from "../utils/clipboard";
 
@@ -26,7 +26,7 @@ const ExperienceCard = (props) => {
       <Card.Body as="section" className="py-0">
         <Card.Text as="div" className="px-3">
           <ul className="zbhavyai-list-triangle">
-            {props["responsibities"]?.map((item, index) => {
+            {props["responsibilities"]?.map((item, index) => {
               return (
                 <li key={item["keyword"]} className="zbhavyai-list-triangle zbhavyai-text-heavy">
                   <span className="fw-bold">{item["keyword"]}</span>: <span dangerouslySetInnerHTML={{ __html: item["description"] }} />
@@ -69,7 +69,7 @@ ExperienceCard.propTypes = {
   start_date: PropTypes.string.isRequired,
   end_date: PropTypes.string.isRequired,
   tech_stack: PropTypes.arrayOf(PropTypes.string).isRequired,
-  responsibities: PropTypes.arrayOf(PropTypes.object).isRequired,
+  responsibilities: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default ExperienceCard;

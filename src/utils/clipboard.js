@@ -15,10 +15,10 @@ export function getSkills(data) {
 }
 
 export function getExperienceResponsibilities(data) {
-  if (!data["responsibities"] || data["responsibities"].length === 0) {
+  if (!data["responsibilities"] || data["responsibilities"].length === 0) {
     return "";
   } else {
-    return data["responsibities"]
+    return data["responsibilities"]
       ?.map((responsibility) => `-> ${responsibility["keyword"]}: ${responsibility["description"]}`)
       .join("\n")
       .concat("\n");
