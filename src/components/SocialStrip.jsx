@@ -1,7 +1,6 @@
 import { faDiscord, faFacebook, faGithub, faGoogle, faHackerrank, faInstagram, faLinkedinIn, faTelegram, faWhatsapp, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ProfileList from "../data/profiles.json";
