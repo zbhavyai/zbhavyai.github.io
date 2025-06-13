@@ -1,24 +1,18 @@
 # Hello!
 
-Visit my portfolio at [zbhavyai.github.io](https://zbhavyai.github.io).
+Visit my online portfolio at [https://zbhavyai.github.io](https://zbhavyai.github.io) or see my [resume here](https://drive.google.com/file/d/10WE6XlZXNCFWb5d9cwgmPr7qyMQWUAzk/view?usp=sharing).
 
-## Get web app running
+## Or, if you are developer like me,
 
-and seeing it on [127.0.0.1:8080](http://127.0.0.1:8080/).
+Build and run the web app and see it on [127.0.0.1:8080](http://127.0.0.1:8080/)
 
 ```shell
 make container-build
 make container-run
 ```
 
-## Get resume's pdf
-
-but first refer to [my texlive guide](https://github.com/zbhavyai/containers/tree/main/texlive) for setup details.
+Build the resume's PDF from LaTeX, after referring to [my texlive guide](https://github.com/zbhavyai/containers/tree/main/texlive) for setup details
 
 ```shell
 make resume
-
-# or
-
-cd ./src/assets/resume && latex resume.tex && cd -
 ```
