@@ -1,6 +1,6 @@
 IMAGE_APP := localhost/zbhavyai
 IMAGE_LATEX := localhost/latex
-RESUME_DIR := ./src/assets/resume
+RESUME_DIR := ./public/assets/resume
 RESUME_TEX := resume.tex
 RESUME_PDF := resume.pdf
 
