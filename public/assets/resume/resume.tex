@@ -25,6 +25,10 @@
 % Slightly tweak font spacing to prevent hyphenation after text justify
 \usepackage{microtype}
 
+% Color the heading
+\usepackage[dvipsnames]{xcolor}
+\definecolor{Accent}{HTML}{1A4F80}
+
 \microtypesetup{protrusion=true,expansion=true}
 
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
@@ -36,13 +40,13 @@
 
 %--------------------------------CUSTOM COMMANDS---------------------------------
 \newcommand{\lineunder} {
-    \vspace*{-8pt} \\
-    \hspace*{-18pt} \hrulefill \hspace*{-6pt} \\
+    \vspace*{0pt} \\
+    {\color{Accent}\hspace*{-18pt} \hrulefill \hspace*{-6pt}} \\
 }
 
 \newcommand{\header} [1] {
-    \vspace*{5pt}
-    {\hspace*{-18pt}\vspace*{6pt} \large\textsc{#1}}
+    \vspace*{3pt}
+    {\hspace*{-18pt} \textcolor{Accent}{\large\textbf{\textsc{#1}}}}
     \vspace*{-6pt} \lineunder
 }
 
