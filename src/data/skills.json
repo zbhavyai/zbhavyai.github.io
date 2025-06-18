@@ -1,26 +1,30 @@
 [
   {
     "type": "backend",
-    "list": ["Java", "Quarkus", "Spring Boot", "JPA", "Hiberate", "JUnit", "Python", "Flask"]
+    "list": ["Java", "Python", "Quarkus", "Spring Boot", "JPA", "Hiberate", "JUnit", "REST API", "Microservices"]
   },
   {
     "type": "frontend",
-    "list": ["JavaScript", "React.js", "Bootstrap", "HTML", "CSS"]
+    "list": ["React.js", "TypeScript", "JavaScript", "Bootstrap", "HTML", "CSS"]
   },
   {
     "type": "databases",
-    "list": ["SQL", "PostgreSQL", "MySQL", "Flyway"]
+    "list": ["PostgreSQL", "MySQL", "SQL", "Flyway"]
   },
   {
-    "type": "tools",
-    "list": ["Docker", "Git", "Linux", "Ansible", "Bash", "Maven", "Postman", "Grafana", "Prometheus", "Nginx", "Keycloak", "HashiCorp Vault", "CI/CD"]
+    "type": "devOps",
+    "list": ["Docker", "Git", "CI/CD", "Linux", "Ansible", "Bash", "Maven", "Prometheus", "Grafana", "Nginx"]
   },
   {
     "type": "cloud",
-    "list": ["Google Cloud", "CLI", "Compute Engine", "Cloud Run", "Cloud Functions", "Pub/Sub", "Artifact Registry", "Cloud Storage", "IAM"]
+    "list": ["GCP Certified", "Google Cloud", "GCloud CLI", "Cloud Run", "Functions", "Pub/Sub", "Artifact Registry", "Storage", "IAM"]
   },
   {
-    "type": "Other",
-    "list": ["REST API", "Event-Driven Architecture", "SSO", "OAuth2", "JWT", "Unit Testing", "Agile", "Scrum", "Kanban", "Jira", "LaTeX"]
+    "type": "security",
+    "list": ["Keycloak", "HashiCorp Vault", "SSO", "OIDC", "OAuth2", "JWT"]
+  },
+  {
+    "type": "workflow",
+    "list": ["GitHub", "Bitbucket", "Jira", "Agile", "Scrum", "Kanban"]
   }
 ]

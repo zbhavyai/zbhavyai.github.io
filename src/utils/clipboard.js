@@ -9,6 +9,7 @@ export function getSkills(data) {
   } else {
     return data
       ?.map((skillgroup) => `${skillgroup["list"] ? skillgroup["list"].join(", ") : ""}`)
+      .filter((group) => group !== "")
       .join(", ")
       .concat("\n");
   }
