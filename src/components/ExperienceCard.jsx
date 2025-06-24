@@ -29,7 +29,7 @@ const ExperienceCard = (props) => {
             {props["responsibilities"]?.map((item, index) => {
               return (
                 <li key={item["keyword"]} className="zbhavyai-list-triangle zbhavyai-text-heavy">
-                  <span className="fw-bold">{item["keyword"]}</span>: <span dangerouslySetInnerHTML={{ __html: item["description"] }} />
+                  <span dangerouslySetInnerHTML={{ __html: item["description"] }} />
                 </li>
               );
             })}

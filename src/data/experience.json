@@ -26,31 +26,24 @@
     ],
     "responsibilities": [
       {
-        "keyword": "Data integration and visualization",
         "description": "Led the integration of various BI and data visualization tools, including Power BI, Tableau, Epic Systems, ServiceNow, Grafana, PowerPoint, and Domo, utilizing a centralized credential management for secure and seamless user access."
       },
       {
-        "keyword": "Robust data management",
         "description": "Designed and implemented a comprehensive backup and restore system for PostgreSQL databases, Vault secrets, and media files."
       },
       {
-        "keyword": "Monitoring & alerting",
         "description": "Integrated real-time metrics from DBus into our core product using Micrometer, Prometheus, and Grafana, implementing notifications to alert users of critical system usage."
       },
       {
-        "keyword": "Grafana whitelabeling",
         "description": "Whitelabeled Grafana v7.5.15 source code, resulting in cost savings of approximately $100,000 by avoiding OEM licensing."
       },
       {
-        "keyword": "High-performance rendering",
         "description": "Leveraged Nvidia SLI Mosaic technology to enable 4K output and integrated Megapixel products for 8K content routing on LED panels with centralized control."
       },
       {
-        "keyword": "Enhanced security",
         "description": "Integrated HashiCorp's Vault to secure critical media sources, including RTSP streams, VNC/RDP connections, and BI platforms."
       },
       {
-        "keyword": "Agile development & collaboration",
         "description": "Contributed to agile development processes and authored technical documentation to facilitate collaboration with stakeholders."
       }
     ]
@@ -64,7 +57,6 @@
     "tech_stack": ["Linux", "Bash", "Ant scripts", "Oracle SQL"],
     "responsibilities": [
       {
-        "keyword": "Market Risk",
         "description": "Led the technical build for Murex Market Risk migration from version 2.36 to 3.41, utilizing ANT scripts, bash scripts, and configuration management for seamless transition."
       }
     ]
@@ -78,7 +70,6 @@
     "tech_stack": ["Linux", "Bash", "Ant scripts", "Oracle SQL"],
     "responsibilities": [
       {
-        "keyword": "Market Risk",
         "description": "Built the Market Risk module within MX.3, adapting to diverse client and international entity requirements."
       }
     ]
@@ -92,7 +83,6 @@
     "tech_stack": ["Linux", "Bash", "Ant scripts", "Oracle SQL"],
     "responsibilities": [
       {
-        "keyword": "Market Risk",
         "description": "Implemented a greenfield market risk framework, encompassing scenario generation, application, and computations like VaR, Stress Testing, and Back Testing."
       }
     ]
