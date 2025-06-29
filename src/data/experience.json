@@ -1,63 +1,71 @@
 [
   {
     "company": "Userful Corporation",
-    "designation": "Software Developer",
+    "designation": "Tech Lead",
     "location": "Calgary, AB",
     "start_date": "Apr 2022",
     "end_date": "present",
     "tech_stack": [
-      "Quarkus",
       "Java",
+      "Quarkus",
       "Python",
       "React.js",
-      "Javascript",
+      "TypeScript",
       "PostgreSQL",
       "Linux",
       "Bash",
-      "Vault KV2",
       "OAuth2",
       "JWT",
+      "Docker",
+      "Nginx",
       "Grafana",
       "Prometheus",
-      "Power BI Embedded",
-      "Tableau Embedded",
-      "Domo Embedded",
-      "Epic System Web Services"
+      "IoT",
+      "LLM",
+      "Ollama",
+      "HuggingFace",
+      "LangChain"
     ],
     "responsibilities": [
       {
-        "description": "Led the integration of various BI and data visualization tools, including Power BI, Tableau, Epic Systems, ServiceNow, Grafana, PowerPoint, and Domo, utilizing a centralized credential management for secure and seamless user access."
+        "description": "Currently leading the development of <strong>edge-based AI analysis</strong> using LangChain and Vision-Language Models on <strong>Azure IoT Edge</strong> to automate dashboard and data <strong>analysis and incident reporting</strong>."
       },
       {
-        "description": "Designed and implemented a comprehensive backup and restore system for PostgreSQL databases, Vault secrets, and media files."
+        "description": "Architected a unified credential management system integrating tools like Power BI, Tableau, ServiceNow, etc, <strong>eliminating 90% of manual logins</strong> across 100+ sources per site. Developed API-driven dashboard selection and configuration interfaces, enabling <strong>zero-touch visualizations with 24/7 uptime</strong>."
       },
       {
-        "description": "Integrated real-time metrics from DBus into our core product using Micrometer, Prometheus, and Grafana, implementing notifications to alert users of critical system usage."
+        "description": "Engineered <strong>system observability</strong> (using DBus, Micrometer, Grafana, Prometheus) and dynamic alerting to users (via in-app notifications and emails), <strong>reducing mean time to detection</strong> by 80%."
       },
       {
-        "description": "Whitelabeled Grafana v7.5.15 source code, resulting in cost savings of approximately $100,000 by avoiding OEM licensing."
+        "description": "Achieved <strong>$100,000 in annual savings</strong> by customizing and whitelabeling Grafana v7.5.15 source code, eliminating OEM licensing costs."
       },
       {
-        "description": "Leveraged Nvidia SLI Mosaic technology to enable 4K output and integrated Megapixel products for 8K content routing on LED panels with centralized control."
+        "description": "Integrated HashiCorp Vault to securely manage credentials and tokens for RTSP streams, VNC/RDP sessions, and BI tools. <strong>Automated secret injection into runtime environments</strong>, eliminating manual handling and <strong>reducing operational risk</string>."
       },
       {
-        "description": "Integrated HashiCorp's Vault to secure critical media sources, including RTSP streams, VNC/RDP connections, and BI platforms."
+        "description": "Designed and maintained resilient <strong>disaster recovery system</strong>, automating daily backups and on-demand restoration for PostgreSQL databases, Vault secrets, and gigabytes of media files achieving RTO of less than 5 minutes."
       },
       {
-        "description": "Contributed to agile development processes and authored technical documentation to facilitate collaboration with stakeholders."
+        "description": "Delivered ultra-low-latency, high-resolution video playback across synchronized LED panels by integrating <strong>NVIDIA SLI Mosaic</strong> and <strong>Megapixel 8K routing</strong>. Achieved zero frame loss at scale with <strong>centralized orchestration</strong>."
+      },
+      {
+        "description": "Drove Agile delivery cycles through sprint planning, backlog refinement, and peer code reviews. <strong>Mentored junior developers</strong> via onboarding and technical guidance. Authored documentation adopted across teams as the internal standard."
       }
     ]
   },
   {
-    "company": "Luxoft",
+    "company": "DXC Technology",
     "designation": "Consultant",
     "location": "Singapore",
     "start_date": "Oct 2018",
     "end_date": "Dec 2019",
-    "tech_stack": ["Linux", "Bash", "Ant scripts", "Oracle SQL"],
+    "tech_stack": ["Linux", "Bash", "SQL", "Apache Ant"],
     "responsibilities": [
       {
-        "description": "Led the technical build for Murex Market Risk migration from version 2.36 to 3.41, utilizing ANT scripts, bash scripts, and configuration management for seamless transition."
+        "description": "Spearheaded the end-to-end technical migration of Murex Market Risk from v2.36 to MX.3 v3.41, <strong>leveraging Ant automation</strong>, <strong>shell scripting</strong>, and granular configuration control to ensure a zero-defect transition across SIT1 and SIT2 environments."
+      },
+      {
+        "description": "Engineered custom bash scripts and SQL procedures to optimize the EOD risk processing pipeline, <strong>enhancing stability and reducing runtime by 15%</strong>. Acted as the primary technical liaison with Front Office to resolve VaR model and scenario simulation discrepancies."
       }
     ]
   },
@@ -67,10 +75,13 @@
     "location": "Singapore",
     "start_date": "Aug 2017",
     "end_date": "Aug 2018",
-    "tech_stack": ["Linux", "Bash", "Ant scripts", "Oracle SQL"],
+    "tech_stack": ["Linux", "Bash", "SQL", "Apache Ant"],
     "responsibilities": [
       {
-        "description": "Built the Market Risk module within MX.3, adapting to diverse client and international entity requirements."
+        "description": "Developed and maintained Ant scripts for automated deployment and configuration management, <strong>ensuring consistency across environments</strong>."
+      },
+      {
+        "description": "Delivered the technical build of the Market Risk module in MX.3, automating report reconciliation using SQL scripts <strong>reducing manual QA by ~30%</strong> and accelerating go-live readiness."
       }
     ]
   },
@@ -80,10 +91,13 @@
     "location": "Gurugram, IN",
     "start_date": "Jun 2016",
     "end_date": "Aug 2017",
-    "tech_stack": ["Linux", "Bash", "Ant scripts", "Oracle SQL"],
+    "tech_stack": ["Linux", "Bash", "SQL", "Apache Ant"],
     "responsibilities": [
       {
-        "description": "Implemented a greenfield market risk framework, encompassing scenario generation, application, and computations like VaR, Stress Testing, and Back Testing."
+        "description": "Designed and deployed market and credit risk configurations in MX.3, including VaR scenario modeling and Limit Controller setups, <strong>streamlining risk visibility</strong>."
+      },
+      {
+        "description": "Authored market risk scenario generation and application <strong>technical build documents</strong>, enabling faster handoffs and shortening deployment cycles."
       }
     ]
   }

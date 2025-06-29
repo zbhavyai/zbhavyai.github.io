@@ -20,8 +20,11 @@ export function getExperienceResponsibilities(data) {
     return "";
   } else {
     return data["responsibilities"]
-      ?.map((responsibility) => `-> ${responsibility["keyword"]}: ${responsibility["description"]}`)
-      .join("\n")
+      ?.map((responsibility) => {
+        const plainDescription = responsibility["description"].replace(/<\/?[^>]+(>|$)/g, "");
+        return `- ${plainDescription}`;
+      })
+      .join("\n\n")
       .concat("\n");
   }
 }

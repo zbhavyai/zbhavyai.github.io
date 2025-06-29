@@ -213,6 +213,10 @@ li.zbhavyai-list-triangle:before {
   text-align: justify;
 }
 
+.zbhavyai-text-heavy > span > strong {
+  font-weight: bold;
+}
+
 .zbhavyai-certificate-link {
   text-decoration: none;
   color: var(--theme-text);
