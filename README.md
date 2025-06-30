@@ -11,7 +11,7 @@ make container-build
 make container-run
 ```
 
-Build the resume's PDF from LaTeX, after referring to [my texlive guide](https://github.com/zbhavyai/containers/tree/main/texlive) for setup details
+Build the resume's PDF using XeLaTeX, after referring to [my texlive guide](https://github.com/zbhavyai/containers/tree/main/texlive) for setup details
 
 ```shell
 make resume

@@ -13,7 +13,21 @@ RESUME_PDF := resume.pdf
 		exit 1; \
 	fi
 
-resume: .check-latex
+.fonts:
+	@if [ ! -d "$(RESUME_DIR)/fonts" ]; then \
+		if ! command -v fonttools >/dev/null 2>&1; then \
+			echo "'fonttools' is not installed. Please run:"; \
+			echo "  pip install fonttools"; \
+			exit 1; \
+		fi; \
+		mkdir -p $(RESUME_DIR)/fonts; \
+		cp /usr/share/fonts/adwaita-sans-fonts/*ttf $(RESUME_DIR)/fonts/; \
+		fonttools varLib.mutator -o $(RESUME_DIR)/fonts/AdwaitaSans-Light.ttf $(RESUME_DIR)/fonts/AdwaitaSans-Regular.ttf wght=300; \
+		fonttools varLib.mutator -o $(RESUME_DIR)/fonts/AdwaitaSans-Bold.ttf $(RESUME_DIR)/fonts/AdwaitaSans-Regular.ttf wght=500; \
+		fonttools varLib.mutator -o $(RESUME_DIR)/fonts/AdwaitaSans-BoldItalic.ttf $(RESUME_DIR)/fonts/AdwaitaSans-Italic.ttf wght=500; \
+	fi
+
+resume: .check-latex .fonts
 	@echo "Building resume PDF."
 	@podman container run --privileged --rm --volume "$(shell pwd):/data" -w /data/$(RESUME_DIR) --name latex $(IMAGE_LATEX) latex $(RESUME_TEX) 1>/dev/null
 	@echo "Resume generated at '$(RESUME_DIR)/$(RESUME_PDF)'."
