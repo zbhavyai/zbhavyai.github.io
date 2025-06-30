@@ -9,7 +9,7 @@
 %--------------------------------------------------------------------------------
 % Page layout and margins
 \usepackage{fullpage}                                                   % Reasonable default margins
-\usepackage[left=0.5in, right=0.5in, bottom=0.3in, top=0.6in]{geometry} % Custom margin setup
+\usepackage[left=0.5in, right=0.5in, bottom=0.3in, top=0.3in]{geometry} % Custom margin setup
 \pagestyle{empty}                                                       % Suppress page numbers
 
 %--------------------------------------------------------------------------------
@@ -56,62 +56,56 @@
 
 
 %--------------------------------CUSTOM COMMANDS---------------------------------
-\newcommand{\lineunder} {
-    \vspace*{0pt} \\
-    {\color{Accent}\hspace*{-18pt} \hrulefill \hspace*{-6pt}} \\
-}
-
 \newcommand{\header} [1] {
-    \vspace*{3pt}
+    \vspace{6pt}
     {\hspace*{-18pt} \textcolor{Accent}{\large\textbf{\MakeUppercase{#1}}}}
-    \vspace*{-6pt} \lineunder
+    \vspace{-7pt} \\
+    {\color{Accent}\hspace*{-18pt} \hrulefill \hspace*{-7pt}}
+    \vspace{3pt}
 }
 
 \newcommand{\resumeHeadingExperience}[4]{
     \textbf{#1} \hfill {#2}\\
     {#3} \hfill {#4}\\
-    \vspace{-3mm}
+    \vspace{-7pt}
 }
 
 \newcommand{\resumeItemExperience}[1]{
   \item{
     \begin{justify}
-    \setlength{\rightskip}{0.15in}{#1 \vspace{-2pt}}
-    % {\fontsize{9pt}{11pt}\selectfont \setlength{\rightskip}{0.15in}{#1 \vspace{-2pt}}}
+    \setlength{\rightskip}{0.15in}{{\fontsize{9.0pt}{11pt}\selectfont #1} \vspace{-2pt}}
     \end{justify}
   }
 }
 
 \newcommand{\resumeHeadingProject}[3]{
     {\textbf{#1}} (\href{#2}{\uline{source code}})
-    \vspace{-2mm}
+    \vspace{-5pt}
 }
 
 \newcommand{\resumeItemProject}[1]{
   \item{
     \begin{justify}
-    \setlength{\rightskip}{0.15in} {#1 \vspace{-4pt}}
+    \setlength{\rightskip}{0.15in} {{\fontsize{9.0pt}{11pt}\selectfont #1} \vspace{-4pt}}
     \end{justify}
   }
 }
 
 \newcommand{\resumeHeadingEducation}[4]{
     \textbf{#1} \hfill {#2}\\
-    {#3} \hfill {#4}\\
-    \vspace{2mm}
+    {\fontsize{9.0pt}{11pt}\selectfont {#3}} \hfill {#4}\\
+    \vspace{5pt}
 }
 
 %----------------------------------RESUME START----------------------------------
 \begin{document}
-\vspace*{-40pt}
 
 
 %------------------------------------HEADING-------------------------------------
-\vspace*{-10pt}
 \begin{center}
    {\defaultserif {\Huge\bfseries BHAVYAI GUPTA}}
 \end{center}
-\vspace{-15pt}
+\vspace{-10pt}
 
 \begin{center}
     \href{mailto:zbhavyai@gmail.com}{\uline{zbhavyai@gmail.com}} \quad|\quad
@@ -119,22 +113,22 @@
     \href{https://linkedin.com/in/zbhavyai}{\uline{linkedin.com/in/zbhavyai}} \quad|\quad
     \href{https://zbhavyai.github.io}{\uline{Portfolio Website}}
 \end{center}
-\vspace{5pt}
 
 
 %------------------------------------SUMMARY-------------------------------------
 \header{Professional Summary}
 
-\vspace{-8pt}
+\vspace{-9pt}
 \begin{justify}
-GCP-certified Backend Software Engineer with 6+ years of experience building scalable microservices and secure cloud-native platforms using Java, Quarkus, Spring Boot, and GCP. Proven track record in automating infrastructure, reducing operational costs, and leading cross-functional teams. Strong focus on API design, observability, and AI-driven backend automation in enterprise environments.
+{\fontsize{9.0pt}{11pt}\selectfont GCP-certified Backend Software Engineer with 6+ years of experience building scalable microservices and secure cloud-native platforms using Java, Quarkus, Spring Boot, and GCP. Proven track record in automating infrastructure, reducing operational costs, and leading cross-functional teams. Strong focus on API design, observability, and AI-driven backend automation in enterprise environments.}
 \end{justify}
+\vspace{-4pt}
 
 
 %--------------------------------TECHNICAL SKILLS--------------------------------
 \header{Technical Skills}
 
-\vspace{3pt}
+{\fontsize{9.0pt}{11pt}\selectfont
 \begin{tabular}{ l l }
     \textbf{Backend}    & Java, Python, Quarkus, Spring Boot, JPA, Hibernate, JUnit, REST API, Microservices    \\
     \textbf{Frontend}   & React.js, TypeScript, JavaScript, Bootstrap, HTML, CSS                                \\
@@ -144,14 +138,13 @@ GCP-certified Backend Software Engineer with 6+ years of experience building sca
     \textbf{Security}   & Keycloak, HashiCorp Vault, SSO, OIDC, OAuth2, JWT                                     \\
     \textbf{Workflow}   & GitHub, Bitbucket, Jira, Agile, Scrum, Kanban                                         \\
 \end{tabular}
-\vspace{8pt}
-
+}
 
 %-----------------------------------EXPERIENCE-----------------------------------
 \header{Relevant Work Experience}
 
 \resumeHeadingExperience {Userful Corporation} {Calgary, Canada} {Tech Lead} {Apr 2022 - Present}
-\vspace{4pt}
+
 \begin{itemize} \itemsep 2pt
     \resumeItemExperience {Currently the leading development of \textbf{edge-based AI analysis} using LangChain and Vision-Language Models on \textbf{Azure IoT Edge} to automate dashboard and data \textbf{analysis and incident reporting}.}
     \resumeItemExperience {Architected a unified credential management system for integrating tools like Power BI, Tableau, ServiceNow, etc, \textbf{eliminating 90\% of manual logins} across 100+ sources per site. Developed API-driven dashboard selection and configuration interfaces, enabling \textbf{zero-touch visualizations with 24/7 uptime}.}
@@ -160,7 +153,6 @@ GCP-certified Backend Software Engineer with 6+ years of experience building sca
     \resumeItemExperience {Designed and maintained resilient \textbf{disaster recovery system}, automating daily backups and on-demand restoration for PostgreSQL databases, Vault secrets, and gigabytes of media files.}
     \resumeItemExperience {Drove Agile delivery cycles through sprint planning, backlog refinement, and peer code reviews. \textbf{Mentored junior developers} via onboarding and technical guidance. Authored documentation adopted across teams as the internal standard.}
 \end{itemize}
-\vspace{5pt}
 
 
 %------------------------------------PROJECTS------------------------------------
@@ -184,14 +176,14 @@ GCP-certified Backend Software Engineer with 6+ years of experience building sca
     \resumeItemProject {Automated my Fedora Workstation setup using Ansible, drastically \textbf{reducing manual configuration time} from hours to minutes.}
     \resumeItemProject {Configured essential packages, system settings, dev tools, and GNOME shell customizations, demonstrating expertise in \textbf{infrastructure as code} and \textbf{system automation}.}
 \end{itemize}
-\vspace{5pt}
+\vspace{3pt}
 
 %---------------------------------CERTIFICATIONS---------------------------------
 \header{Certifications}
 
 \textbf{Associate Cloud Engineer} \hfill Nov 2024 - Nov 2027\\
-\href{https://www.credly.com/badges/52bb681c-f535-47e7-b669-78e9b4d7c4a0}{\uline{Google Cloud Certified}}
-\vspace{10pt}
+{\fontsize{9.0pt}{11pt}\selectfont \href{https://www.credly.com/badges/52bb681c-f535-47e7-b669-78e9b4d7c4a0}{\uline{Google Cloud Certified}}}
+\vspace{4pt}
 
 
 %-----------------------------------EDUCATION------------------------------------
