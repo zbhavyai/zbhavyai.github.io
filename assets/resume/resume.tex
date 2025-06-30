@@ -6,36 +6,63 @@
 
 \documentclass[a4paper]{article}
 
-\usepackage{fullpage}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{textcomp}
-\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
-\usepackage{ulem}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\textheight=10in
-\pagestyle{empty}
-\raggedright
-\usepackage[left=0.8in,right=0.8in,bottom=0.3in,top=0.8in]{geometry}
+%--------------------------------------------------------------------------------
+% Input and font encoding (required for pdflatex)
+% \usepackage[utf8]{inputenc}                                           % Allow UTF-8 characters in the source
+% \usepackage[T1]{fontenc}                                              % Better font encoding for PDF output
 
-% Support text justify
-\usepackage{ragged2e}
+%--------------------------------------------------------------------------------
+% Page layout and margins
+\usepackage{fullpage}                                                   % Reasonable default margins
+\usepackage[left=0.5in, right=0.5in, bottom=0.3in, top=0.6in]{geometry} % Custom margin setup
+\pagestyle{empty}                                                       % Suppress page numbers
 
-% Slightly tweak font spacing to prevent hyphenation after text justify
-\usepackage{microtype}
+%--------------------------------------------------------------------------------
+% Mathematics and symbols
+\usepackage{amsmath}                                                    % Core math environments and symbols
+\usepackage{amssymb}                                                    % Extra math symbols
+\usepackage{textcomp}                                                   % Extra text symbols (like \textdegree)
 
-% Color the heading
-\usepackage[dvipsnames]{xcolor}
-\definecolor{Accent}{HTML}{1A4F80}
+%--------------------------------------------------------------------------------
+% Typography and spacing
+\usepackage[protrusion=true, expansion=false]{microtype}                % Fine-tune font spacing
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
 
-\microtypesetup{protrusion=true,expansion=true}
+\usepackage{fontspec}
+\setmainfont{AdwaitaSans}[
+    Path=./fonts/,
+    Extension = .ttf,
+    UprightFont=*-Light,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+    ]
 
-\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+\newfontfamily\defaultserif{Latin Modern Roman}
 
-% Generate pdf is ATS parsable
-\input{glyphtounicode}
-\pdfgentounicode=1
+%--------------------------------------------------------------------------------
+% Text formatting and justification
+\usepackage{ragged2e}                                                   % Enable text justification
+\usepackage{ulem}                                                       % Allow underlining, strike-through, etc.
+\raggedright                                                            % Left-align text
+
+%--------------------------------------------------------------------------------
+% Hyperlinks and color
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}                   % Enable and color hyperlinks
+\usepackage[dvipsnames]{xcolor}                                         % Extended color support
+\definecolor{Accent}{HTML}{1A4F80}                                      % Define a custom accent color
+
+%--------------------------------------------------------------------------------
+% Custom symbols and bullets
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }                  % Define a custom bullet
+
+%--------------------------------------------------------------------------------
+% PDF accessibility
+% \input{glyphtounicode}                                                % Map glyphs to Unicode for screen readers
+% \pdfgentounicode=1                                                    % Make PDF text selectable/searchable
 
 
 %--------------------------------CUSTOM COMMANDS---------------------------------
@@ -46,26 +73,27 @@
 
 \newcommand{\header} [1] {
     \vspace*{3pt}
-    {\hspace*{-18pt} \textcolor{Accent}{\large\textbf{\textsc{#1}}}}
+    {\hspace*{-18pt} \textcolor{Accent}{\large\textbf{\MakeUppercase{#1}}}}
     \vspace*{-6pt} \lineunder
 }
 
 \newcommand{\resumeHeadingExperience}[4]{
     \textbf{#1} \hfill {#2}\\
-    \textit{#3} \hfill {#4}\\
+    {#3} \hfill {#4}\\
     \vspace{-3mm}
 }
 
-\newcommand{\resumeItemExperience}[2]{
+\newcommand{\resumeItemExperience}[1]{
   \item{
     \begin{justify}
-    \setlength{\rightskip}{0.15in} \textbf{#1}{: #2 \vspace{-2pt}}
+    \setlength{\rightskip}{0.15in}{#1 \vspace{-2pt}}
+    % {\fontsize{9pt}{11pt}\selectfont \setlength{\rightskip}{0.15in}{#1 \vspace{-2pt}}}
     \end{justify}
   }
 }
 
 \newcommand{\resumeHeadingProject}[3]{
-    {\textbf{#1}} $|$ \textit{#2} % \hfill {#3}
+    {\textbf{#1}} (\href{#2}{\uline{source code}})
     \vspace{-2mm}
 }
 
@@ -91,93 +119,89 @@
 %------------------------------------HEADING-------------------------------------
 \vspace*{-10pt}
 \begin{center}
-    \textbf{\Huge \scshape {Bhavyai Gupta}}\\
+   {\defaultserif {\Huge\bfseries BHAVYAI GUPTA}}
 \end{center}
-\vspace{-10pt}
+\vspace{-15pt}
 
 \begin{center}
     \href{mailto:zbhavyai@gmail.com}{\uline{zbhavyai@gmail.com}} \quad|\quad
-    \href{tel:+15875756982}{\uline{+1(587)575-6982}} \quad|\quad
+    \href{tel:+15875756982}{\uline{+1 (587) 575-6982}} \quad|\quad
     \href{https://linkedin.com/in/zbhavyai}{\uline{linkedin.com/in/zbhavyai}} \quad|\quad
     \href{https://zbhavyai.github.io}{\uline{Portfolio Website}}
 \end{center}
 \vspace{5pt}
 
 
+%------------------------------------SUMMARY-------------------------------------
+\header{Professional Summary}
+
+\vspace{-8pt}
+\begin{justify}
+GCP-certified Backend Software Engineer with 6+ years of experience building scalable microservices and secure cloud-native platforms using Java, Quarkus, Spring Boot, and GCP. Proven track record in automating infrastructure, reducing operational costs, and leading cross-functional teams. Strong focus on API design, observability, and AI-driven backend automation in enterprise environments.
+\end{justify}
+
+
 %--------------------------------TECHNICAL SKILLS--------------------------------
 \header{Technical Skills}
 
-\vspace{2pt}
+\vspace{3pt}
 \begin{tabular}{ l l }
     \textbf{Backend}    & Java, Python, Quarkus, Spring Boot, JPA, Hibernate, JUnit, REST API, Microservices    \\
-    \textbf{Frontend}   & React.js, TypeScript, JavaScript, HTML, CSS, Bootstrap                                \\
+    \textbf{Frontend}   & React.js, TypeScript, JavaScript, Bootstrap, HTML, CSS                                \\
     \textbf{Databases}  & PostgreSQL, MySQL, SQL, Flyway                                                        \\
     \textbf{DevOps}     & Docker, Git, CI/CD, Linux, Ansible, Bash, Maven, Prometheus, Grafana, Nginx           \\
-    \textbf{Cloud}      & GCP Certified, Google Cloud (Compute Engine, Cloud Run, Functions, Pub/Sub, Storage)  \\
-    \textbf{Security}   & HashiCorp Vault, Keycloak, SSO, OIDC, OAuth2, JWT                                     \\
+    \textbf{Cloud}      & GCP Certified, Google Cloud, Compute Engine, Cloud Run, Functions, Pub/Sub, Storage   \\
+    \textbf{Security}   & Keycloak, HashiCorp Vault, SSO, OIDC, OAuth2, JWT                                     \\
     \textbf{Workflow}   & GitHub, Bitbucket, Jira, Agile, Scrum, Kanban                                         \\
 \end{tabular}
-\vspace{2mm}
+\vspace{8pt}
 
 
 %-----------------------------------EXPERIENCE-----------------------------------
-\header{Work Experience}
+\header{Relevant Work Experience}
 
-\resumeHeadingExperience {Userful Corporation} {Calgary, Canada} {Software Developer} {Apr 2022 - Present}
-\begin{itemize} \itemsep 1pt
-    \resumeItemExperience {Data integration and visualization} {Led the integration of various BI and data visualization tools, including Power BI, Tableau, Epic Systems, ServiceNow, Grafana, PowerPoint, and Domo, utilizing a centralized credential management for secure and seamless user access.}
-    \resumeItemExperience {Robust data management} {Designed and implemented a comprehensive backup and restore system for PostgreSQL databases, Vault secrets, and media files.}
-    \resumeItemExperience {Monitoring \& alerting} {Integrated real-time metrics from DBus into our core product using Micrometer, Prometheus, and Grafana, implementing notifications to alert users of critical system usage.}
-    \resumeItemExperience {Grafana whitelabeling} {Whitelabeled Grafana v7.5.15 source code, resulting in cost savings of approximately \$100,000 by avoiding OEM licensing.}
-    \resumeItemExperience {High-performance rendering} {Leveraged Nvidia SLI Mosaic technology to enable 4K output and integrated Megapixel products for 8K content routing on LED panels with centralized control.}
-    \resumeItemExperience {Enhanced security} {Integrated HashiCorp's Vault to secure critical media sources, including RTSP streams, VNC/RDP connections, and BI platforms.}
+\resumeHeadingExperience {Userful Corporation} {Calgary, Canada} {Tech Lead} {Apr 2022 - Present}
+\vspace{4pt}
+\begin{itemize} \itemsep 2pt
+    \resumeItemExperience {Currently the leading development of \textbf{edge-based AI analysis} using LangChain and Vision-Language Models on \textbf{Azure IoT Edge} to automate dashboard and data \textbf{analysis and incident reporting}.}
+    \resumeItemExperience {Architected a unified credential management system for integrating tools like Power BI, Tableau, ServiceNow, etc, \textbf{eliminating 90\% of manual logins} across 100+ sources per site. Developed API-driven dashboard selection and configuration interfaces, enabling \textbf{zero-touch visualizations with 24/7 uptime}.}
+    \resumeItemExperience {Engineered \textbf{system observability} (using DBus, Micrometer, Grafana, Prometheus) and dynamic alerting to users (via in-app notifications and emails), \textbf{reducing mean time to detection} by 80\%.}
+    \resumeItemExperience {Achieved \textbf{\$100,000 in annual savings} by customizing and whitelabeling Grafana v7.5.15 source code, eliminating OEM licensing costs.}
+    \resumeItemExperience {Designed and maintained resilient \textbf{disaster recovery system}, automating daily backups and on-demand restoration for PostgreSQL databases, Vault secrets, and gigabytes of media files.}
+    \resumeItemExperience {Drove Agile delivery cycles through sprint planning, backlog refinement, and peer code reviews. \textbf{Mentored junior developers} via onboarding and technical guidance. Authored documentation adopted across teams as the internal standard.}
 \end{itemize}
-
-\resumeHeadingExperience {Luxoft} {Singapore} {Consultant} {Oct 2018 - Dec 2019}
-\begin{itemize} \itemsep 1pt
-    \resumeItemExperience{Market Risk} {Led the technical build for Murex Market Risk migration from version 2.36 to 3.41, utilizing ANT scripts, bash scripts, and configuration management for seamless transition.}
-\end{itemize}
-
-\resumeHeadingExperience {Capgemini} {Singapore} {Associate Consultant} {Aug 2017 - Aug 2018}
-\begin{itemize} \itemsep 1pt
-    \resumeItemExperience{Market Risk} {Built the Market Risk module within MX.3, adapting to diverse client and international entity requirements.}
-\end{itemize}
-
-\resumeHeadingExperience {Capgemini} {Gurugram} {Associate Consultant} {Jun 2016 - Aug 2017}
-\begin{itemize} \itemsep 1pt
-    \resumeItemExperience{Market Risk} {Implemented a greenfield market risk framework, encompassing scenario generation, application, and computations like VaR, Stress Testing, and Back Testing.}
-\end{itemize}
+\vspace{5pt}
 
 
 %------------------------------------PROJECTS------------------------------------
 \header{Projects}
 
-\resumeHeadingProject {BudLib} {Spring Boot, React.js, MySQL} {Jan 2022 - Apr 2022}
+\resumeHeadingProject {BudLib} {https://github.com/budlib} {Jan 2022 - Apr 2022}
 \begin{itemize}
-    \resumeItemProject {Full-stack web application developed and used by Calgary Waldorf School for library management.}
+    \resumeItemProject {Built a full-stack library management system using \textbf{Spring Boot, React, and MySQL}, replacing legacy software and streamlining book inventory and loan workflows.}
+    \resumeItemProject {Delivered a production-ready system with a \textbf{RESTful backend, user authentication, and dynamic frontend views}. Still actively used by the school librarian.}
+
 \end{itemize}
 
-\resumeHeadingProject {IntelliNurse} {Spring Boot, React.js, MySQL} {Feb 2022 - Mar 2022}
+\resumeHeadingProject {Inspirational Morning} {https://github.com/zbhavyai/inspirational-morning} {Jun 2024 - Jun 2024}
 \begin{itemize}
-    \resumeItemProject {Full-stack web application for Registered Nurses to post articles and surveys, achieving 2nd place in a hackathon.}
+    \resumeItemProject {Designed and deployed a \textbf{serverless} Java application on \textbf{Google Cloud Run Functions} to send automated daily inspirational quotes to Google Chat using ZenQuotes API and \textbf{event-driven Pub/Sub triggers}.}
+    \resumeItemProject {Implemented cloud-based scheduling with \textbf{Google Cloud Scheduler} and dynamic timezone support, enabling configurable weekday message delivery for Google Workspace users.}
 \end{itemize}
 
-\resumeHeadingProject {Inspirational Morning} {Quarkus, Google Cloud functions, Google Chat webhook} {Jun 2024 - Jun 2024}
+\resumeHeadingProject {Fedora Setup} {https://github.com/zbhavyai/fedora-setup} {May 2025 - May 2025}
 \begin{itemize}
-    \resumeItemProject {Serverless function using Quarkus and Google Cloud to send daily inspirational quotes to Google Chat.}
+    \resumeItemProject {Automated my Fedora Workstation setup using Ansible, drastically \textbf{reducing manual configuration time} from hours to minutes.}
+    \resumeItemProject {Configured essential packages, system settings, dev tools, and GNOME shell customizations, demonstrating expertise in \textbf{infrastructure as code} and \textbf{system automation}.}
 \end{itemize}
-
-\resumeHeadingProject {Fedora Setup} {Ansible} {May 2025 - May 2025}
-\begin{itemize}
-    \resumeItemProject {Automated set up of Fedora Workstation using Ansible, including installation of essential packages, configuration of various system and application settings, and customization of the GNOME shell.}
-\end{itemize}
-
+\vspace{5pt}
 
 %---------------------------------CERTIFICATIONS---------------------------------
 \header{Certifications}
+
 \textbf{Associate Cloud Engineer} \hfill Nov 2024 - Nov 2027\\
 \href{https://www.credly.com/badges/52bb681c-f535-47e7-b669-78e9b4d7c4a0}{\uline{Google Cloud Certified}}
-\vspace{2mm}
+\vspace{10pt}
 
 
 %-----------------------------------EDUCATION------------------------------------
@@ -188,5 +212,4 @@
 
 
 %-----------------------------------RESUME END-----------------------------------
-\
 \end{document}
