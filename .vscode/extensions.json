@@ -1,3 +1,13 @@
 {
-  "recommendations": ["sonarsource.sonarlint-vscode", "esbenp.prettier-vscode"]
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "mkhl.shfmt",
+    "redhat.vscode-xml",
+    "redhat.vscode-yaml",
+    "sonarsource.sonarlint-vscode",
+    "visualstudioexptteam.intellicode-api-usage-examples",
+    "visualstudioexptteam.vscodeintellicode"
+  ]
 }
