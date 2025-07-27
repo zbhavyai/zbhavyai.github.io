@@ -4,9 +4,9 @@ RESUME_DIR := ./public/assets/resume
 RESUME_TEX := resume.tex
 RESUME_PDF := resume.pdf
 
-.PHONY: resume container-build container-run help
+.PHONY: check resume container-build container-run help
 
-.check-latex:
+.latex:
 	@if ! podman image exists $(IMAGE_LATEX); then \
 		echo "'$(IMAGE_LATEX)' is not present in podman."; \
 		echo "Refer to https://github.com/zbhavyai/containers/tree/main/texlive for setup."; \
@@ -27,7 +27,10 @@ RESUME_PDF := resume.pdf
 		fonttools varLib.mutator -o $(RESUME_DIR)/fonts/AdwaitaSans-BoldItalic.ttf $(RESUME_DIR)/fonts/AdwaitaSans-Italic.ttf wght=600; \
 	fi
 
-resume: .check-latex .fonts
+check: .latex .fonts
+	@echo "Checks done."
+
+resume: .latex .fonts
 	@echo "Building resume PDF."
 	@podman container run --privileged --rm --volume "$(shell pwd):/data" -w /data/$(RESUME_DIR) --name latex $(IMAGE_LATEX) latex $(RESUME_TEX) 1>/dev/null
 	@echo "Resume generated at '$(RESUME_DIR)/$(RESUME_PDF)'."
@@ -42,6 +45,7 @@ container-run:
 
 help:
 	@echo "Available targets:"
+	@echo "  check           - Run checks for latex image and fonts"
 	@echo "  resume          - Build the resume PDF using latex (requires podman image)"
 	@echo "  container-build - Build the container"
 	@echo "  container-run   - Run the container"
