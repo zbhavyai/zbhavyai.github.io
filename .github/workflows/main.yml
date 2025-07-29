@@ -31,6 +31,7 @@ jobs:
         with:
           name: build-artifacts
           path: build/
+          retention-days: 5
 
   deploy:
     runs-on: ubuntu-latest
