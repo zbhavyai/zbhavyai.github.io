@@ -52,11 +52,13 @@ jobs:
       - name: Display structure of downloaded files
         run: ls -R build/
 
-      - name: Deploy to GitHub Pages
+      - name: Configure Git
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
 
+      - name: Deploy to GitHub Pages
+        run: |
           if [[ -z $(git ls-remote --heads origin gh-pages) ]]; then
             echo "Create new branch gh-pages"
             git checkout --orphan gh-pages
