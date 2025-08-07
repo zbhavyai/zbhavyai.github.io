@@ -28,6 +28,20 @@
     "hasFrontend": false
   },
   {
+    "name": "Quote Weaver",
+    "summary": "Generating humorous rhyming quotes using Gemini and posting on X",
+    "description": "",
+    "repository_link": "https://github.com/zbhavyai/quote-weaver",
+    "deployment_link": "",
+    "association": "Personal",
+    "last_updated": 2025,
+    "card_image": "https://clipground.com/images/logo-quotes-8.png",
+    "language": ["Java"],
+    "tech_stack": ["Quarkus", "Gemini", "Twitter API"],
+    "hasBackend": true,
+    "hasFrontend": false
+  },
+  {
     "name": "Inspirational Morning",
     "summary": "Periodically send a good morning message to your Google Chat with an inspirational quote.",
     "description": "",
