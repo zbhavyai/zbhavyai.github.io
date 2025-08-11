@@ -7,22 +7,23 @@ indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{js, jsx, ts, tsx}]
+[*.{js,jsx,ts,tsx}]
 indent_size = 2
 max_line_length = 200
 
-[*.{json, jsonc}]
-max_line_length = off
-
-[*.{yaml, yml}]
+[*.{yaml,yml}]
 indent_size = 2
+
+[*.{json,jsonc}]
+max_line_length = off
 
 [*.md]
 indent_size = 3
 max_line_length = off
 
-[pre-commit]
+[*.sh]
 indent_size = 4
+max_line_length = off
 
 [Makefile]
 indent_size = 4
