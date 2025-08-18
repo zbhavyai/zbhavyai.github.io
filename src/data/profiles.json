@@ -60,7 +60,7 @@
     "link": "https://www.twitter.com/zbhavyai",
     "type": "social",
     "faIcon": "faXTwitter",
-    "show": false
+    "show": true
   },
   {
     "name": "Discord",
