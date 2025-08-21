@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
-  pages: write
+  contents: write
 
 jobs:
   build:
