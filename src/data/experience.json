@@ -28,7 +28,7 @@
     ],
     "responsibilities": [
       {
-        "description": "Currently developing edge-based <strong>AI Agent creation framework</strong> using <strong>Ollama and LangChain4J</strong> to enable customers automate <strong>anomaly detection and incident reporting</strong>."
+        "description": "Currently developing edge-based <strong>AI Agent creation framework</strong> using <strong>local LLMs and LangChain4J</strong> to enable customers automate <strong>anomaly detection and incident reporting</strong>."
       },
       {
         "description": "Architected a unified credential management system integrating tools like Power BI, Tableau, ServiceNow, etc, <strong>eliminating 90% of manual logins</strong> across 100+ sources per site. Developed API-driven dashboard selection and configuration interfaces, enabling <strong>zero-touch visualizations with 24/7 uptime</strong>."
