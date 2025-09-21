@@ -15,7 +15,7 @@
   },
   {
     "name": "Fedora Workstation Setup",
-    "summary": "Automated set up of Fedora Workstation using Ansible",
+    "summary": "Automated set up of Fedora Workstation using Ansible.",
     "description": "",
     "repository_link": "https://github.com/zbhavyai/fedora-setup",
     "deployment_link": "",
@@ -82,6 +82,20 @@
     "tech_stack": ["React.js"],
     "hasBackend": false,
     "hasFrontend": true
+  },
+  {
+    "name": "Scripts",
+    "summary": "Useful little cmd line scripts for various stuff.",
+    "description": "",
+    "repository_link": "https://github.com/zbhavyai/scripts",
+    "deployment_link": "",
+    "association": "Personal",
+    "last_updated": 2025,
+    "card_image": "https://icons.iconarchive.com/icons/kxmylo/simple/512/utilities-terminal-icon.png",
+    "language": ["Bash", "Python"],
+    "tech_stack": [],
+    "hasBackend": true,
+    "hasFrontend": false
   },
   {
     "name": "EPIC API Scaper",
