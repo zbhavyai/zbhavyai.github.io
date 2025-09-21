@@ -49,7 +49,7 @@
     "deployment_link": "",
     "association": "Personal",
     "last_updated": 2024,
-    "card_image": "https://t3.ftcdn.net/jpg/00/99/43/24/360_F_99432452_rqzeyOumTPfYCVzaLcZU7EaLlJbM519m.jpg",
+    "card_image": "https://www.starbucks.ca/weblx/images/rewards/offers/opt-in-success.png",
     "language": ["Java"],
     "tech_stack": ["Quarkus", "Google Cloud Functions"],
     "hasBackend": true,
