@@ -3,8 +3,10 @@ IMAGE_LATEX := localhost/latex
 RESUME_DIR := ./public/assets/resume
 RESUME_TEX := resume.tex
 RESUME_PDF := resume.pdf
+CV_TEX := cover_letter.tex
+CV_PDF := cover_letter.pdf
 
-.PHONY: check resume container-build container-run help
+.PHONY: check resume cv container-build container-run help
 
 .latex:
 	@if ! podman image exists $(IMAGE_LATEX); then \
@@ -31,9 +33,14 @@ check: .latex .fonts
 	@echo "Checks done."
 
 resume: .latex .fonts
-	@echo "Building resume PDF."
+	@echo "Building your resume."
 	@podman container run --privileged --rm --volume "$(shell pwd):/data" -w /data/$(RESUME_DIR) --name latex $(IMAGE_LATEX) latex $(RESUME_TEX) 1>/dev/null
 	@echo "Resume generated at '$(RESUME_DIR)/$(RESUME_PDF)'."
+
+cv: .latex .fonts
+	@echo "Building your CV."
+	@podman container run --privileged --rm --volume "$(shell pwd):/data" -w /data/$(RESUME_DIR) --name latex $(IMAGE_LATEX) latex $(CV_TEX) 1>/dev/null
+	@echo "CV generated at '$(RESUME_DIR)/$(CV_PDF)'."
 
 container-build:
 	@echo "Building the project in container."
@@ -47,6 +54,7 @@ help:
 	@echo "Available targets:"
 	@echo "  check           - Run checks for latex image and fonts"
 	@echo "  resume          - Build the resume PDF using latex (requires podman image)"
+	@echo "  cv              - Build the cover letter PDF using latex (requires podman image)"
 	@echo "  container-build - Build the container"
 	@echo "  container-run   - Run the container"
 	@echo "  help            - Show this help message"
