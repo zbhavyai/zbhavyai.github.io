@@ -1,0 +1,104 @@
+%--------------------------------------------------------------------------------
+% Author :      Bhavyai Gupta
+% Repository:   https://github.com/zbhavyai/zbhavyai.github.io.git
+% Website:      https://zbhavyai.github.io
+%--------------------------------------------------------------------------------
+
+\documentclass[letter]{article}
+
+%--------------------------------------------------------------------------------
+% Page layout and margins
+\usepackage{fullpage}                                                   % Reasonable default margins
+\usepackage[left=1in, right=1in, bottom=1in, top=1in]{geometry}         % Custom margin setup
+\pagestyle{empty}                                                       % Suppress page numbers
+
+%--------------------------------------------------------------------------------
+% Mathematics and symbols
+\usepackage{amsmath}                                                    % Core math environments and symbols
+\usepackage{amssymb}                                                    % Extra math symbols
+\usepackage{textcomp}                                                   % Extra text symbols (like \textdegree)
+
+%--------------------------------------------------------------------------------
+% Typography and spacing
+\usepackage[protrusion=true, expansion=false]{microtype}                % Fine-tune font spacing
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\usepackage{fontspec}
+\setmainfont{AdwaitaSans}[
+    Path=./fonts/,
+    Extension = .ttf,
+    UprightFont=*-Light,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+    ]
+
+\newfontfamily\defaultserif{Latin Modern Roman}
+
+%--------------------------------------------------------------------------------
+% Text formatting and justification
+\usepackage{ragged2e}                                                   % Enable text justification
+\usepackage{ulem}                                                       % Allow underlining, strike-through, etc.
+\usepackage{setspace}                                                   % For line spacing
+\setstretch{1.2}                                                        % Set global line height
+\raggedright                                                            % Left-align text
+
+%--------------------------------------------------------------------------------
+% Hyperlinks and color
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}                   % Enable and color hyperlinks
+\usepackage[dvipsnames]{xcolor}                                         % Extended color support
+\definecolor{Accent}{HTML}{1A4F80}                                      % Define a custom accent color
+
+%--------------------------------CUSTOM COMMANDS---------------------------------
+\newcommand{\body} [1] {
+    \begin{justify}
+        {\fontsize{11pt}{13pt}\selectfont #1}
+    \end{justify}
+    \vspace{1pt}
+}
+
+%------------------------------------CV START------------------------------------
+\begin{document}
+
+%------------------------------------HEADING-------------------------------------
+{\defaultserif {\Huge\bfseries BHAVYAI GUPTA}}
+\vspace{5pt}
+
+\href{mailto:zbhavyai@gmail.com}{\uline{zbhavyai@gmail.com}} \hfill {+1 (587) 575-6982}\\
+\href{https://linkedin.com/in/zbhavyai}{\uline{linkedin.com/in/zbhavyai}} \hfill \href{https://zbhavyai.github.io}{\uline{Portfolio Website}}
+
+\vspace{15pt}
+\body {\today}
+\vspace{15pt}
+\body {Dear Hiring Team at XYZ,}
+
+%----------------------------------INTRODUCTION----------------------------------
+\body {
+Lorem ipsum dolor sit amet. Id animi ullam sed dolorem repellendus et earum quas? Et error maiores est quibusdam asperiores id doloribus molestias. Qui quia enim a enim iusto in maiores autem qui asperiores nemo et iure consequatur.
+}
+
+%-------------------------------------SKILLS-------------------------------------
+\body {
+Non vitae error qui reprehenderit unde ut dolores facilis aut ratione velit? Ut Quis consequatur et quaerat voluptas aut sequi voluptatem et magnam veniam sed dolorem fugit. Ut placeat nostrum rem vero possimus eum sequi eaque et sint voluptas. Ea quod impedit est sint mollitia et corrupti quia. Eos dolores quos qui excepturi odio qui obcaecati autem. Est quam omnis eum pariatur deleniti est quod fugit eos assumenda illo. Et quisquam quia qui sint quia et doloribus dolores.
+}
+
+%-----------------------------------ALIGNMENT------------------------------------
+\body {
+Est suscipit repellat ea totam porro qui doloribus ullam ex veritatis pariatur eos corrupti fuga 33 voluptas consequatur aut voluptas iste. Sed omnis officia qui doloremque mollitia ea animi mollitia aut atque dignissimos ut cumque quia cum deleniti voluptas et exercitationem quos. In aperiam galisum est dolor alias et odit quae et voluptatum ipsa aut galisum eaque. Qui illum rerum qui minima iste est quam molestiae.
+}
+
+%------------------------------------CLOSING-------------------------------------
+\body {
+Et eligendi velit et impedit ullam id facilis fuga aut porro sunt. Qui placeat quod rem blanditiis dolores qui recusandae maiores quo dolor enim aut voluptatem voluptate ut architecto dolore qui enim placeat?
+}
+
+\vspace{15pt}
+\body{
+Yours Sincerely, \\
+Bhavyai Gupta}
+
+%-------------------------------------CV END-------------------------------------
+\end{document}
