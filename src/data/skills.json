@@ -1,7 +1,11 @@
 [
   {
     "type": "backend",
-    "list": ["Java", "Python", "Quarkus", "Spring Boot", "JPA", "Hiberate", "JUnit", "REST API", "Microservices"]
+    "list": ["Java", "Python", "Quarkus", "Spring Boot", "FastAPI", "Apache Kafka", "ORM", "JPA", "Hibernate", "JUnit", "REST API"]
+  },
+  {
+    "type": "architecture",
+    "list": ["OOPs", "Microservices", "Event-Driven Architecture", "Functional Programming", "Design Patterns"]
   },
   {
     "type": "frontend",
