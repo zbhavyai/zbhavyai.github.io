@@ -47,8 +47,12 @@ container-build:
 	@podman build --tag $(IMAGE_APP):1.0.0 .
 
 container-run:
-	@echo "Running the project container."
+	@echo "Running the project in container."
 	@podman container run --rm --name zbhavyai --detach --publish 8080:80 $(IMAGE_APP):1.0.0
+
+container-destroy:
+	@echo "Stopping the project container."
+	@podman container stop zbhavyai
 
 help:
 	@echo "Available targets:"
