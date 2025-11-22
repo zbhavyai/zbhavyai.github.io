@@ -5,9 +5,6 @@
     "esbenp.prettier-vscode",
     "mkhl.shfmt",
     "redhat.vscode-xml",
-    "redhat.vscode-yaml",
-    "sonarsource.sonarlint-vscode",
-    "visualstudioexptteam.intellicode-api-usage-examples",
-    "visualstudioexptteam.vscodeintellicode"
+    "redhat.vscode-yaml"
   ]
 }
