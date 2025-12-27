@@ -29,7 +29,7 @@
   },
   {
     "name": "Quote Weaver",
-    "summary": "Generating humorous rhyming quotes using Gemini and posting on X",
+    "summary": "Generating humorous rhyming quotes using Gemini and posting on X.",
     "description": "",
     "repository_link": "https://github.com/zbhavyai/quote-weaver",
     "deployment_link": "",
@@ -40,6 +40,20 @@
     "tech_stack": ["Quarkus", "Gemini", "Twitter API"],
     "hasBackend": true,
     "hasFrontend": false
+  },
+  {
+    "name": "Melody Engine",
+    "summary": "Prompt based instrumental music generation.",
+    "description": "",
+    "repository_link": "https://github.com/zbhavyai/melody-engine",
+    "deployment_link": "https://hub.docker.com/repository/docker/zbhavyai/melody-engine",
+    "association": "Personal",
+    "last_updated": 2025,
+    "card_image": "https://img.freepik.com/premium-vector/note-music-logo-design_93835-645.jpg",
+    "language": ["Python"],
+    "tech_stack": ["FastAPI", "Google Magenta Realtime"],
+    "hasBackend": true,
+    "hasFrontend": true
   },
   {
     "name": "Inspirational Morning",
