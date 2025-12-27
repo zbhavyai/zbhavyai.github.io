@@ -6,7 +6,7 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "extensions.ignoreRecommendations": true,
-  "[html][css][scss][javascript][typescript][typescriptreact][json][jsonc]": {
+  "[html][css][scss][javascript][javascriptreact][typescript][typescriptreact][json][jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode", "editor.tabSize": 3 },
