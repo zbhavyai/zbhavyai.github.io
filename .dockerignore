@@ -1,10 +1,25 @@
-.git
-.github
-.vscode
-node_modules
-build
-.editorconfig
-.env
-.dockerignore
+# git related
+.git/
 .gitignore
+.gitattributes
+.github
+.hooks/
+
+# build folders
+node_modules/
+build/
+dist/
+
+# ide settings
+.idea/
+.vscode/
+.editorconfig
+
+# configuration files
+.dockerignore
+.prettierignore
 Dockerfile
+Makefile
+
+# other
+resume/
