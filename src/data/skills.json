@@ -21,7 +21,7 @@
   },
   {
     "type": "frontend",
-    "list": ["React.js", "TypeScript", "JavaScript", "Bootstrap", "HTML", "CSS"]
+    "list": ["React.js", "Vite", "TypeScript", "JavaScript", "Bootstrap", "HTML", "CSS"]
   },
   {
     "type": "databases",
@@ -29,7 +29,19 @@
   },
   {
     "type": "devOps",
-    "list": ["Docker", "Git", "CI/CD", "Linux", "Ansible", "Bash", "Maven", "Prometheus", "Grafana", "Nginx"]
+    "list": [
+      "Docker",
+      "Git",
+      "CI/CD",
+      "Linux",
+      "Ansible",
+      "Bash",
+      "Maven",
+      "Prometheus",
+      "Grafana",
+      "Nginx",
+      "Terraform"
+    ]
   },
   {
     "type": "cloud",
@@ -48,6 +60,10 @@
   {
     "type": "security",
     "list": ["Keycloak", "HashiCorp Vault", "SSO", "OIDC", "OAuth2", "JWT"]
+  },
+  {
+    "type": "AI & ML",
+    "list": ["Gemini", "OpenAI", "Ollama", "vLLM", "LangChain"]
   },
   {
     "type": "workflow",
