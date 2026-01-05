@@ -56,6 +56,20 @@
     "hasFrontend": true
   },
   {
+    "name": "New Tab Override",
+    "summary": "Chrome and Edge extension to override New Tab Page.",
+    "description": "",
+    "repository_link": "https://github.com/zbhavyai/new-tab-override",
+    "deployment_link": "https://microsoftedge.microsoft.com/addons/detail/new-tab-override/bcakacnhmddpidpkbognmjggkcppnepl",
+    "association": "Personal",
+    "last_updated": 2026,
+    "card_image": "https://store-images.s-microsoft.com/image/apps.1148.3455bfde-d896-4c07-90a8-66f8b372de77.a77e9605-4c3a-45fe-879c-848b9627d6c8.08d4108f-ed2d-4d1d-97f2-6e4e6d3b4fae?mode=scale&h=100&q=90&w=100",
+    "language": ["Typescript"],
+    "tech_stack": [],
+    "hasBackend": false,
+    "hasFrontend": true
+  },
+  {
     "name": "Inspirational Morning",
     "summary": "Periodically send a good morning message to your Google Chat with an inspirational quote.",
     "description": "",
