@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 import brokenCardImage from "../images/no-image.jpg";
 
 const ProjectCard = (props) => {
+  let projectLink = props["deployment_link"] || props["repository_link"];
+
   return (
-    <Link className="zbhavyai-project-link" to={props["repository_link"]} target="_blank" rel="noopener noreferrer">
+    <Link className="zbhavyai-project-link" to={projectLink} target="_blank" rel="noopener noreferrer">
       <Card as="article" className="zbhavyai-project-card shadow" height={"100px"}>
         <Card.Body as="section" className="p-0 d-flex flex-row">
           <Image
