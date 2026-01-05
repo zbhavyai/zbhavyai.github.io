@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { default as React } from "react";
+import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
@@ -10,7 +10,7 @@ import "./styles/main.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <React.StrictMode>
+  <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -19,5 +19,5 @@ root.render(
         <Route path="*" element={<Navigate to="/" />}></Route>
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
+  </StrictMode>,
 );
