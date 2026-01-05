@@ -1,5 +1,6 @@
 {
   "name": "zbhavyai.github.io",
+  "description": "Personal website and portfolio of Bhavyai Gupta",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -11,6 +12,18 @@
     "format": "prettier --write .",
     "lint": "eslint .",
     "preview": "vite preview"
+  },
+  "author": "Bhavyai Gupta <zbhavyai@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zbhavyai/zbhavyai.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zbhavyai/zbhavyai.github.io/issues"
+  },
+  "funding": {
+    "type": "buymeacoffee",
+    "url": "https://www.buymeacoffee.com/zbhavyai"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
