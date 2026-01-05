@@ -12,32 +12,32 @@ CONTAINER_APP := zbhavyai
 
 .PHONY: init clean format lint dev build update resume cv container-build container-run container-destroy help
 
-init:
+init: ## install hook and dependencies
 	@ln -sf $(CURDIR)/.hooks/pre-commit.sh .git/hooks/pre-commit
 	@pnpm install --frozen-lockfile
 
-clean:
+clean: ## clean the build artifacts
 	@rm -rf dist/
 
-distclean: clean
+distclean: clean ## clean all generated files
 	@rm -rf node_modules
 	@rm -f $(RESUME_DIR)/fonts
 	@rm -f $(RESUME_DIR)/$(RESUME_PDF)
 	@rm -f $(RESUME_DIR)/$(CV_PDF)
 
-format:
+format: ## format the codebase
 	@pnpm run format
 
-lint:
+lint: ## lint the codebase
 	@pnpm run lint
 
-dev:
+dev: ## start the development server
 	@pnpm run dev
 
-build: clean
+build: clean ## build the project
 	@pnpm run build
 
-update:
+update: ## update dependencies in interactive mode
 	@pnpm update --interactive --latest
 
 .latex:
@@ -61,38 +61,25 @@ update:
 		fonttools varLib.mutator -o $(RESUME_DIR)/fonts/AdwaitaSans-BoldItalic.ttf $(RESUME_DIR)/fonts/AdwaitaSans-Italic.ttf wght=600; \
 	fi
 
-resume: .latex .fonts
+resume: .latex .fonts ## build the resume PDF using latex (requires podman image)
 	@echo "Building resume..."
 	@podman container run --privileged --rm --volume "$(shell pwd):/data" -w /data/$(RESUME_DIR) --name latex $(IMAGE_LATEX) latex $(RESUME_TEX) 1>/dev/null
 	@echo "Resume generated at '$(RESUME_DIR)/$(RESUME_PDF)'."
 
-cv: .latex .fonts
+cv: .latex .fonts ## build the cover letter PDF using latex (requires podman image)
 	@echo "Building CV..."
 	@podman container run --privileged --rm --volume "$(shell pwd):/data" -w /data/$(RESUME_DIR) --name latex $(IMAGE_LATEX) latex $(CV_TEX) 1>/dev/null
 	@echo "CV generated at '$(RESUME_DIR)/$(CV_PDF)'."
 
-container-build:
+container-build: ## build the container
 	@podman image build --tag $(IMAGE_APP):$(COMMIT_SHA) --build-arg COMMIT_SHA=$(COMMIT_SHA) --file Dockerfile .
 
-container-run:
+container-run: ## run the container
 	@podman container run --rm --name $(CONTAINER_APP) --detach --publish 8080:80 $(IMAGE_APP):$(COMMIT_SHA)
 
-container-destroy:
+container-destroy: ## stop the running container
 	@podman container stop $(CONTAINER_APP)
 
-help:
+help: ## show this help message
 	@echo "Available targets:"
-	@echo "  init               - Install hook and dependencies"
-	@echo "  clean              - Clean the build artifacts"
-	@echo "  format             - Format the codebase"
-	@echo "  lint               - Lint the codebase"
-	@echo "  dev                - Start the development server"
-	@echo "  build              - Build the project"
-	@echo "  update             - Update dependencies in interactive mode"
-	@echo "  resume             - Build the resume PDF using latex (requires podman image)"
-	@echo "  cv                 - Build the cover letter PDF using latex (requires podman image)"
-	@echo "  container-build    - Build the container"
-	@echo "  container-run      - Run the container"
-	@echo "  container-destroy  - Stop the running container"
-	@echo "  help               - Show this help message"
-
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  %-20s - %s\n", $$1, $$2}'
