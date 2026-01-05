@@ -42,7 +42,7 @@ export default function Resume() {
         <Container className="zbhavyai-container-experience my-5">
           <h4 className="mb-0 fw-bold">Work Experience</h4>
           <Row id="zbhavyai-row-experience" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
-            {ExperienceList?.map((exp, index) => {
+            {ExperienceList?.map((exp) => {
               return (
                 <Col key={exp["start_date"]}>
                   <ExperienceCard {...exp} />
@@ -58,7 +58,7 @@ export default function Resume() {
         <Container className="zbhavyai-container-certifications my-5">
           <h4 className="mb-0 fw-bold">Certifications</h4>
           <Row id="zbhavyai-row-certification" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
-            {CertificationList?.map((cert, index) => {
+            {CertificationList?.map((cert) => {
               return (
                 <Col key={cert["certification"]}>
                   <CertificationCard {...cert} />
@@ -74,7 +74,7 @@ export default function Resume() {
         <Container className="zbhavyai-container-education my-5">
           <h4 className="mb-0 fw-bold">Education</h4>
           <Row id="zbhavyai-row-education" xs={1} md={1} lg={1} xl={1} className="g-4 mt-0">
-            {EducationList?.map((edu, index) => {
+            {EducationList?.map((edu) => {
               return (
                 <Col key={edu["university"]}>
                   <EducationCard {...edu} />

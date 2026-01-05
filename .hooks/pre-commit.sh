@@ -34,7 +34,7 @@ function lint() {
     fi
 }
 
-CHECKS="format"
+CHECKS="format lint"
 
 for CHECK in $CHECKS; do
     ($CHECK) || exit $?

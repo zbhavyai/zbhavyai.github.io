@@ -26,7 +26,7 @@ const ExperienceCard = (props) => {
       <Card.Body as="section" className="py-0">
         <Card.Text as="div" className="px-3">
           <ul className="zbhavyai-list-triangle">
-            {props["responsibilities"]?.map((item, index) => {
+            {props["responsibilities"]?.map((item) => {
               return (
                 <li key={item["keyword"]} className="zbhavyai-list-triangle zbhavyai-text-heavy">
                   <span dangerouslySetInnerHTML={{ __html: item["description"] }} />
@@ -37,7 +37,7 @@ const ExperienceCard = (props) => {
         </Card.Text>
       </Card.Body>
       <Card.Footer as="footer">
-        {props["tech_stack"]?.map((language, index) => {
+        {props["tech_stack"]?.map((language) => {
           return (
             <Badge key={language} pill className="zbhavyai-tech-badge fira-mono-regular me-1">
               {language}

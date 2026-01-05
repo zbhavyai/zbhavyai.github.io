@@ -15,7 +15,7 @@ const SkillsCard = ({ skills }) => {
       <Card.Body as="section" className="d-flex justify-content-between">
         <Table variant="dark" className="zbhavyai-skills-table">
           <tbody>
-            {skills?.map((skillgroup, index) => {
+            {skills?.map((skillgroup) => {
               return (
                 <tr key={skillgroup["type"]}>
                   <td className="fw-bold text-capitalize" width={"15%"}>

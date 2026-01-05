@@ -35,7 +35,7 @@ const iconMap = {
 const SocialStrip = () => {
   return (
     <Container className="zbhavyai-container-social px-0 py-3">
-      {ProfileList?.filter((profile) => profile["show"]).map((profile, index) => {
+      {ProfileList?.filter((profile) => profile["show"]).map((profile) => {
         const IconComponent = iconMap[profile["faIcon"]];
 
         return (
