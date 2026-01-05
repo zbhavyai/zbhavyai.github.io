@@ -1,10 +1,14 @@
-IMAGE_APP := localhost/zbhavyai
-IMAGE_LATEX := localhost/latex
+COMMIT_SHA := $(shell git rev-parse --short HEAD)
+
 RESUME_DIR := ./resume
 RESUME_TEX := resume.tex
 RESUME_PDF := resume.pdf
 CV_TEX := cover_letter.tex
 CV_PDF := cover_letter.pdf
+
+IMAGE_APP := localhost/zbhavyai
+IMAGE_LATEX := localhost/latex
+CONTAINER_APP := zbhavyai
 
 .PHONY: init clean format lint dev build update resume cv container-build container-run container-destroy help
 
@@ -62,16 +66,13 @@ cv: .latex .fonts
 	@echo "CV generated at '$(RESUME_DIR)/$(CV_PDF)'."
 
 container-build:
-	@echo "Building the project in container."
-	@podman build --tag $(IMAGE_APP):1.0.0 .
+	@podman image build --tag $(IMAGE_APP):$(COMMIT_SHA) --build-arg COMMIT_SHA=$(COMMIT_SHA) --file Dockerfile .
 
 container-run:
-	@echo "Running the project in container."
-	@podman container run --rm --name zbhavyai --detach --publish 8080:80 $(IMAGE_APP):1.0.0
+	@podman container run --rm --name $(CONTAINER_APP) --detach --publish 8080:80 $(IMAGE_APP):$(COMMIT_SHA)
 
 container-destroy:
-	@echo "Stopping the project container."
-	@podman container stop zbhavyai
+	@podman container stop $(CONTAINER_APP)
 
 help:
 	@echo "Available targets:"
