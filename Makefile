@@ -19,6 +19,12 @@ init:
 clean:
 	@rm -rf dist/
 
+distclean: clean
+	@rm -rf node_modules
+	@rm -f $(RESUME_DIR)/fonts
+	@rm -f $(RESUME_DIR)/$(RESUME_PDF)
+	@rm -f $(RESUME_DIR)/$(CV_PDF)
+
 format:
 	@pnpm run format
 
