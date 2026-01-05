@@ -11,7 +11,9 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -46,71 +48,21 @@ jobs:
       - name: Build application
         run: pnpm run build
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v6
+      - name: Upload static files
+        id: deployment
+        uses: actions/upload-pages-artifact@v4
         with:
-          name: build-artifacts
           path: dist/
-          retention-days: 5
 
   deploy:
     runs-on: ubuntu-latest
     needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-
-      - name: Download build artifacts
-        uses: actions/download-artifact@v7
-        with:
-          name: build-artifacts
-          path: dist/
-
-      - name: Configure git
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-
       - name: Deploy to GitHub Pages
-        run: |
-          if [[ -z $(git ls-remote --heads origin gh-pages) ]]; then
-            echo "Create new branch gh-pages"
-            git checkout --orphan gh-pages
-
-            # remove source code
-            git rm -rf .
-
-            # move build artifacts
-            mv dist/* .
-
-            # commit changes
-            git add -A
-            git commit -m "Initial gh-pages deploy"
-            git push origin gh-pages
-
-          else
-            echo "Use existing branch gh-pages"
-            git checkout gh-pages
-
-            # remove old build artifacts
-            git rm -rf .
-
-            # move build artifacts
-            cp -r dist/* .
-            rm -rf dist/
-            git add -A
-
-            # for logging
-            git status
-
-            if ! git diff --cached --quiet; then
-              git commit -m "Update site: ${{ github.sha }}"
-              git push origin gh-pages
-            else
-              echo "No changes to deploy."
-            fi
-          fi
+        uses: actions/deploy-pages@v4
