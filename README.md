@@ -17,11 +17,10 @@ pnpm create vite --template react-swc --no-rolldown --immediate zbhavyai.github.
 
 ## Local build and run
 
-To build and run the web app in a container, run below commands and access it at [127.0.0.1:8080](http://127.0.0.1:8080/):
+To build and run the web app in a container, run below commands and access it at [http://127.0.0.1:8080](http://127.0.0.1:8080/):
 
 ```shell
-make container-build
-make container-run
+make container-build && make container-run
 ```
 
 ## Resume PDF generation
