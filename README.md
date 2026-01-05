@@ -1,6 +1,6 @@
 # Hello!
 
-Personal website and portfolio built with **Vite**, **ReactJS**, and **LaTeX**. Live at [https://zbhavyai.github.io](https://zbhavyai.github.io).
+This is my personal website and portfolio built with **Vite**, **ReactJS**, and **LaTeX**. Live at [https://zbhavyai.github.io](https://zbhavyai.github.io).
 
 [![GH Pages](https://img.shields.io/github/actions/workflow/status/zbhavyai/zbhavyai.github.io/main.yml?label=GH%20Pages)](https://github.com/zbhavyai/zbhavyai.github.io/actions/workflows/main.yml)
 [![License](https://img.shields.io/github/license/zbhavyai/zbhavyai.github.io?label=License)](https://github.com/zbhavyai/zbhavyai.github.io/blob/main/LICENSE)
