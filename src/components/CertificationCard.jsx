@@ -10,7 +10,12 @@ const CertificationCard = (props) => {
       <Card.Body as="section" className="d-flex justify-content-between">
         <div>
           <Card.Title>
-            <Link className="zbhavyai-certificate-link" to={props["credential_url"]} target="_blank" rel="noopener noreferrer">
+            <Link
+              className="zbhavyai-certificate-link"
+              to={props["credential_url"]}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {props["certification"]}
               <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="zbhavyai-external-link-icon" />
             </Link>

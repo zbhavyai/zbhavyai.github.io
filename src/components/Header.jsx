@@ -3,7 +3,12 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 
 const Header = ({ activeNav }) => {
   return (
-    <Navbar className="zbhavyai-navbar navbar-dark bg-body-tertiary justify-content-between" bg="dark" expand="sm" collapseOnSelect>
+    <Navbar
+      className="zbhavyai-navbar navbar-dark bg-body-tertiary justify-content-between"
+      bg="dark"
+      expand="sm"
+      collapseOnSelect
+    >
       <Container>
         <Navbar.Brand href="/" className="zbhavyai-brand fira-mono-bold fw-bold">
           Bhavyai Gupta

@@ -1,5 +1,9 @@
 {
-  "editor.codeActionsOnSave": { "source.organizeImports": "always", "source.addMissingImports": "always", "source.unusedImports": "always" },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always",
+    "source.addMissingImports": "always",
+    "source.unusedImports": "always"
+  },
   "editor.formatOnSave": true,
   "editor.insertSpaces": true,
   "files.eol": "\n",
@@ -19,7 +23,7 @@
   "prettier.bracketSameLine": false,
   "prettier.endOfLine": "lf",
   "prettier.jsxSingleQuote": false,
-  "prettier.printWidth": 200,
+  "prettier.printWidth": 120,
   "prettier.semi": true,
   "prettier.singleQuote": false,
   "prettier.tabWidth": 2,

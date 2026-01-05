@@ -9,13 +9,14 @@ trim_trailing_whitespace = true
 
 [*.{js,jsx,ts,tsx}]
 indent_size = 2
-max_line_length = 200
+max_line_length = 120
 
 [*.{yaml,yml}]
 indent_size = 2
 
 [*.{json,jsonc}]
-max_line_length = off
+indent_size = 2
+max_line_length = 120
 
 [*.md]
 indent_size = 3

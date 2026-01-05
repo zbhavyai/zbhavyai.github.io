@@ -1,7 +1,19 @@
 [
   {
     "type": "backend",
-    "list": ["Java", "Python", "Quarkus", "Spring Boot", "FastAPI", "Apache Kafka", "ORM", "JPA", "Hibernate", "JUnit", "REST API"]
+    "list": [
+      "Java",
+      "Python",
+      "Quarkus",
+      "Spring Boot",
+      "FastAPI",
+      "Apache Kafka",
+      "ORM",
+      "JPA",
+      "Hibernate",
+      "JUnit",
+      "REST API"
+    ]
   },
   {
     "type": "architecture",
@@ -21,7 +33,17 @@
   },
   {
     "type": "cloud",
-    "list": ["GCP Certified", "Google Cloud", "GCloud CLI", "Cloud Run", "Functions", "Pub/Sub", "Artifact Registry", "Storage", "IAM"]
+    "list": [
+      "GCP Certified",
+      "Google Cloud",
+      "GCloud CLI",
+      "Cloud Run",
+      "Functions",
+      "Pub/Sub",
+      "Artifact Registry",
+      "Storage",
+      "IAM"
+    ]
   },
   {
     "type": "security",
