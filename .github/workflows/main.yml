@@ -2,8 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  workflow_dispatch:
+  workflow_call:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -13,49 +14,82 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 1
 
-      - name: Set up NodeJS
-        uses: actions/setup-node@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
         with:
-          node-version: "22.18.0"
-          cache: "npm"
+          run_install: false
+
+      - name: Set up NodeJS
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: "pnpm"
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
+
+      - name: Format checks
+        run: pnpm exec prettier --log-level error --check .
+
+  build:
+    runs-on: ubuntu-latest
+    needs: lint
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Set up NodeJS
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Build application
-        run: CI=false npm run build
+        run: pnpm run build
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: build-artifacts
-          path: build/
+          path: dist/
           retention-days: 5
 
   deploy:
     runs-on: ubuntu-latest
     needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: build-artifacts
-          path: build/
+          path: dist/
 
       - name: Configure git
         run: |
@@ -72,11 +106,11 @@ jobs:
             git rm -rf .
 
             # move build artifacts
-            mv build/* .
+            mv dist/* .
 
             # commit changes
             git add -A
-            git commit -m "create gh-pages"
+            git commit -m "Initial gh-pages deploy"
             git push origin gh-pages
 
           else
@@ -87,18 +121,17 @@ jobs:
             git rm -rf .
 
             # move build artifacts
-            mv build/* .
-
-            # stage changes, if any
+            cp -r dist/* .
+            rm -rf dist/
             git add -A
 
             # for logging
             git status
 
             if ! git diff --cached --quiet; then
-              git commit -m "update gh-pages"
+              git commit -m "Update site: ${{ github.sha }}"
               git push origin gh-pages
             else
-              echo "No changes to commit to gh-pages."
+              echo "No changes to deploy."
             fi
           fi
