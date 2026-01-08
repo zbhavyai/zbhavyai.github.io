@@ -29,7 +29,7 @@ function lint() {
         return 0
     fi
 
-    if ! pnpm exec -- eslint --max-warnings 0 "${staged_files[@]}"; then
+    if ! pnpm exec -- eslint --max-warnings 0 -- "${staged_files[@]}"; then
         block "Linting issues found."
     fi
 }

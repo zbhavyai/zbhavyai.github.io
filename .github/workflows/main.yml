@@ -43,10 +43,10 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Format checks
-        run: pnpm exec prettier --log-level error --check .
+        run: pnpm exec -- prettier --log-level error --check .
 
       - name: Lint checks
-        run: pnpm exec eslint -- src/ eslint.config.js
+        run: pnpm exec -- eslint --max-warnings 0 -- src/
 
       - name: Build application
         run: pnpm run build

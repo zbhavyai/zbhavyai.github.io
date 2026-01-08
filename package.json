@@ -10,7 +10,7 @@
     "dev": "vite",
     "build": "vite build",
     "format": "prettier --write .",
-    "lint": "eslint -- src/ **/*.{js,jsx}",
+    "lint": "eslint --max-warnings 0 -- src/",
     "preview": "vite preview"
   },
   "author": "Bhavyai Gupta <zbhavyai@gmail.com>",
