@@ -1,6 +1,6 @@
 # build stage
 FROM docker.io/library/node:24-slim AS build
-RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN corepack enable && corepack prepare pnpm@latest-10 --activate
 WORKDIR /app
 COPY pnpm-lock.yaml package.json ./
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
