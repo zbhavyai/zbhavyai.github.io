@@ -16,7 +16,7 @@ function format() {
         return 0
     fi
 
-    if ! pnpm exec prettier --log-level error --check "${staged_files[@]}"; then
+    if ! pnpm exec -- prettier --log-level error --check "${staged_files[@]}"; then
         block "Formatting issues found."
     fi
 }
@@ -29,7 +29,7 @@ function lint() {
         return 0
     fi
 
-    if ! pnpm exec eslint "${staged_files[@]}" --max-warnings 0; then
+    if ! pnpm exec -- eslint --max-warnings 0 "${staged_files[@]}"; then
         block "Linting issues found."
     fi
 }
