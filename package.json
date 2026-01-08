@@ -1,8 +1,9 @@
 {
   "name": "zbhavyai.github.io",
-  "description": "Personal website and portfolio of Bhavyai Gupta",
   "version": "1.0.0",
+  "description": "Personal website and portfolio of Bhavyai Gupta",
   "private": true,
+  "license": "AGPL-3.0-only",
   "type": "module",
   "packageManager": "pnpm@10.27.0",
   "scripts": {
@@ -13,12 +14,14 @@
     "preview": "vite preview"
   },
   "author": "Bhavyai Gupta <zbhavyai@gmail.com>",
+  "homepage": "https://zbhavyai.github.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zbhavyai/zbhavyai.github.io.git"
+    "url": "git+https://github.com/zbhavyai/zbhavyai.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/zbhavyai/zbhavyai.github.io/issues"
+    "url": "https://github.com/zbhavyai/zbhavyai.github.io/issues",
+    "email": "zbhavyai@gmail.com"
   },
   "funding": {
     "type": "buymeacoffee",
