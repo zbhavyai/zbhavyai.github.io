@@ -34,3 +34,6 @@ lerna-debug.log*
 resume.pdf
 cover_letter.pdf
 fonts/
+
+# netlify
+.netlify

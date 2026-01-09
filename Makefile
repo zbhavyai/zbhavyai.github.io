@@ -6,6 +6,8 @@ RESUME_PDF := resume.pdf
 CV_TEX := cover_letter.tex
 CV_PDF := cover_letter.pdf
 
+DEPLOY_SITE := zbhavyai
+
 IMAGE_APP := localhost/zbhavyai
 IMAGE_LATEX := localhost/latex
 CONTAINER_APP := zbhavyai
@@ -39,6 +41,18 @@ build: clean ## build the project
 
 update: ## update dependencies in interactive mode
 	@pnpm update --interactive --latest
+
+deploy: build ## deploy to netlify
+	@echo "Ensuring site $(DEPLOY_SITE) exists"
+	@pnpm exec netlify sites:list --json | grep -q '"name": "$(DEPLOY_SITE)"' || \
+		(pnpm exec netlify sites:create --name $(DEPLOY_SITE) --account-slug zbhavyai)
+	@pnpm exec netlify deploy \
+		--no-build \
+		--auth ${NETLIFY_AUTH_TOKEN} \
+		--prod \
+		--site $(DEPLOY_SITE) \
+		--dir=./dist \
+		--message "deploy by makefile at commit: $(COMMIT_SHA)"
 
 .latex:
 	@if ! podman image exists $(IMAGE_LATEX); then \
