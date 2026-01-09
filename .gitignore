@@ -26,8 +26,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# idea
-.idea/
+# webstorm
+.idea/*
+!.idea/prettier.xml
 
 # custom
 resume.pdf
