@@ -17,7 +17,7 @@ pnpm create vite --template react-swc --no-rolldown --immediate zbhavyai.github.
 
 ## Local build and run
 
-To build and run the web app in a container, run below commands and access it at [http://127.0.0.1:8080](http://127.0.0.1:8080/):
+Build and run in a container, then access it at [http://127.0.0.1:8080](http://127.0.0.1:8080/):
 
 ```shell
 make container-build && make container-run
@@ -25,7 +25,7 @@ make container-build && make container-run
 
 ## Resume PDF generation
 
-The resume is built using XeLaTeX inside a container to ensure consistent rendering. Refer to [my texlive guide](https://github.com/zbhavyai/containers/tree/main/texlive) for setup details.
+Resume is built with XeLaTeX in a container. See [texlive guide](https://github.com/zbhavyai/containers/tree/main/texlive) for setup.
 
 ```shell
 make resume
