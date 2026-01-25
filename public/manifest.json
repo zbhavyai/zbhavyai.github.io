@@ -1,6 +1,12 @@
 {
-  "short_name": "Bhavyai Gupta",
   "name": "Bhavyai Gupta",
+  "short_name": "zbhavyai",
+  "description": "Personal website and portfolio of Bhavyai Gupta",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
   "icons": [
     {
       "src": "favicon.ico",
@@ -17,9 +23,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
