@@ -1,8 +1,8 @@
 /* BASE **********************************************************************/
 :root {
-  --theme-dark-1: #0e0f0f;
+  --theme-dark-1: #0f0f0f;
   --theme-dark-2: #262a2b;
-  --theme-text: #deddda;
+  --theme-text: #dedede;
   --theme-text-bright: #ffffff;
 }
 
