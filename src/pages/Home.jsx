@@ -10,9 +10,13 @@ export default function Home() {
       <Container className="zbhavyai-container-about d-flex justify-content-center align-items-center">
         <Row>
           <Col md={12} className="zbhavyai-col-about p-lg-2 p-4">
-            <h1 className="zbhavyai-h1-about fira-mono-bold py-2">Hi! I am Bhavyai.</h1>
+            <h1 className="zbhavyai-h1-about fira-mono-bold py-2">Hi, I'm Bhavyai</h1>
             <h2 className="fira-mono-regular">
-              I do full-stack software development professionally and as a personal endeavor.
+              Developer
+              <i className="bi bi-dot" aria-hidden="true"></i>
+              Engineer
+              <i className="bi bi-dot" aria-hidden="true"></i>
+              Always building
             </h2>
             <SocialStrip />
           </Col>
