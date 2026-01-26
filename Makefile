@@ -41,6 +41,7 @@ build: clean ## build the project
 
 update: ## update dependencies in interactive mode
 	@pnpm update --interactive --latest
+	@pnpm self-update
 
 deploy: build ## deploy to netlify
 	@echo "Ensuring site $(DEPLOY_SITE) exists"
