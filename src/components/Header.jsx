@@ -2,8 +2,16 @@ import PropTypes from "prop-types";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 const Header = ({ activeNav }) => {
+  let pageTitle = "Bhavyai Gupta";
+
+  if (activeNav !== "about") {
+    pageTitle = `${pageTitle} | ${activeNav[0].toUpperCase() + activeNav.slice(1)}`;
+  }
+
   return (
     <Navbar className="zbhavyai-navbar justify-content-between" data-bs-theme="dark" expand="sm" collapseOnSelect>
+      <title>{pageTitle}</title>
+
       <Container>
         <Navbar.Brand href="/" className="zbhavyai-brand fira-mono-bold fw-bold">
           Bhavyai Gupta
