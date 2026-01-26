@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <React.Fragment>
       <Header activeNav="about" />
-      <Container className="zbhavyai-container-about d-flex justify-content-center align-items-center">
+      <Container className="zbhavyai-container-about d-flex justify-content-center">
         <Row className="align-items-center">
           <Col md={4} className="d-flex justify-content-center my-3">
             <Image src="/logo512.png" alt="Bhavyai Gupta" roundedCircle className="zbhavyai-logo" />
@@ -19,8 +19,6 @@ export default function Home() {
               Developer
               <i className="bi bi-dot" aria-hidden="true"></i>
               Engineer
-              <i className="bi bi-dot" aria-hidden="true"></i>
-              Always building
             </h2>
             <SocialStrip />
           </Col>

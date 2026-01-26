@@ -65,20 +65,14 @@ body {
 }
 
 .zbhavyai-logo {
-  width: 260px;
-  height: 260px;
-  min-width: 260px;
-  min-height: 260px;
+  width: min(260px, 70vw);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   opacity: 0.95;
-}
-
-.zbhavyai-col-about {
-  max-width: 850px;
 }
 
 .zbhavyai-h1-about {
   font-size: 3em;
-  letter-spacing: 0.04em;
 }
 
 .zbhavyai-container-social {
@@ -86,7 +80,7 @@ body {
 }
 
 .zbhavyai-container-social .social {
-  padding-left: 0px;
+  padding-left: 0;
   padding-right: 20px;
   color: var(--theme-text);
 }
