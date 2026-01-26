@@ -1,5 +1,13 @@
 [
   {
+    "certification": "Professional Cloud Architect",
+    "organization": "Google Cloud",
+    "issue_date": "Jan 2026",
+    "expiry_date": "Jan 2028",
+    "credential_id": "e991805a03ce44568e25894e952e5729",
+    "credential_url": "https://www.credly.com/badges/587b3a5f-2ba6-462d-8a33-6ebfeb5de1fd"
+  },
+  {
     "certification": "Associate Cloud Engineer",
     "organization": "Google Cloud",
     "issue_date": "Nov 2024",
