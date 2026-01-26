@@ -46,7 +46,7 @@
     "link": "https://www.instagram.com/gbhavyai",
     "type": "social",
     "faIcon": "faInstagram",
-    "show": true
+    "show": false
   },
   {
     "name": "Facebook",
