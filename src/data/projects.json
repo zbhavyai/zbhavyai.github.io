@@ -46,7 +46,7 @@
     "summary": "Prompt based instrumental music generation.",
     "description": "",
     "repository_link": "https://github.com/zbhavyai/melody-engine",
-    "deployment_link": "https://hub.docker.com/repository/docker/zbhavyai/melody-engine",
+    "deployment_link": "https://hub.docker.com/r/zbhavyai/melody-engine",
     "association": "Personal",
     "last_updated": 2025,
     "card_image": "https://img.freepik.com/premium-vector/note-music-logo-design_93835-645.jpg",
