@@ -12,7 +12,7 @@ IMAGE_APP := localhost/zbhavyai
 IMAGE_LATEX := localhost/latex
 CONTAINER_APP := zbhavyai
 
-.PHONY: init clean format lint dev build update resume cv container-build container-run container-destroy help
+.PHONY: init clean format lint dev build update resume cl container-build container-run container-destroy help
 
 init: ## install hook and dependencies
 	@ln -sf $(CURDIR)/.hooks/pre-commit.sh .git/hooks/pre-commit
