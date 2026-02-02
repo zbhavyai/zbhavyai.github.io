@@ -3,8 +3,8 @@ COMMIT_SHA := $(shell git rev-parse --short HEAD)
 RESUME_DIR := ./resume
 RESUME_TEX := resume.tex
 RESUME_PDF := resume.pdf
-CV_TEX := cover_letter.tex
-CV_PDF := cover_letter.pdf
+COVER_LETTER_TEX := cover_letter.tex
+COVER_LETTER_PDF := cover_letter.pdf
 
 DEPLOY_SITE := zbhavyai
 
@@ -81,10 +81,10 @@ resume: .latex .fonts ## build the resume PDF using latex (requires podman image
 	@podman container run --privileged --rm --volume "$(shell pwd):/data" -w /data/$(RESUME_DIR) --name latex $(IMAGE_LATEX) latex $(RESUME_TEX) 1>/dev/null
 	@echo "Resume generated at '$(RESUME_DIR)/$(RESUME_PDF)'."
 
-cv: .latex .fonts ## build the cover letter PDF using latex (requires podman image)
-	@echo "Building CV..."
-	@podman container run --privileged --rm --volume "$(shell pwd):/data" -w /data/$(RESUME_DIR) --name latex $(IMAGE_LATEX) latex $(CV_TEX) 1>/dev/null
-	@echo "CV generated at '$(RESUME_DIR)/$(CV_PDF)'."
+cl: .latex .fonts ## build the cover letter PDF using latex (requires podman image)
+	@echo "Building Cover Letter..."
+	@podman container run --privileged --rm --volume "$(shell pwd):/data" -w /data/$(RESUME_DIR) --name latex $(IMAGE_LATEX) latex $(COVER_LETTER_TEX) 1>/dev/null
+	@echo "Cover Letter generated at '$(RESUME_DIR)/$(COVER_LETTER_PDF)'."
 
 container-build: ## build the container
 	@podman image build --tag $(IMAGE_APP):$(COMMIT_SHA) --build-arg COMMIT_SHA=$(COMMIT_SHA) --file Dockerfile .
