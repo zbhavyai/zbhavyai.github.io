@@ -1,3 +1,5 @@
+import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
@@ -17,7 +19,7 @@ export default function Home() {
             <h1 className="zbhavyai-h1-about fira-mono-bold py-2">Hi, I'm Bhavyai</h1>
             <h2 className="fira-mono-regular">
               Developer
-              <i className="bi bi-dot" aria-hidden="true"></i>
+              <FontAwesomeIcon icon={faCircle} size="xs" className="zbhavyai-dot-icon" />
               Engineer
             </h2>
             <SocialStrip />
