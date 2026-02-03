@@ -12,7 +12,7 @@ IMAGE_APP := localhost/zbhavyai
 IMAGE_LATEX := localhost/latex
 CONTAINER_APP := zbhavyai
 
-.PHONY: init clean format lint dev build update resume cl container-build container-run container-destroy help
+.PHONY: init clean distclean format lint dev build update deploy resume cl container-build container-run container-destroy help
 
 init: ## install hook and dependencies
 	@ln -sf $(CURDIR)/.hooks/pre-commit.sh .git/hooks/pre-commit
@@ -25,7 +25,7 @@ distclean: clean ## clean all generated files
 	@rm -rf node_modules/
 	@rm -f $(RESUME_DIR)/fonts/
 	@rm -f $(RESUME_DIR)/$(RESUME_PDF)
-	@rm -f $(RESUME_DIR)/$(CV_PDF)
+	@rm -f $(RESUME_DIR)/$(COVER_LETTER_PDF)
 
 format: ## format the codebase
 	@pnpm run format
@@ -78,12 +78,28 @@ deploy: build ## deploy to netlify
 
 resume: .latex .fonts ## build the resume PDF using latex (requires podman image)
 	@echo "Building resume..."
-	@podman container run --privileged --rm --volume "$(shell pwd):/data" -w /data/$(RESUME_DIR) --name latex $(IMAGE_LATEX) latex $(RESUME_TEX) 1>/dev/null
+	@podman container run \
+		--rm \
+		--volume /etc/localtime:/etc/localtime:ro \
+		--volume "$(shell pwd):/data:Z" \
+		--workdir /data/$(RESUME_DIR) \
+		--name latex \
+		$(IMAGE_LATEX) \
+		latex $(RESUME_TEX) \
+		>/dev/null
 	@echo "Resume generated at '$(RESUME_DIR)/$(RESUME_PDF)'."
 
 cl: .latex .fonts ## build the cover letter PDF using latex (requires podman image)
 	@echo "Building Cover Letter..."
-	@podman container run --privileged --rm --volume "$(shell pwd):/data" -w /data/$(RESUME_DIR) --name latex $(IMAGE_LATEX) latex $(COVER_LETTER_TEX) 1>/dev/null
+	@podman container run \
+		--rm \
+		--volume /etc/localtime:/etc/localtime:ro \
+		--volume "$(shell pwd):/data:Z" \
+		--workdir /data/$(RESUME_DIR) \
+		--name latex \
+		$(IMAGE_LATEX) \
+		latex $(COVER_LETTER_TEX) \
+		>/dev/null
 	@echo "Cover Letter generated at '$(RESUME_DIR)/$(COVER_LETTER_PDF)'."
 
 container-build: ## build the container
