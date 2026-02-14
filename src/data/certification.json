@@ -14,5 +14,13 @@
     "expiry_date": "Nov 2027",
     "credential_id": "22944b1266ae460daf0469f5abd1435a",
     "credential_url": "https://www.credly.com/badges/52bb681c-f535-47e7-b669-78e9b4d7c4a0"
+  },
+  {
+    "certification": "Generative AI Leader",
+    "organization": "Google Cloud",
+    "issue_date": "Feb 2026",
+    "expiry_date": "Feb 2029",
+    "credential_id": "7354ec375ecd41cfa7cc251b255aa087",
+    "credential_url": "https://www.credly.com/badges/53b2f933-8411-4d31-88b5-69ad97f2a36a"
   }
 ]
