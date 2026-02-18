@@ -9,7 +9,7 @@ COVER_LETTER_PDF := cover_letter.pdf
 DEPLOY_SITE := zbhavyai
 
 IMAGE_APP := localhost/zbhavyai
-IMAGE_LATEX := localhost/latex
+IMAGE_LATEX := docker.io/zbhavyai/latex-xelatex-builder:latest
 CONTAINER_APP := zbhavyai
 
 .PHONY: init clean distclean format lint dev build update deploy resume cl container-build container-run container-destroy help
