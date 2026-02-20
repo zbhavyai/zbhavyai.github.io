@@ -25,7 +25,7 @@ make container-build && make container-run
 
 ## Resume PDF generation
 
-Resume is built with XeLaTeX in a container. See [texlive guide](https://github.com/zbhavyai/containers/tree/main/texlive) for setup.
+Resume is built with XeLaTeX in a container.
 
 ```shell
 make resume
