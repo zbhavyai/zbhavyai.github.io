@@ -55,13 +55,6 @@ deploy: build ## deploy to netlify
 		--no-build \
 		--message "deploy by makefile at commit: $(COMMIT_SHA)"
 
-.latex:
-	@if ! podman image exists $(IMAGE_LATEX); then \
-		echo "'$(IMAGE_LATEX)' is not present in podman."; \
-		echo "Refer to https://github.com/zbhavyai/containers/tree/main/texlive for setup."; \
-		exit 1; \
-	fi
-
 .fonts:
 	@if [ ! -d "$(RESUME_DIR)/fonts" ]; then \
 		if ! command -v fonttools >/dev/null 2>&1; then \
@@ -76,7 +69,7 @@ deploy: build ## deploy to netlify
 		fonttools varLib.mutator -o $(RESUME_DIR)/fonts/AdwaitaSans-BoldItalic.ttf $(RESUME_DIR)/fonts/AdwaitaSans-Italic.ttf wght=600; \
 	fi
 
-resume: .latex .fonts ## build the resume PDF using latex (requires podman image)
+resume: .fonts ## build the resume PDF using latex (requires podman image)
 	@echo "Building resume..."
 	@podman container run \
 		--rm \
@@ -89,7 +82,7 @@ resume: .latex .fonts ## build the resume PDF using latex (requires podman image
 		>/dev/null
 	@echo "Resume generated at '$(RESUME_DIR)/$(RESUME_PDF)'."
 
-cl: .latex .fonts ## build the cover letter PDF using latex (requires podman image)
+cl: .fonts ## build the cover letter PDF using latex (requires podman image)
 	@echo "Building Cover Letter..."
 	@podman container run \
 		--rm \
