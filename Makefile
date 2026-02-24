@@ -58,8 +58,8 @@ deploy: build ## deploy to netlify
 .fonts:
 	@if [ ! -d "$(RESUME_DIR)/fonts" ]; then \
 		if ! command -v fonttools >/dev/null 2>&1; then \
-			echo "'fonttools' is not installed. Please run:"; \
-			echo "  pip install fonttools"; \
+			echo "'fonttools' is not installed. You may install it like this:"; \
+			echo "  sudo dnf install fonttools"; \
 			exit 1; \
 		fi; \
 		mkdir -p $(RESUME_DIR)/fonts; \
