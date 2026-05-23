@@ -1,10 +1,13 @@
 import PropTypes from "prop-types";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
 
-const Header = ({ activeNav }) => {
+const Header = () => {
+  const activeNav = useLocation().pathname.slice(1);
+
   let pageTitle = "Bhavyai Gupta";
 
-  if (activeNav !== "about") {
+  if (activeNav !== "") {
     pageTitle = `${pageTitle} | ${activeNav[0].toUpperCase() + activeNav.slice(1)}`;
   }
 
@@ -21,7 +24,7 @@ const Header = ({ activeNav }) => {
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav className="ml-auto" variant="pills" activeKey={activeNav}>
             <Nav.Item>
-              <Nav.Link eventKey="about" href="/" className="px-3">
+              <Nav.Link eventKey="" href="/" className="px-3">
                 About
               </Nav.Link>
             </Nav.Item>

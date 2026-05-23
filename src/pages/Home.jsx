@@ -9,7 +9,7 @@ import SocialStrip from "../components/SocialStrip";
 export default function Home() {
   return (
     <React.Fragment>
-      <Header activeNav="about" />
+      <Header />
       <Container className="zbhavyai-container-about d-flex justify-content-center">
         <Row className="align-items-center">
           <Col md={4} className="d-flex justify-content-center my-3">

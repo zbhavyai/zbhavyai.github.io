@@ -23,7 +23,7 @@ export default function Resume() {
 
   return (
     <React.Fragment>
-      <Header activeNav="resume" />
+      <Header />
 
       {/* Technical Skills */}
       {SkillsList?.length > 0 && (
