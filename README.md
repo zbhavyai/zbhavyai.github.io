@@ -12,7 +12,7 @@ Live at [https://zbhavyai.github.io](https://zbhavyai.github.io).
 The project was bootstrapped with the command:
 
 ```shell
-pnpm create vite --template react-swc --no-rolldown --immediate zbhavyai.github.io
+pnpm create vite --template react --immediate zbhavyai.github.io
 ```
 
 ## Local build and run

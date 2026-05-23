@@ -23,7 +23,8 @@ clean: ## clean the build artifacts
 
 distclean: clean ## clean all generated files
 	@rm -rf node_modules/
-	@rm -f $(RESUME_DIR)/fonts/
+	@rm -rf .netlify/
+	@rm -rf $(RESUME_DIR)/fonts/
 	@rm -f $(RESUME_DIR)/$(RESUME_PDF)
 	@rm -f $(RESUME_DIR)/$(COVER_LETTER_PDF)
 
