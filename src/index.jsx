@@ -13,10 +13,10 @@ root.render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/resume" element={<Resume />}></Route>
-        <Route path="/projects" element={<Projects />}></Route>
-        <Route path="*" element={<Navigate to="/" />}></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
