@@ -6,7 +6,6 @@ import ButtonGroup from "react-bootstrap/ButtonGroup";
 import CertificationCard from "../components/CertificationCard";
 import EducationCard from "../components/EducationCard";
 import ExperienceCard from "../components/ExperienceCard";
-import Header from "../components/Header";
 import SkillsCard from "../components/SkillsCard";
 import CertificationList from "../data/certification.json";
 import EducationList from "../data/education.json";
@@ -23,8 +22,6 @@ export default function Resume() {
 
   return (
     <React.Fragment>
-      <Header />
-
       {/* Technical Skills */}
       {SkillsList?.length > 0 && (
         <Container className="zbhavyai-container-skills my-5">

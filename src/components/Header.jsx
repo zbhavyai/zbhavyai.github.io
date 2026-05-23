@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const activeNav = useLocation().pathname.slice(1);
@@ -24,17 +24,17 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav className="ml-auto" variant="pills" activeKey={activeNav}>
             <Nav.Item>
-              <Nav.Link eventKey="" href="/" className="px-3">
+              <Nav.Link as={Link} className="px-3" to="/" eventKey="">
                 About
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="projects" href="/projects" className="px-3">
+              <Nav.Link as={Link} className="px-3" to="/projects" eventKey="projects">
                 Projects
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="resume" href="/resume" className="px-3">
+              <Nav.Link as={Link} className="px-3" to="/resume" eventKey="resume">
                 Resume
               </Nav.Link>
             </Nav.Item>

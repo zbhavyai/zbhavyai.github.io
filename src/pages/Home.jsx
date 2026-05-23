@@ -3,13 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
-import Header from "../components/Header";
 import SocialStrip from "../components/SocialStrip";
 
 export default function Home() {
   return (
     <React.Fragment>
-      <Header />
       <Container className="zbhavyai-container-about d-flex justify-content-center">
         <Row className="align-items-center">
           <Col md={4} className="d-flex justify-content-center my-3">
