@@ -1,10 +1,23 @@
 [
   {
+    "company": "Synechron Canada Systems Integration Inc",
+    "designation": "Senior Associate - Technology",
+    "location": "Calgary, Canada",
+    "start_date": "May 2026",
+    "end_date": "present",
+    "tech_stack": ["Java", "Spring Boot", "Apache Kafka"],
+    "responsibilities": [
+      {
+        "description": "Working on the Shareworks project, a wealth management platform for investors and plan participants."
+      }
+    ]
+  },
+  {
     "company": "Userful Corporation",
     "designation": "Software Developer II",
-    "location": "Canada",
+    "location": "Calgary, Canada",
     "start_date": "Apr 2022",
-    "end_date": "present",
+    "end_date": "Apr 2026",
     "tech_stack": [
       "Java",
       "Quarkus",
