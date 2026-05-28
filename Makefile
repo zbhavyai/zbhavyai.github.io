@@ -12,7 +12,7 @@ IMAGE_APP := localhost/zbhavyai
 IMAGE_LATEX := docker.io/zbhavyai/latex-xelatex-builder:latest
 CONTAINER_APP := zbhavyai
 
-.PHONY: init clean distclean format lint dev build update deploy resume cl container-build container-run container-destroy help
+.PHONY: init clean distclean format lint dev build update deploy resume cover container-build container-run container-destroy help
 
 init: ## install hook and dependencies
 	@ln -sf $(CURDIR)/.hooks/pre-commit.sh .git/hooks/pre-commit
@@ -83,7 +83,7 @@ resume: .fonts ## build the resume PDF using latex (requires podman image)
 		>/dev/null
 	@echo "Resume generated at '$(RESUME_DIR)/$(RESUME_PDF)'."
 
-cl: .fonts ## build the cover letter PDF using latex (requires podman image)
+cover: .fonts ## build the cover letter PDF using latex (requires podman image)
 	@echo "Building Cover Letter..."
 	@podman container run \
 		--rm \
