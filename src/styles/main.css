@@ -2,7 +2,7 @@
 :root {
   --theme-dark-1: #0f0f0f;
   --theme-dark-2: #303030;
-  --theme-text: #ffffff;
+  --theme-text: #e5e5e5;
   --theme-text-bright: #ffffff;
 }
 
@@ -83,6 +83,48 @@ body {
   padding-left: 0;
   padding-right: 20px;
   color: var(--theme-text);
+}
+
+/* PROJECT FILTER BAR ********************************************************/
+.zbhavyai-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.zbhavyai-filter-btn {
+  background-color: transparent;
+  color: var(--theme-text);
+  border: 1px solid var(--theme-dark-2);
+  border-radius: 20px;
+  font-size: 0.85em;
+  padding: 0.3rem 1.1rem;
+  text-transform: uppercase;
+}
+
+.zbhavyai-filter-btn.active {
+  background-color: var(--theme-dark-2);
+  color: var(--theme-text);
+  border-color: var(--theme-dark-2);
+  font-weight: 700;
+}
+
+.zbhavyai-filter-btn:hover,
+.zbhavyai-filter-btn:active,
+.zbhavyai-filter-btn:focus {
+  background-color: var(--theme-dark-2) !important;
+  color: var(--theme-text) !important;
+  border-color: var(--theme-dark-2) !important;
+}
+
+.zbhavyai-filter-empty {
+  color: var(--theme-text);
+  font-size: 0.95em;
+  opacity: 0.6;
+  padding: 2rem 0;
+  text-align: center;
 }
 
 /* PROJECT CARDS *************************************************************/
