@@ -10,8 +10,7 @@
     "card_image": "https://zbhavyai.github.io/logo512.png",
     "language": ["Javascript"],
     "tech_stack": ["React.js"],
-    "hasBackend": false,
-    "hasFrontend": true
+    "type": "WEB"
   },
   {
     "name": "Fedora Workstation Setup",
@@ -24,8 +23,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/fedora-setup.svg",
     "language": ["Bash"],
     "tech_stack": ["Ansible"],
-    "hasBackend": true,
-    "hasFrontend": false
+    "type": "DEVOPS"
   },
   {
     "name": "Quote Weaver",
@@ -38,8 +36,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/quote-weaver.png",
     "language": ["Java"],
     "tech_stack": ["Quarkus", "Gemini", "Twitter API"],
-    "hasBackend": true,
-    "hasFrontend": false
+    "type": "AI"
   },
   {
     "name": "Melody Engine",
@@ -52,8 +49,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/melody-engine.avif",
     "language": ["Python"],
     "tech_stack": ["FastAPI", "Google Magenta Realtime"],
-    "hasBackend": true,
-    "hasFrontend": true
+    "type": "AI"
   },
   {
     "name": "New Tab Override",
@@ -66,8 +62,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/new-tab-override.png",
     "language": ["Typescript"],
     "tech_stack": [],
-    "hasBackend": false,
-    "hasFrontend": true
+    "type": "EXTENSION"
   },
   {
     "name": "Inspirational Morning",
@@ -80,8 +75,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/inspirational-morning.png",
     "language": ["Java"],
     "tech_stack": ["Quarkus", "Google Cloud Functions"],
-    "hasBackend": true,
-    "hasFrontend": false
+    "type": "API"
   },
   {
     "name": "Containers",
@@ -94,8 +88,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/containers.png",
     "language": ["YAML"],
     "tech_stack": ["Docker"],
-    "hasBackend": false,
-    "hasFrontend": false
+    "type": "DEVOPS"
   },
   {
     "name": "Walnut OT",
@@ -108,8 +101,7 @@
     "card_image": "https://walnutot.com.au/logo512.png",
     "language": ["Javascript"],
     "tech_stack": ["React.js"],
-    "hasBackend": false,
-    "hasFrontend": true
+    "type": "WEB"
   },
   {
     "name": "OMDb Client",
@@ -122,8 +114,7 @@
     "card_image": "https://omdb-client.netlify.app/logo512.png",
     "language": ["Javascript"],
     "tech_stack": ["React.js"],
-    "hasBackend": false,
-    "hasFrontend": true
+    "type": "WEB"
   },
   {
     "name": "Scripts",
@@ -136,8 +127,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/scripts.png",
     "language": ["Bash", "Python"],
     "tech_stack": [],
-    "hasBackend": true,
-    "hasFrontend": false
+    "type": "CLI"
   },
   {
     "name": "EPIC API Scaper",
@@ -150,8 +140,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/epic-open-api-scraper.png",
     "language": ["Python"],
     "tech_stack": ["BeautifulSoup4"],
-    "hasBackend": true,
-    "hasFrontend": false
+    "type": "CLI"
   },
   {
     "name": "YouTube Audio Downloader",
@@ -164,8 +153,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/youtube-audio-downloader.jpeg",
     "language": ["Python"],
     "tech_stack": [""],
-    "hasBackend": true,
-    "hasFrontend": false
+    "type": "CLI"
   },
   {
     "name": "Currency Converter",
@@ -178,8 +166,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/currency-converter.jpeg",
     "language": ["Javascript"],
     "tech_stack": ["XMLHttpRequest", "fetch"],
-    "hasBackend": false,
-    "hasFrontend": true
+    "type": "WEB"
   },
   {
     "name": "Revered Banshee",
@@ -192,8 +179,7 @@
     "card_image": "https://raw.githubusercontent.com/zbhavyai/revered-banshee/main/src/main/assets/banshee.png",
     "language": ["Java"],
     "tech_stack": ["Quarkus"],
-    "hasBackend": true,
-    "hasFrontend": false
+    "type": "API"
   },
   {
     "name": "BudLib",
@@ -206,8 +192,7 @@
     "card_image": "https://avatars.githubusercontent.com/u/96268227",
     "language": ["Java", "Javascript", "SQL"],
     "tech_stack": ["Spring Boot", "React.js", "MySQL"],
-    "hasBackend": true,
-    "hasFrontend": true
+    "type": "WEB"
   },
   {
     "name": "EyeSea Analytics",
@@ -220,8 +205,7 @@
     "card_image": "https://eyesea.netlify.app/images/logo512.png",
     "language": ["Javascript"],
     "tech_stack": ["React.js"],
-    "hasBackend": false,
-    "hasFrontend": true
+    "type": "WEB"
   },
   {
     "name": "Intelli Nurse",
@@ -234,8 +218,7 @@
     "card_image": "https://intellinurse.netlify.app/logo512.png",
     "language": ["Java", "Javascript", "SQL"],
     "tech_stack": ["Spring Boot", "React.js", "MySQL"],
-    "hasBackend": true,
-    "hasFrontend": true
+    "type": "WEB"
   },
   {
     "name": "Vet Application",
@@ -248,8 +231,7 @@
     "card_image": "https://the-vet-app.netlify.app/animals.png",
     "language": ["Java", "Javascript", "SQL"],
     "tech_stack": ["Spring Boot", "React.js", "MySQL"],
-    "hasBackend": true,
-    "hasFrontend": true
+    "type": "WEB"
   },
   {
     "name": "README Downloader",
@@ -262,8 +244,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/readme-downloader.png",
     "language": ["Python"],
     "tech_stack": ["Pandas", "Databricks"],
-    "hasBackend": true,
-    "hasFrontend": false
+    "type": "CLI"
   },
   {
     "name": "Counter App",
@@ -276,8 +257,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/react-counter-app.png",
     "language": ["Javascript"],
     "tech_stack": ["React.js"],
-    "hasBackend": false,
-    "hasFrontend": true
+    "type": "WEB"
   },
   {
     "name": "Tic Tac Toe",
@@ -290,8 +270,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/tic-tac-toe.png",
     "language": ["Java"],
     "tech_stack": ["Socket", "ServerSocket"],
-    "hasBackend": true,
-    "hasFrontend": true
+    "type": "DESKTOP"
   },
   {
     "name": "Movie Ticket Reservation System",
@@ -304,8 +283,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/movie-ticket-reservation-system.jpg",
     "language": ["Java", "MySQL"],
     "tech_stack": ["Swing", "Mail", "JDBC"],
-    "hasBackend": true,
-    "hasFrontend": true
+    "type": "DESKTOP"
   },
   {
     "name": "Course Registration System",
@@ -318,8 +296,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/course-registration-system.jpg",
     "language": ["Java"],
     "tech_stack": ["Swing"],
-    "hasBackend": true,
-    "hasFrontend": true
+    "type": "DESKTOP"
   },
   {
     "name": "SWAPI Client",
@@ -332,8 +309,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/swapi-client.jpg",
     "language": ["Java"],
     "tech_stack": ["Java"],
-    "hasBackend": false,
-    "hasFrontend": true
+    "type": "CLI"
   },
   {
     "name": "T9 Keyboard",
@@ -346,8 +322,7 @@
     "card_image": "https://website-icon-cache.netlify.app/cache/t9-keyboard.png",
     "language": ["Javascript"],
     "tech_stack": ["Javascript"],
-    "hasBackend": false,
-    "hasFrontend": true
+    "type": "WEB"
   },
   {
     "name": "Calculator",
@@ -360,7 +335,6 @@
     "card_image": "http://website-icon-cache.netlify.app/cache/same-old-calculator.webp",
     "language": ["Javascript"],
     "tech_stack": ["Javascript"],
-    "hasBackend": false,
-    "hasFrontend": true
+    "type": "WEB"
   }
 ]
