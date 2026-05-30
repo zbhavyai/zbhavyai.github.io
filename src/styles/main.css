@@ -1,14 +1,13 @@
 /* BASE **********************************************************************/
 :root {
-  --theme-dark-1: #0f0f0f;
-  --theme-dark-2: #303030;
-  --theme-text: #e5e5e5;
-  --theme-text-bright: #ffffff;
+  --theme-dark: #0f0f0f;
+  --theme-dark-alt: #303030;
+  --theme-text: #fdfdfd;
 }
 
 html,
 body {
-  background-color: var(--theme-dark-1);
+  background-color: var(--theme-dark);
   color: var(--theme-text);
   margin: 0;
   font-family: "Inter", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -18,7 +17,7 @@ body {
 
 /* HEADER ********************************************************************/
 .zbhavyai-navbar {
-  background-color: var(--theme-dark-1) !important;
+  background-color: var(--theme-dark) !important;
 }
 
 .zbhavyai-brand {
@@ -33,9 +32,9 @@ body {
 }
 
 .nav-link.active {
-  background-color: var(--theme-dark-2) !important;
-  font-weight: bold;
-  color: var(--theme-text-bright) !important;
+  background-color: var(--theme-dark-alt) !important;
+  font-weight: 700;
+  color: var(--theme-text) !important;
   border-radius: 5px;
 }
 
@@ -97,26 +96,27 @@ body {
 .zbhavyai-filter-btn {
   background-color: transparent;
   color: var(--theme-text);
-  border: 1px solid var(--theme-dark-2);
+  border: 1px solid var(--theme-dark-alt);
   border-radius: 20px;
+  font-family: "Fira Mono", monospace;
   font-size: 0.85em;
   padding: 0.3rem 1.1rem;
   text-transform: uppercase;
 }
 
 .zbhavyai-filter-btn.active {
-  background-color: var(--theme-dark-2);
+  background-color: var(--theme-dark-alt);
   color: var(--theme-text);
-  border-color: var(--theme-dark-2);
+  border-color: var(--theme-dark-alt);
   font-weight: 700;
 }
 
 .zbhavyai-filter-btn:hover,
 .zbhavyai-filter-btn:active,
 .zbhavyai-filter-btn:focus {
-  background-color: var(--theme-dark-2) !important;
+  background-color: var(--theme-dark-alt) !important;
   color: var(--theme-text) !important;
-  border-color: var(--theme-dark-2) !important;
+  border-color: var(--theme-dark-alt) !important;
 }
 
 .zbhavyai-filter-empty {
@@ -135,7 +135,7 @@ body {
 }
 
 .zbhavyai-project-card {
-  background-color: var(--theme-dark-2);
+  background-color: var(--theme-dark-alt);
   display: block;
   border-radius: 10px;
   color: var(--theme-text);
@@ -188,13 +188,13 @@ body {
 .zbhavyai-experience-card,
 .zbhavyai-certification-card,
 .zbhavyai-education-card {
-  background-color: var(--theme-dark-2);
+  background-color: var(--theme-dark-alt);
   color: var(--theme-text);
 }
 
 .zbhavyai-skills-table,
 .zbhavyai-skills-table td {
-  background-color: var(--theme-dark-2) !important;
+  background-color: var(--theme-dark-alt) !important;
   color: var(--theme-text) !important;
   border: none !important;
   margin-bottom: 0;
@@ -238,7 +238,7 @@ li.zbhavyai-list-triangle:before {
 }
 
 .zbhavyai-tech-badge {
-  background-color: var(--theme-dark-1) !important;
+  background-color: var(--theme-dark) !important;
   border: 1px solid var(--theme-text);
   border-radius: 5px !important;
   display: inline-block;
