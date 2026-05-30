@@ -98,6 +98,20 @@
     "hasFrontend": false
   },
   {
+    "name": "Walnut OT",
+    "summary": "A website for an independent occupational therapist in Australia.",
+    "description": "",
+    "repository_link": "",
+    "deployment_link": "https://walnutot.com.au",
+    "association": "Freelance",
+    "last_updated": 2026,
+    "card_image": "https://walnutot.com.au/logo512.png",
+    "language": ["Javascript"],
+    "tech_stack": ["React.js"],
+    "hasBackend": false,
+    "hasFrontend": true
+  },
+  {
     "name": "OMDb Client",
     "summary": "A frontend for searching for movies or web series using the OMDb API.",
     "description": "",
