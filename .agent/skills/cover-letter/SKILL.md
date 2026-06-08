@@ -1,6 +1,6 @@
 ---
 name: cover-letter
-description: "Generate a tailored, one-page cover letter for a specific job description. Rewrites resume/cover_letter.tex with natural, job-aligned prose based on the candidate's real background."
+description: Generate a tailored, one-page cover letter for a specific job description. Rewrites resume/cover_letter.tex with natural, job-aligned prose based on the candidate's real background.
 ---
 
 # Cover Letter Skill
