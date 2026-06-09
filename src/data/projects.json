@@ -208,11 +208,11 @@
     "type": "CLI"
   },
   {
-    "name": "EPIC API Scaper",
+    "name": "EPIC API Scraper",
     "summary": "A scraper to quickly get the aggregated list of EPIC System's Open APIs.",
     "description": "",
-    "repository_link": "https://github.com/zbhavyai/epic-open-api-scaper",
-    "deployment_link": "",
+    "repository_link": "https://github.com/zbhavyai/epic-open-api-scraper",
+    "deployment_link": "https://zbhavyai.github.io/epic-open-api-scraper/",
     "association": "Personal",
     "last_updated": 2023,
     "card_image": "https://website-icon-cache.netlify.app/cache/epic-open-api-scraper.png",
