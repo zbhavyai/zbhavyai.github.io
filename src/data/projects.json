@@ -80,11 +80,11 @@
     "type": "CLI"
   },
   {
-    "name": "YouTube Audio Downloader",
-    "summary": "Downloads given YouTube links as mp3 using yt-dlp with post-processing and setting up of metadata.",
-    "repository_link": "https://github.com/zbhavyai/youtube-audio-downloader",
+    "name": "AudioHook",
+    "summary": "Downloads given YouTube links as mp3 with post-processing and setting up of metadata.",
+    "repository_link": "https://github.com/zbhavyai/audiohook",
     "deployment_link": "",
-    "card_image": "https://website-icon-cache.netlify.app/cache/youtube-audio-downloader.jpeg",
+    "card_image": "https://website-icon-cache.netlify.app/cache/audiohook.jpeg",
     "language": ["Python"],
     "tech_stack": [""],
     "type": "CLI"
