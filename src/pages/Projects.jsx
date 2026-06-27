@@ -7,7 +7,7 @@ import projectList from "../data/projects.json";
 
 function applyFilter(projects, filter) {
   if (filter === PROJECT_TYPE_ALL) return projects;
-  return projects.filter((p) => p.type === filter);
+  return projects.filter((p) => p.type.includes(filter));
 }
 
 export default function Projects() {

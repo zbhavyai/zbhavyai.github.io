@@ -5,7 +5,7 @@
     "repository_link": "https://github.com/zbhavyai/zbhavyai.github.io",
     "deployment_link": "https://zbhavyai.github.io",
     "card_image": "https://zbhavyai.github.io/logo512.png",
-    "type": "WEB"
+    "type": ["WEB"]
   },
   {
     "name": "Fedora Workstation Setup",
@@ -13,7 +13,7 @@
     "repository_link": "https://github.com/zbhavyai/fedora-setup",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/fedora-setup.svg",
-    "type": "DEVOPS"
+    "type": ["DEVOPS"]
   },
   {
     "name": "Melody Engine",
@@ -21,7 +21,7 @@
     "repository_link": "https://github.com/zbhavyai/melody-engine",
     "deployment_link": "https://hub.docker.com/r/zbhavyai/melody-engine",
     "card_image": "https://website-icon-cache.netlify.app/cache/melody-engine.avif",
-    "type": "AI"
+    "type": ["AI"]
   },
   {
     "name": "Quote Weaver",
@@ -29,7 +29,7 @@
     "repository_link": "https://github.com/zbhavyai/quote-weaver",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/quote-weaver.png",
-    "type": "AI"
+    "type": ["AI"]
   },
   {
     "name": "Inspirational Morning",
@@ -37,7 +37,7 @@
     "repository_link": "https://github.com/zbhavyai/inspirational-morning",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/inspirational-morning.png",
-    "type": "API"
+    "type": ["API"]
   },
   {
     "name": "New Tab Override",
@@ -45,7 +45,7 @@
     "repository_link": "https://github.com/zbhavyai/new-tab-override",
     "deployment_link": "https://microsoftedge.microsoft.com/addons/detail/new-tab-override/bcakacnhmddpidpkbognmjggkcppnepl",
     "card_image": "https://website-icon-cache.netlify.app/cache/new-tab-override.png",
-    "type": "EXTENSION"
+    "type": ["EXTENSION"]
   },
   {
     "name": "Containers",
@@ -53,7 +53,7 @@
     "repository_link": "https://github.com/zbhavyai/containers",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/containers.png",
-    "type": "DEVOPS"
+    "type": ["DEVOPS"]
   },
   {
     "name": "Scripts",
@@ -61,7 +61,7 @@
     "repository_link": "https://github.com/zbhavyai/scripts",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/scripts.png",
-    "type": "CLI"
+    "type": ["CLI"]
   },
   {
     "name": "AudioHook",
@@ -69,7 +69,7 @@
     "repository_link": "https://github.com/zbhavyai/audiohook",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/audiohook.jpeg",
-    "type": "CLI"
+    "type": ["CLI"]
   },
   {
     "name": "BudLib",
@@ -77,7 +77,7 @@
     "repository_link": "https://github.com/budlib/",
     "deployment_link": "",
     "card_image": "https://avatars.githubusercontent.com/u/96268227",
-    "type": "WEB"
+    "type": ["WEB"]
   },
   {
     "name": "Intelli Nurse",
@@ -85,7 +85,7 @@
     "repository_link": "https://github.com/meng-ucalgary/intelli-nurse",
     "deployment_link": "https://intellinurse.netlify.app",
     "card_image": "https://intellinurse.netlify.app/logo512.png",
-    "type": "WEB"
+    "type": ["WEB"]
   },
   {
     "name": "EyeSea Analytics",
@@ -93,7 +93,7 @@
     "repository_link": "https://github.com/meng-ucalgary/engg-683-project",
     "deployment_link": "https://eyesea.netlify.app",
     "card_image": "https://eyesea.netlify.app/images/logo512.png",
-    "type": "WEB"
+    "type": ["WEB"]
   },
   {
     "name": "Vet Application",
@@ -101,7 +101,7 @@
     "repository_link": "https://github.com/meng-ucalgary/ensf-607-608-project",
     "deployment_link": "",
     "card_image": "https://the-vet-app.netlify.app/animals.png",
-    "type": "WEB"
+    "type": ["WEB"]
   },
   {
     "name": "OMDb Client",
@@ -109,7 +109,7 @@
     "repository_link": "https://github.com/zbhavyai/omdb-client",
     "deployment_link": "https://omdb-client.netlify.app",
     "card_image": "https://omdb-client.netlify.app/logo512.png",
-    "type": "WEB"
+    "type": ["WEB"]
   },
   {
     "name": "Walnut OT",
@@ -117,7 +117,7 @@
     "repository_link": "",
     "deployment_link": "https://walnutot.com.au",
     "card_image": "https://walnutot.com.au/logo512.png",
-    "type": "WEB"
+    "type": ["WEB"]
   },
   {
     "name": "README Downloader",
@@ -125,7 +125,7 @@
     "repository_link": "https://github.com/zbhavyai/readme-downloader",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/readme-downloader.png",
-    "type": "CLI"
+    "type": ["CLI"]
   },
   {
     "name": "EPIC API Scraper",
@@ -133,7 +133,7 @@
     "repository_link": "https://github.com/zbhavyai/epic-open-api-scraper",
     "deployment_link": "https://zbhavyai.github.io/epic-open-api-scraper/",
     "card_image": "https://website-icon-cache.netlify.app/cache/epic-open-api-scraper.png",
-    "type": "CLI"
+    "type": ["CLI"]
   },
   {
     "name": "Currency Converter",
@@ -141,7 +141,7 @@
     "repository_link": "https://github.com/zbhavyai/currency-converter",
     "deployment_link": "https://zbhavyai.github.io/currency-converter",
     "card_image": "https://website-icon-cache.netlify.app/cache/currency-converter.jpeg",
-    "type": "WEB"
+    "type": ["WEB"]
   },
   {
     "name": "Revered Banshee",
@@ -149,7 +149,7 @@
     "repository_link": "https://github.com/zbhavyai/revered-banshee",
     "deployment_link": "",
     "card_image": "https://raw.githubusercontent.com/zbhavyai/revered-banshee/main/src/main/assets/banshee.png",
-    "type": "API"
+    "type": ["API"]
   },
   {
     "name": "Counter App",
@@ -157,7 +157,7 @@
     "repository_link": "https://github.com/meng-ucalgary/ensf-607-assignment-5",
     "deployment_link": "https://bg-react-counter-app.netlify.app",
     "card_image": "https://website-icon-cache.netlify.app/cache/react-counter-app.png",
-    "type": "WEB"
+    "type": ["WEB"]
   },
   {
     "name": "Tic Tac Toe",
@@ -165,7 +165,7 @@
     "repository_link": "https://github.com/meng-ucalgary/ensf-607-assignment-4",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/tic-tac-toe.png",
-    "type": "DESKTOP"
+    "type": ["DESKTOP"]
   },
   {
     "name": "Movie Ticket Reservation System",
@@ -173,7 +173,7 @@
     "repository_link": "https://github.com/meng-ucalgary/ensf-614-project",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/movie-ticket-reservation-system.jpg",
-    "type": "DESKTOP"
+    "type": ["DESKTOP"]
   },
   {
     "name": "Course Registration System",
@@ -181,7 +181,7 @@
     "repository_link": "https://github.com/meng-ucalgary/ensf-607-assignment-3",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/course-registration-system.jpg",
-    "type": "DESKTOP"
+    "type": ["DESKTOP"]
   },
   {
     "name": "SWAPI Client",
@@ -189,7 +189,7 @@
     "repository_link": "https://github.com/zbhavyai/star-wars-api",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/swapi-client.jpg",
-    "type": "CLI"
+    "type": ["CLI"]
   },
   {
     "name": "T9 Keyboard",
@@ -197,7 +197,7 @@
     "repository_link": "https://github.com/zbhavyai/t9-keyboard",
     "deployment_link": "https://zbhavyai.github.io/t9-keyboard/",
     "card_image": "https://website-icon-cache.netlify.app/cache/t9-keyboard.png",
-    "type": "WEB"
+    "type": ["WEB"]
   },
   {
     "name": "Calculator",
@@ -205,6 +205,6 @@
     "repository_link": "https://github.com/zbhavyai/same-old-calculator",
     "deployment_link": "https://zbhavyai.github.io/same-old-calculator/",
     "card_image": "http://website-icon-cache.netlify.app/cache/same-old-calculator.webp",
-    "type": "WEB"
+    "type": ["WEB"]
   }
 ]
