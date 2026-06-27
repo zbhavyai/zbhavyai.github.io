@@ -13,7 +13,7 @@
     "repository_link": "https://github.com/zbhavyai/fedora-setup",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/fedora-setup.svg",
-    "type": ["DEVOPS"]
+    "type": ["CLI", "DEVOPS"]
   },
   {
     "name": "Melody Engine",
@@ -21,7 +21,7 @@
     "repository_link": "https://github.com/zbhavyai/melody-engine",
     "deployment_link": "https://hub.docker.com/r/zbhavyai/melody-engine",
     "card_image": "https://website-icon-cache.netlify.app/cache/melody-engine.avif",
-    "type": ["AI"]
+    "type": ["AI", "API", "WEB"]
   },
   {
     "name": "Quote Weaver",
@@ -45,7 +45,7 @@
     "repository_link": "https://github.com/zbhavyai/new-tab-override",
     "deployment_link": "https://microsoftedge.microsoft.com/addons/detail/new-tab-override/bcakacnhmddpidpkbognmjggkcppnepl",
     "card_image": "https://website-icon-cache.netlify.app/cache/new-tab-override.png",
-    "type": ["EXTENSION"]
+    "type": ["EXTENSION", "WEB"]
   },
   {
     "name": "Containers",
@@ -53,7 +53,7 @@
     "repository_link": "https://github.com/zbhavyai/containers",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/containers.png",
-    "type": ["DEVOPS"]
+    "type": ["CLI", "DEVOPS"]
   },
   {
     "name": "Scripts",
@@ -77,7 +77,7 @@
     "repository_link": "https://github.com/budlib/",
     "deployment_link": "",
     "card_image": "https://avatars.githubusercontent.com/u/96268227",
-    "type": ["WEB"]
+    "type": ["API", "WEB"]
   },
   {
     "name": "Intelli Nurse",
@@ -85,7 +85,7 @@
     "repository_link": "https://github.com/meng-ucalgary/intelli-nurse",
     "deployment_link": "https://intellinurse.netlify.app",
     "card_image": "https://intellinurse.netlify.app/logo512.png",
-    "type": ["WEB"]
+    "type": ["API", "WEB"]
   },
   {
     "name": "EyeSea Analytics",
@@ -101,7 +101,7 @@
     "repository_link": "https://github.com/meng-ucalgary/ensf-607-608-project",
     "deployment_link": "",
     "card_image": "https://the-vet-app.netlify.app/animals.png",
-    "type": ["WEB"]
+    "type": ["API", "WEB"]
   },
   {
     "name": "OMDb Client",
@@ -133,7 +133,7 @@
     "repository_link": "https://github.com/zbhavyai/epic-open-api-scraper",
     "deployment_link": "https://zbhavyai.github.io/epic-open-api-scraper/",
     "card_image": "https://website-icon-cache.netlify.app/cache/epic-open-api-scraper.png",
-    "type": ["CLI"]
+    "type": ["CLI", "WEB"]
   },
   {
     "name": "Currency Converter",
@@ -149,7 +149,7 @@
     "repository_link": "https://github.com/zbhavyai/revered-banshee",
     "deployment_link": "",
     "card_image": "https://raw.githubusercontent.com/zbhavyai/revered-banshee/main/src/main/assets/banshee.png",
-    "type": ["API"]
+    "type": ["CLI"]
   },
   {
     "name": "Counter App",
@@ -165,7 +165,7 @@
     "repository_link": "https://github.com/meng-ucalgary/ensf-607-assignment-4",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/tic-tac-toe.png",
-    "type": ["DESKTOP"]
+    "type": ["CLI"]
   },
   {
     "name": "Movie Ticket Reservation System",
@@ -204,7 +204,7 @@
     "summary": "Same old boring calculator.",
     "repository_link": "https://github.com/zbhavyai/same-old-calculator",
     "deployment_link": "https://zbhavyai.github.io/same-old-calculator/",
-    "card_image": "http://website-icon-cache.netlify.app/cache/same-old-calculator.webp",
+    "card_image": "https://website-icon-cache.netlify.app/cache/same-old-calculator.webp",
     "type": ["WEB"]
   }
 ]
