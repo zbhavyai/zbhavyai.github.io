@@ -72,6 +72,22 @@
     "type": ["CLI"]
   },
   {
+    "name": "Quarkus Template",
+    "summary": "A ready-to-use template for building backend applications using Java and Quarkus framework.",
+    "repository_link": "https://github.com/devscompass/quarkus-template",
+    "deployment_link": "",
+    "card_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDEjVsUidbiUzq-N-C6vRs-SkET9m3Yu7MUTOl6tnYwSz9HW8yzd4aJhA&s=10",
+    "type": ["API", "WEB"]
+  },
+  {
+    "name": "FastAPI Template",
+    "summary": "A ready-to-use template for building backend applications using Python and FastAPI framework.",
+    "repository_link": "https://github.com/devscompass/fastapi-template",
+    "deployment_link": "",
+    "card_image": "https://avatars.githubusercontent.com/u/156354296?s=280&v=4",
+    "type": ["API", "WEB"]
+  },
+  {
     "name": "BudLib",
     "summary": "A library management system written for Calgary Waldorf School.",
     "repository_link": "https://github.com/budlib/",
