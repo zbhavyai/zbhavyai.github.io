@@ -5,8 +5,6 @@
     "repository_link": "https://github.com/zbhavyai/zbhavyai.github.io",
     "deployment_link": "https://zbhavyai.github.io",
     "card_image": "https://zbhavyai.github.io/logo512.png",
-    "language": ["Javascript"],
-    "tech_stack": ["React.js"],
     "type": "WEB"
   },
   {
@@ -15,8 +13,6 @@
     "repository_link": "https://github.com/zbhavyai/fedora-setup",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/fedora-setup.svg",
-    "language": ["Bash"],
-    "tech_stack": ["Ansible"],
     "type": "DEVOPS"
   },
   {
@@ -25,8 +21,6 @@
     "repository_link": "https://github.com/zbhavyai/melody-engine",
     "deployment_link": "https://hub.docker.com/r/zbhavyai/melody-engine",
     "card_image": "https://website-icon-cache.netlify.app/cache/melody-engine.avif",
-    "language": ["Python"],
-    "tech_stack": ["FastAPI", "Google Magenta Realtime"],
     "type": "AI"
   },
   {
@@ -35,8 +29,6 @@
     "repository_link": "https://github.com/zbhavyai/quote-weaver",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/quote-weaver.png",
-    "language": ["Java"],
-    "tech_stack": ["Quarkus", "Gemini", "Twitter API"],
     "type": "AI"
   },
   {
@@ -45,8 +37,6 @@
     "repository_link": "https://github.com/zbhavyai/inspirational-morning",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/inspirational-morning.png",
-    "language": ["Java"],
-    "tech_stack": ["Quarkus", "Google Cloud Functions"],
     "type": "API"
   },
   {
@@ -55,8 +45,6 @@
     "repository_link": "https://github.com/zbhavyai/new-tab-override",
     "deployment_link": "https://microsoftedge.microsoft.com/addons/detail/new-tab-override/bcakacnhmddpidpkbognmjggkcppnepl",
     "card_image": "https://website-icon-cache.netlify.app/cache/new-tab-override.png",
-    "language": ["Typescript"],
-    "tech_stack": [],
     "type": "EXTENSION"
   },
   {
@@ -65,8 +53,6 @@
     "repository_link": "https://github.com/zbhavyai/containers",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/containers.png",
-    "language": ["YAML"],
-    "tech_stack": ["Docker"],
     "type": "DEVOPS"
   },
   {
@@ -75,8 +61,6 @@
     "repository_link": "https://github.com/zbhavyai/scripts",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/scripts.png",
-    "language": ["Bash", "Python"],
-    "tech_stack": [],
     "type": "CLI"
   },
   {
@@ -85,8 +69,6 @@
     "repository_link": "https://github.com/zbhavyai/audiohook",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/audiohook.jpeg",
-    "language": ["Python"],
-    "tech_stack": [""],
     "type": "CLI"
   },
   {
@@ -95,8 +77,6 @@
     "repository_link": "https://github.com/budlib/",
     "deployment_link": "",
     "card_image": "https://avatars.githubusercontent.com/u/96268227",
-    "language": ["Java", "Javascript", "SQL"],
-    "tech_stack": ["Spring Boot", "React.js", "MySQL"],
     "type": "WEB"
   },
   {
@@ -105,8 +85,6 @@
     "repository_link": "https://github.com/meng-ucalgary/intelli-nurse",
     "deployment_link": "https://intellinurse.netlify.app",
     "card_image": "https://intellinurse.netlify.app/logo512.png",
-    "language": ["Java", "Javascript", "SQL"],
-    "tech_stack": ["Spring Boot", "React.js", "MySQL"],
     "type": "WEB"
   },
   {
@@ -115,8 +93,6 @@
     "repository_link": "https://github.com/meng-ucalgary/engg-683-project",
     "deployment_link": "https://eyesea.netlify.app",
     "card_image": "https://eyesea.netlify.app/images/logo512.png",
-    "language": ["Javascript"],
-    "tech_stack": ["React.js"],
     "type": "WEB"
   },
   {
@@ -125,8 +101,6 @@
     "repository_link": "https://github.com/meng-ucalgary/ensf-607-608-project",
     "deployment_link": "",
     "card_image": "https://the-vet-app.netlify.app/animals.png",
-    "language": ["Java", "Javascript", "SQL"],
-    "tech_stack": ["Spring Boot", "React.js", "MySQL"],
     "type": "WEB"
   },
   {
@@ -135,8 +109,6 @@
     "repository_link": "https://github.com/zbhavyai/omdb-client",
     "deployment_link": "https://omdb-client.netlify.app",
     "card_image": "https://omdb-client.netlify.app/logo512.png",
-    "language": ["Javascript"],
-    "tech_stack": ["React.js"],
     "type": "WEB"
   },
   {
@@ -145,8 +117,6 @@
     "repository_link": "",
     "deployment_link": "https://walnutot.com.au",
     "card_image": "https://walnutot.com.au/logo512.png",
-    "language": ["Javascript"],
-    "tech_stack": ["React.js"],
     "type": "WEB"
   },
   {
@@ -155,8 +125,6 @@
     "repository_link": "https://github.com/zbhavyai/readme-downloader",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/readme-downloader.png",
-    "language": ["Python"],
-    "tech_stack": ["Pandas", "Databricks"],
     "type": "CLI"
   },
   {
@@ -165,8 +133,6 @@
     "repository_link": "https://github.com/zbhavyai/epic-open-api-scraper",
     "deployment_link": "https://zbhavyai.github.io/epic-open-api-scraper/",
     "card_image": "https://website-icon-cache.netlify.app/cache/epic-open-api-scraper.png",
-    "language": ["Python"],
-    "tech_stack": ["BeautifulSoup4"],
     "type": "CLI"
   },
   {
@@ -175,8 +141,6 @@
     "repository_link": "https://github.com/zbhavyai/currency-converter",
     "deployment_link": "https://zbhavyai.github.io/currency-converter",
     "card_image": "https://website-icon-cache.netlify.app/cache/currency-converter.jpeg",
-    "language": ["Javascript"],
-    "tech_stack": ["XMLHttpRequest", "fetch"],
     "type": "WEB"
   },
   {
@@ -185,8 +149,6 @@
     "repository_link": "https://github.com/zbhavyai/revered-banshee",
     "deployment_link": "",
     "card_image": "https://raw.githubusercontent.com/zbhavyai/revered-banshee/main/src/main/assets/banshee.png",
-    "language": ["Java"],
-    "tech_stack": ["Quarkus"],
     "type": "API"
   },
   {
@@ -195,8 +157,6 @@
     "repository_link": "https://github.com/meng-ucalgary/ensf-607-assignment-5",
     "deployment_link": "https://bg-react-counter-app.netlify.app",
     "card_image": "https://website-icon-cache.netlify.app/cache/react-counter-app.png",
-    "language": ["Javascript"],
-    "tech_stack": ["React.js"],
     "type": "WEB"
   },
   {
@@ -205,8 +165,6 @@
     "repository_link": "https://github.com/meng-ucalgary/ensf-607-assignment-4",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/tic-tac-toe.png",
-    "language": ["Java"],
-    "tech_stack": ["Socket", "ServerSocket"],
     "type": "DESKTOP"
   },
   {
@@ -215,8 +173,6 @@
     "repository_link": "https://github.com/meng-ucalgary/ensf-614-project",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/movie-ticket-reservation-system.jpg",
-    "language": ["Java", "MySQL"],
-    "tech_stack": ["Swing", "Mail", "JDBC"],
     "type": "DESKTOP"
   },
   {
@@ -225,8 +181,6 @@
     "repository_link": "https://github.com/meng-ucalgary/ensf-607-assignment-3",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/course-registration-system.jpg",
-    "language": ["Java"],
-    "tech_stack": ["Swing"],
     "type": "DESKTOP"
   },
   {
@@ -235,8 +189,6 @@
     "repository_link": "https://github.com/zbhavyai/star-wars-api",
     "deployment_link": "",
     "card_image": "https://website-icon-cache.netlify.app/cache/swapi-client.jpg",
-    "language": ["Java"],
-    "tech_stack": ["Java"],
     "type": "CLI"
   },
   {
@@ -245,8 +197,6 @@
     "repository_link": "https://github.com/zbhavyai/t9-keyboard",
     "deployment_link": "https://zbhavyai.github.io/t9-keyboard/",
     "card_image": "https://website-icon-cache.netlify.app/cache/t9-keyboard.png",
-    "language": ["Javascript"],
-    "tech_stack": ["Javascript"],
     "type": "WEB"
   },
   {
@@ -255,8 +205,6 @@
     "repository_link": "https://github.com/zbhavyai/same-old-calculator",
     "deployment_link": "https://zbhavyai.github.io/same-old-calculator/",
     "card_image": "http://website-icon-cache.netlify.app/cache/same-old-calculator.webp",
-    "language": ["Javascript"],
-    "tech_stack": ["Javascript"],
     "type": "WEB"
   }
 ]
