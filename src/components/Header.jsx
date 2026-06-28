@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 
@@ -43,10 +42,6 @@ const Header = () => {
       </Container>
     </Navbar>
   );
-};
-
-Header.propTypes = {
-  activeNav: PropTypes.string.isRequired,
 };
 
 export default Header;
