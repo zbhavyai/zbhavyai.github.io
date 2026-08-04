@@ -28,29 +28,29 @@
     "url": "https://www.buymeacoffee.com/zbhavyai"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^7.3.0",
-    "@fortawesome/free-brands-svg-icons": "^7.3.0",
-    "@fortawesome/free-regular-svg-icons": "^7.3.0",
-    "@fortawesome/free-solid-svg-icons": "^7.3.0",
-    "@fortawesome/react-fontawesome": "^3.3.1",
+    "@fortawesome/fontawesome-svg-core": "^7.3.1",
+    "@fortawesome/free-brands-svg-icons": "^7.3.1",
+    "@fortawesome/free-regular-svg-icons": "^7.3.1",
+    "@fortawesome/free-solid-svg-icons": "^7.3.1",
+    "@fortawesome/react-fontawesome": "^3.5.0",
     "bootstrap": "^5.3.8",
     "prop-types": "^15.8.1",
-    "react": "^19.2.7",
+    "react": "^19.2.8",
     "react-bootstrap": "^2.10.10",
-    "react-dom": "^19.2.7",
-    "react-router-dom": "^7.18.0"
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.3",
-    "eslint": "^10.5.0",
+    "@vitejs/plugin-react": "^6.0.4",
+    "eslint": "^10.8.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
-    "globals": "^17.7.0",
-    "netlify-cli": "^26.1.0",
-    "prettier": "^3.8.4",
-    "vite": "^8.1.0"
+    "globals": "^17.8.0",
+    "netlify-cli": "^26.2.0",
+    "prettier": "^3.9.6",
+    "vite": "^8.1.5"
   }
 }
