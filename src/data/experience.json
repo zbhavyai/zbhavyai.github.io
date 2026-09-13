@@ -1,14 +1,30 @@
 [
   {
+    "company": "Helcim Inc",
+    "designation": "Software Developer",
+    "location": "Calgary, Canada",
+    "start_date": "Aug 2026",
+    "end_date": "present",
+    "tech_stack": ["PHP", "Laravel", "Apache Kafka", "Google BigQuery", "Google Cloud Platform", "Kubernetes"],
+    "responsibilities": [
+      {
+        "description": "Working on EQ, to maintain and support core settlement flows, including payment reconciliation, cost calculations, and merchant disbursements."
+      }
+    ]
+  },
+  {
     "company": "Morgan Stanley (Synechron)",
     "designation": "Senior Associate - Technology",
     "location": "Calgary, Canada",
     "start_date": "May 2026",
-    "end_date": "present",
-    "tech_stack": ["Java", "Spring Boot", "Apache Kafka"],
+    "end_date": "Jul 2026",
+    "tech_stack": ["Java", "Spring Boot", "Apache Kafka", "Oracle DB"],
     "responsibilities": [
       {
-        "description": "Working on the Shareworks project, a wealth management platform for investors and plan participants."
+        "description": "Decoupled Blackout tracking from Plan Controls, <strong>reducing redundant message traffic</strong> and improving service modularity."
+      },
+      {
+        "description": "Modernized currency controls by replacing SFTP transfers of Foreign Disbursement code files with Kafka messages, <strong>eliminating manual uploads and downloads</strong>."
       }
     ]
   },
