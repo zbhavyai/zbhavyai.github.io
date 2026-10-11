@@ -129,10 +129,10 @@
   },
   {
     "name": "Walnut OT",
-    "summary": "A website for an independent occupational therapist in Australia.",
+    "summary": "Draft website for an independent occupational therapist in Australia.",
     "repository_link": "",
-    "deployment_link": "https://walnutot.com.au",
-    "card_image": "https://walnutot.com.au/favicon.ico",
+    "deployment_link": "https://walnut-ot.netlify.app",
+    "card_image": "https://walnut-ot.netlify.app/favicon.ico",
     "type": ["WEB"]
   },
   {
